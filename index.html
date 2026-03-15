@@ -1,289 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AliCreationBD</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AliCreationBD</title>
 
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f7fb;
-      color: #333;
-      line-height: 1.6;
-    }
+<style>
 
-    header {
-      background: linear-gradient(135deg, #0d6efd, #003c8f);
-      color: white;
-      text-align: center;
-      padding: 60px 20px 40px;
-    }
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6fb;
+color:#333;
+}
 
-    header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
+header{
+background:linear-gradient(135deg,#0066ff,#002a80);
+color:white;
+text-align:center;
+padding:70px 20px;
+}
 
-    header p {
-      font-size: 20px;
-    }
+header h1{
+font-size:50px;
+margin-bottom:10px;
+}
 
-    nav {
-      background-color: #ffffff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+header p{
+font-size:20px;
+}
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+nav{
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+}
 
-    nav ul li a {
-      display: block;
-      padding: 15px 20px;
-      text-decoration: none;
-      color: #0d6efd;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+margin:0;
+padding:0;
+}
 
-    nav ul li a:hover {
-      background-color: #0d6efd;
-      color: white;
-    }
+nav ul li a{
+padding:15px 20px;
+display:block;
+text-decoration:none;
+color:#0066ff;
+font-weight:bold;
+}
 
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: 30px auto;
-    }
+nav ul li a:hover{
+background:#0066ff;
+color:white;
+}
 
-    .section-title {
-      text-align: center;
-      font-size: 32px;
-      color: #0d6efd;
-      margin-bottom: 25px;
-    }
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:40px 0;
+}
 
-    .box {
-      background: white;
-      padding: 30px;
-      margin-bottom: 25px;
-      border-radius: 14px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-    }
+.section-title{
+text-align:center;
+font-size:32px;
+color:#0066ff;
+margin-bottom:30px;
+}
 
-    .box h3 {
-      color: #0d6efd;
-      margin-bottom: 12px;
-      font-size: 28px;
-    }
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+text-align:center;
+}
 
-    .service-card {
-      background: white;
-      padding: 25px;
-      border-radius: 14px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-      text-align: center;
-    }
+.card h3{
+color:#0066ff;
+}
 
-    .service-card h4 {
-      color: #0d6efd;
-      margin-bottom: 10px;
-      font-size: 22px;
-    }
+.price{
+font-size:28px;
+color:#111;
+margin:10px 0;
+}
 
-    .highlight {
-      background: linear-gradient(135deg, #eaf2ff, #ffffff);
-      border-left: 5px solid #0d6efd;
-    }
+.btn{
+display:inline-block;
+background:#0066ff;
+color:white;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+margin-top:10px;
+}
 
-    .contact-links {
-      margin-top: 20px;
-    }
+.btn:hover{
+background:#003fb8;
+}
 
-    .btn {
-      display: inline-block;
-      margin: 8px 8px 0 0;
-      padding: 12px 20px;
-      background-color: #0d6efd;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
+.whatsapp{
+background:#25d366;
+}
 
-    .btn:hover {
-      background-color: #003c8f;
-    }
+.facebook{
+background:#1877f2;
+}
 
-    .btn-whatsapp {
-      background-color: #25D366;
-    }
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
 
-    .btn-whatsapp:hover {
-      background-color: #1da851;
-    }
-
-    .btn-facebook {
-      background-color: #1877f2;
-    }
-
-    .btn-facebook:hover {
-      background-color: #0f5ec9;
-    }
-
-    footer {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-      margin-top: 40px;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 34px;
-      }
-
-      header p {
-        font-size: 17px;
-      }
-
-      .section-title {
-        font-size: 26px;
-      }
-
-      .box h3 {
-        font-size: 24px;
-      }
-    }
-  </style>
+</style>
 </head>
+
 <body>
 
-  <header id="home">
-    <h1>AliCreationBD</h1>
-    <p>Digital Marketing, Freelancing and Basic Computer Learning Website</p>
-  </header>
+<header>
+<h1>AliCreationBD</h1>
+<p>Digital Marketing | Freelancing | Computer Learning</p>
+</header>
 
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#whyus">Why Us</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 
-  <div class="container">
+<div class="container" id="about">
 
-    <section id="about">
-      <h2 class="section-title">About Us</h2>
-      <div class="box">
-        <h3>Welcome to AliCreationBD</h3>
-        <p>
-          AliCreationBD is a growing platform for digital marketing, freelancing guidance,
-          and basic computer learning. Our goal is to help students, beginners, and
-          online workers build useful skills and move forward with confidence.
-        </p>
-      </div>
-    </section>
+<h2 class="section-title">About Us</h2>
 
-    <section id="services">
-      <h2 class="section-title">Our Services</h2>
-      <div class="services">
-        <div class="service-card">
-          <h4>Digital Marketing</h4>
-          <p>
-            Learn Facebook marketing, online promotion, content creation,
-            and practical business growth strategies.
-          </p>
-        </div>
+<div class="card">
+<p>
+AliCreationBD is a digital platform helping beginners learn digital marketing,
+freelancing and basic computer skills. We support students and online workers
+to grow their digital career.
+</p>
+</div>
 
-        <div class="service-card">
-          <h4>Freelancing Guidance</h4>
-          <p>
-            Get beginner-friendly guidance on freelancing, skill development,
-            portfolio building, and online career growth.
-          </p>
-        </div>
+</div>
 
-        <div class="service-card">
-          <h4>Basic Computer Learning</h4>
-          <p>
-            Understand computer basics, typing, internet browsing,
-            and office work in a simple and practical way.
-          </p>
-        </div>
+<div class="container" id="services">
 
-        <div class="service-card">
-          <h4>Business Support</h4>
-          <p>
-            Build your online presence and improve your business ideas
-            with easy and useful digital support.
-          </p>
-        </div>
-      </div>
-    </section>
+<h2 class="section-title">Our Services</h2>
 
-    <section id="whyus">
-      <h2 class="section-title">Why Choose Us</h2>
-      <div class="box highlight">
-        <h3>Simple, Helpful and Practical</h3>
-        <p>
-          We focus on practical learning, beginner-friendly support,
-          and real online growth. Our mission is to make digital skills
-          easier for everyone.
-        </p>
-      </div>
-    </section>
+<div class="grid">
 
-    <section id="contact">
-      <h2 class="section-title">Contact Us</h2>
-      <div class="box">
-        <h3>Get In Touch</h3>
-        <p><strong>Business Name:</strong> AliCreationBD</p>
-        <p><strong>Location:</strong> Narsingdi, Bangladesh</p>
-        <p><strong>Email:</strong> alicreationbd2025@gmail.com</p>
-        <p><strong>Facebook:</strong> AliCreationBD Official Page</p>
-        <p><strong>WhatsApp:</strong> 01345288953</p>
+<div class="card">
+<h3>Digital Marketing</h3>
+<p>Facebook promotion and online marketing support.</p>
+</div>
 
-        <div class="contact-links">
-          <a class="btn" href="mailto:alicreationbd2025@gmail.com">Send Email</a>
-          <a class="btn btn-facebook" href="https://www.facebook.com/profile.php?id=61586306490344" target="_blank">Visit Facebook</a>
-          <a class="btn btn-whatsapp" href="https://wa.me/8801345288953" target="_blank">Chat on WhatsApp</a>
-        </div>
-      </div>
-    </section>
+<div class="card">
+<h3>Freelancing Guidance</h3>
+<p>Beginner friendly freelancing learning support.</p>
+</div>
 
-  </div>
+<div class="card">
+<h3>Basic Website Creation</h3>
+<p>Simple website creation using GitHub pages.</p>
+</div>
 
-  <footer>
-    <p>© 2026 AliCreationBD. All rights reserved.</p>
-  </footer>
+<div class="card">
+<h3>Computer Learning</h3>
+<p>Basic computer course for students.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="container" id="portfolio">
+
+<h2 class="section-title">Portfolio</h2>
+
+<div class="card">
+<p>
+Example works will appear here.  
+Website creation, digital marketing projects and other online work.
+</p>
+</div>
+
+</div>
+
+<div class="container" id="pricing">
+
+<h2 class="section-title">Service Pricing</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Facebook Page Setup</h3>
+<div class="price">500৳</div>
+<a class="btn whatsapp" href="https://wa.me/8801345288953">Order Now</a>
+</div>
+
+<div class="card">
+<h3>Basic Website</h3>
+<div class="price">1500৳</div>
+<a class="btn whatsapp" href="https://wa.me/8801345288953">Order Now</a>
+</div>
+
+<div class="card">
+<h3>Freelancing Guide</h3>
+<div class="price">1000৳</div>
+<a class="btn whatsapp" href="https://wa.me/8801345288953">Order Now</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="container" id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Email</h3>
+<p>alicreationbd2025@gmail.com</p>
+<a class="btn" href="mailto:alicreationbd2025@gmail.com">Send Email</a>
+</div>
+
+<div class="card">
+<h3>Facebook</h3>
+<a class="btn facebook" href="https://www.facebook.com/profile.php?id=61586306490344">Visit Page</a>
+</div>
+
+<div class="card">
+<h3>WhatsApp</h3>
+<a class="btn whatsapp" href="https://wa.me/8801345288953">Chat Now</a>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 AliCreationBD | All Rights Reserved</p>
+
+</footer>
 
 </body>
 </html>
