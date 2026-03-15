@@ -1,97 +1,271 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AlicreationBD</title>
+  <title>AliCreationBD</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fb;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #0d6efd;
+      background: linear-gradient(135deg, #0d6efd, #003c8f);
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 60px 20px 40px;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 36px;
+      font-size: 48px;
+      margin-bottom: 10px;
     }
 
     header p {
-      margin-top: 10px;
-      font-size: 18px;
+      font-size: 20px;
+    }
+
+    nav {
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #0d6efd;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #0d6efd;
+      color: white;
     }
 
     .container {
       width: 90%;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 30px auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      color: #0d6efd;
+      margin-bottom: 25px;
     }
 
     .box {
       background: white;
-      padding: 25px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
     }
 
-    .box h2 {
+    .box h3 {
       color: #0d6efd;
-      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 28px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .service-card h4 {
+      color: #0d6efd;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .highlight {
+      background: linear-gradient(135deg, #eaf2ff, #ffffff);
+      border-left: 5px solid #0d6efd;
+    }
+
+    .contact-links {
+      margin-top: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 8px 8px 0 0;
+      padding: 12px 20px;
+      background-color: #0d6efd;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #003c8f;
     }
 
     footer {
-      background: #222;
+      background: #111827;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 30px;
+      padding: 25px 15px;
+      margin-top: 40px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 34px;
+      }
+
+      header p {
+        font-size: 17px;
+      }
+
+      .section-title {
+        font-size: 26px;
+      }
+
+      .box h3 {
+        font-size: 24px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <header id="home">
     <h1>AliCreationBD</h1>
     <p>Digital Marketing, Freelancing and Basic Computer Learning Website</p>
   </header>
 
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#whyus">Why Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <div class="container">
-    <div class="box">
-      <h2>About Us</h2>
-      <p>Welcome to AliCreationBD. We provide support for digital marketing, freelancing guidance, and basic computer learning for beginners.</p>
-    </div>
 
-    <div class="box">
-      <h2>Digital Marketing</h2>
-      <p>Learn Facebook marketing, online promotion, content creation, and business growth strategies.</p>
-    </div>
+    <section id="about">
+      <h2 class="section-title">About Us</h2>
+      <div class="box">
+        <h3>Welcome to AliCreationBD</h3>
+        <p>
+          AliCreationBD is a growing platform for digital marketing, freelancing guidance,
+          and basic computer learning. Our goal is to help students, beginners, and
+          online workers build useful skills and move forward with confidence.
+        </p>
+      </div>
+    </section>
 
-    <div class="box">
-      <h2>Freelancing</h2>
-      <p>Start your freelancing journey with beginner-friendly ideas, skill development, and online work guidance.</p>
-    </div>
+    <section id="services">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services">
+        <div class="service-card">
+          <h4>Digital Marketing</h4>
+          <p>
+            Learn Facebook marketing, online promotion, content creation,
+            and practical business growth strategies.
+          </p>
+        </div>
 
-    <div class="box">
-      <h2>Basic Computer Learning</h2>
-      <p>We help students and new learners understand the basics of computer use, typing, internet, and office work.</p>
-    </div>
+        <div class="service-card">
+          <h4>Freelancing Guidance</h4>
+          <p>
+            Get beginner-friendly guidance on freelancing, skill development,
+            portfolio building, and online career growth.
+          </p>
+        </div>
 
-    <div class="box">
-      <h2>Contact</h2>
-      <p>Facebook Page: Ali Creation</p>
-      <p>Email: your@email.com</p>
-      <p>Location: Narsingdi, Bangladesh</p>
-    </div>
+        <div class="service-card">
+          <h4>Basic Computer Learning</h4>
+          <p>
+            Understand computer basics, typing, internet browsing,
+            and office work in a simple and practical way.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h4>Business Support</h4>
+          <p>
+            Build your online presence and improve your business ideas
+            with easy and useful digital support.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="whyus">
+      <h2 class="section-title">Why Choose Us</h2>
+      <div class="box highlight">
+        <h3>Simple, Helpful and Practical</h3>
+        <p>
+          We focus on practical learning, beginner-friendly support,
+          and real online growth. Our mission is to make digital skills
+          easier for everyone.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="box">
+        <h3>Get In Touch</h3>
+        <p><strong>Business Name:</strong> AliCreationBD</p>
+        <p><strong>Location:</strong> Narsingdi, Bangladesh</p>
+        <p><strong>Email:</strong> your@email.com</p>
+        <p><strong>Facebook Page:</strong> Ali Creation</p>
+
+        <div class="contact-links">
+          <a class="btn" href="https://facebook.com" target="_blank">Visit Facebook</a>
+          <a class="btn" href="mailto:your@email.com">Send Email</a>
+        </div>
+      </div>
+    </section>
+
   </div>
 
   <footer>
