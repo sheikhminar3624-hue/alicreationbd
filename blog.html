@@ -1,301 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AliCreationBD Blog</title>
-  <meta name="description" content="Read digital marketing, freelancing, online income and computer learning tips from AliCreationBD.">
-  <meta name="keywords" content="AliCreationBD blog, digital marketing Bangladesh, freelancing tips, online income, computer learning">
-  <meta name="author" content="AliCreationBD">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fb;
-      color: #1f2937;
-      line-height: 1.7;
-    }
-
-    header {
-      background: linear-gradient(135deg, #0d6efd, #003c8f);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    header h1 {
-      font-size: 44px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 18px;
-      max-width: 750px;
-      margin: 0 auto;
-    }
-
-    nav {
-      background: white;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav ul li a {
-      display: block;
-      padding: 15px 20px;
-      text-decoration: none;
-      color: #0d6efd;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-      background: #0d6efd;
-      color: white;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1150px;
-      margin: 35px auto;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 34px;
-      color: #0d6efd;
-      margin-bottom: 25px;
-    }
-
-    .intro-box {
-      background: white;
-      padding: 28px;
-      border-radius: 18px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      margin-bottom: 30px;
-      text-align: center;
-    }
-
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 22px;
-    }
-
-    .blog-card {
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      padding: 24px;
-      transition: transform 0.3s;
-    }
-
-    .blog-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .blog-card h3 {
-      color: #0d6efd;
-      font-size: 24px;
-      margin-bottom: 12px;
-    }
-
-    .blog-card p {
-      margin-bottom: 12px;
-      color: #4b5563;
-    }
-
-    .blog-meta {
-      font-size: 14px;
-      color: #6b7280;
-      margin-bottom: 12px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 11px 18px;
-      background: #0d6efd;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #004fc4;
-    }
-
-    .tips-box {
-      background: linear-gradient(135deg, #eef4ff, #ffffff);
-      border-left: 6px solid #0d6efd;
-      padding: 28px;
-      border-radius: 18px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      margin-top: 35px;
-    }
-
-    .tips-box h2 {
-      color: #0d6efd;
-      margin-bottom: 12px;
-    }
-
-    .tips-box ul {
-      padding-left: 20px;
-    }
-
-    .tips-box li {
-      margin-bottom: 8px;
-    }
-
-    footer {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 24px 15px;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 34px;
-      }
-
-      header p {
-        font-size: 16px;
-      }
-
-      .section-title {
-        font-size: 28px;
-      }
-
-      .blog-card h3 {
-        font-size: 22px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | AliCreationBD</title>
+  <meta name="description" content="Read digital marketing, freelancing, online income, and basic computer tips from AliCreationBD." />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>AliCreationBD Blog</h1>
-    <p>Read useful tips on digital marketing, freelancing, online income and basic computer learning.</p>
+  <header class="site-header">
+    <div class="container">
+      <h1>AliCreationBD Blog</h1>
+      <p>Digital Tips, Freelancing Guides & Online Income Ideas</p>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="blog.html" class="active">Blog</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="index.html#services">Services</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <main class="container blog-page">
 
-  <div class="container">
-    <h2 class="section-title">Latest Blog Posts</h2>
-
-    <div class="intro-box">
+    <section class="blog-hero">
+      <h2>Digital Tips & Blog</h2>
       <p>
-        Welcome to the AliCreationBD Blog. Here you will find practical guides, simple learning tips,
-        and useful online career ideas for students, beginners and small business owners.
+        Learn freelancing, digital marketing, basic computer skills, and smart online income ideas
+        in simple language for beginners in Bangladesh.
       </p>
-    </div>
+    </section>
 
-    <div class="blog-grid">
+    <section class="blog-grid">
 
-      <div class="blog-card">
-        <div class="blog-meta">Category: Freelancing | Date: 15 March 2026</div>
+      <article class="blog-card">
+        <span class="blog-tag">Freelancing</span>
         <h3>How to Start Freelancing in Bangladesh</h3>
         <p>
-          Learn the basic steps to start freelancing, choose a skill, create a portfolio,
-          and begin your online journey with confidence.
+          Learn the first steps to begin freelancing, choose a skill, build a profile,
+          and earn online from trusted marketplaces.
         </p>
-        <a class="btn" href="blogs/freelancing-bangladesh.html">Read More</a>
-      </div>
+        <a href="#">Read More</a>
+      </article>
 
-      <div class="blog-card">
-        <div class="blog-meta">Category: Digital Marketing | Date: 15 March 2026</div>
+      <article class="blog-card">
+        <span class="blog-tag">Marketing</span>
         <h3>Basic Digital Marketing Guide for Beginners</h3>
         <p>
-          Understand Facebook marketing, content promotion, audience reach,
-          and simple online business growth strategies.
+          Understand Facebook promotion, content strategy, audience targeting,
+          and simple ways to grow online.
         </p>
-        <a class="btn" href="blogs/digital-marketing-guide.html">Read More</a>
-      </div>
+        <a href="#">Read More</a>
+      </article>
 
-      <div class="blog-card">
-        <div class="blog-meta">Category: Online Income | Date: 15 March 2026</div>
+      <article class="blog-card">
+        <span class="blog-tag">Skills</span>
         <h3>Best Skills for Online Income in 2026</h3>
         <p>
-          Discover useful digital skills like website creation, marketing,
-          graphic work, and computer knowledge for online earning.
+          Discover high-demand skills like graphic design, website creation,
+          SEO, and social media marketing.
         </p>
-        <a class="btn" href="blogs/online-income-skills.html">Read More</a>
-      </div>
+        <a href="#">Read More</a>
+      </article>
 
-      <div class="blog-card">
-        <div class="blog-meta">Category: Computer Learning | Date: 15 March 2026</div>
-        <h3>Basic Computer Learning for Students</h3>
+      <article class="blog-card">
+        <span class="blog-tag">Computer</span>
+        <h3>Basic Computer Skills Everyone Should Learn</h3>
         <p>
-          A simple guide to typing, internet browsing, file management,
-          email use, and office work for beginners.
+          From typing and file management to email, Google Docs, and internet browsing,
+          these skills are essential for students and freelancers.
         </p>
-        <a class="btn" href="blogs/basic-computer-learning.html">Read More</a>
-      </div>
+        <a href="#">Read More</a>
+      </article>
 
-      <div class="blog-card">
-        <div class="blog-meta">Category: Facebook Tips | Date: 15 March 2026</div>
-        <h3>How to Grow a Facebook Page Organically</h3>
+      <article class="blog-card">
+        <span class="blog-tag">Facebook</span>
+        <h3>How to Promote a Small Business on Facebook</h3>
         <p>
-          Learn practical ideas to improve page content, post consistency,
-          engagement and audience growth without paid ads.
+          Learn how to create attractive posts, use page features,
+          and reach local customers without spending too much money.
         </p>
-        <a class="btn" href="blogs/facebook-page-growth.html">Read More</a>
-      </div>
+        <a href="#">Read More</a>
+      </article>
 
-      <div class="blog-card">
-        <div class="blog-meta">Category: Business Tips | Date: 15 March 2026</div>
-        <h3>How Small Businesses Can Use Digital Marketing</h3>
+      <article class="blog-card">
+        <span class="blog-tag">Online Income</span>
+        <h3>Easy Online Income Ideas for Beginners</h3>
         <p>
-          See how local businesses can use Facebook, WhatsApp and simple websites
-          to get more customers and build trust.
+          Explore simple and realistic online income ideas through services,
+          content work, affiliate marketing, and digital products.
         </p>
-        <a class="btn" href="blogs/small-business-digital-marketing.html">Read More</a>
-      </div>
+        <a href="#">Read More</a>
+      </article>
 
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 AliCreationBD. All rights reserved.</p>
     </div>
-
-    <div class="tips-box">
-      <h2>Why This Blog Matters</h2>
-      <ul>
-        <li>Helps Google understand your website better</li>
-        <li>Brings more visitors through useful content</li>
-        <li>Builds trust for your services and business</li>
-        <li>Supports SEO with targeted keywords</li>
-      </ul>
-    </div>
-  </div>
-
-  <footer>
-    <p>© 2026 AliCreationBD. All rights reserved.</p>
   </footer>
 
 </body>
