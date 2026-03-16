@@ -1,150 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AliCreationBD | Digital Marketing & Freelancing</title>
-  <meta
-    name="description"
-    content="AliCreationBD helps beginners learn digital marketing, freelancing, basic computer skills, and online income ideas in Bangladesh."
-  />
-  <link rel="stylesheet" href="assets/style.css" />
+  <title>AliCreationBD | Digital Services & Homemade Pitha</title>
+  <meta name="description" content="AliCreationBD - Digital Marketing, Freelancing Support, Basic Computer Services, and Homemade Pitha Order in Narsingdi." />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .site-header {
+      background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+      color: white;
+      padding: 60px 0 35px;
+      text-align: center;
+    }
+    .site-header h1 {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+    .site-header p {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      margin: 5px;
+    }
+    .btn-primary {
+      background: white;
+      color: #0d6efd;
+    }
+    .btn-primary:hover {
+      background: #e9f1ff;
+    }
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+    }
+    .btn-whatsapp:hover {
+      background: #1ebd59;
+    }
+    .navbar {
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #0d6efd;
+    }
+    .nav-links a {
+      color: #222;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 600;
+    }
+    .nav-links a:hover {
+      color: #0d6efd;
+    }
+    section {
+      padding: 70px 0;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-title h2 {
+      font-size: 32px;
+      color: #0d6efd;
+      margin-bottom: 10px;
+    }
+    .section-title p {
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+    .card h3 {
+      margin-bottom: 12px;
+      color: #0d6efd;
+    }
+    .about-box, .contact-box {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    .price-list li {
+      list-style: none;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .contact-box p {
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+    .contact-box a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    .footer {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 22px 0;
+    }
+    .floating-whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 14px 18px;
+      border-radius: 50px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      .nav-wrap {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .nav-links a {
+        margin: 0 8px;
+      }
+      .site-header h1 {
+        font-size: 30px;
+      }
+      .section-title h2 {
+        font-size: 26px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container">
-      <div class="top-bar">
-        <h1 class="logo">AliCreationBD</h1>
-
-        <nav class="navbar">
-          <a href="index.html" class="active">Home</a>
-          <a href="blog.html">Blog</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+  <nav class="navbar">
+    <div class="container nav-wrap">
+      <div class="logo">AliCreationBD</div>
+      <div class="nav-links">
+        <a href="#home">হোম</a>
+        <a href="#services">সার্ভিস</a>
+        <a href="#pitha">পিঠা</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#contact">যোগাযোগ</a>
       </div>
+    </div>
+  </nav>
 
-      <section class="hero">
-        <div class="hero-text">
-          <h2>Learn Digital Skills & Start Your Online Journey</h2>
-          <p>
-            AliCreationBD is a learning platform for digital marketing,
-            freelancing, basic computer training, and online income ideas
-            for beginners in Bangladesh.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="blog.html" class="btn btn-primary">Explore Blog</a>
-            <a href="#services" class="btn btn-secondary">Our Services</a>
-          </div>
-        </div>
-      </section>
+  <header class="site-header" id="home">
+    <div class="container">
+      <h1>AliCreationBD</h1>
+      <p>Digital Services, Freelancing Support, Basic Computer Help & Homemade Pitha Order</p>
+      <a class="btn btn-primary" href="#services">আমাদের সার্ভিস দেখুন</a>
+      <a class="btn btn-whatsapp" href="https://wa.me/880132888953" target="_blank">WhatsApp অর্ডার</a>
     </div>
   </header>
 
-  <main>
-    <section class="features">
-      <div class="container feature-grid">
-        <div class="feature-box">
-          <h3>Beginner Friendly</h3>
-          <p>
-            Simple guides and easy explanations for students, freelancers,
-            and new learners.
-          </p>
-        </div>
-
-        <div class="feature-box">
-          <h3>Practical Learning</h3>
-          <p>
-            Learn useful skills like Facebook marketing, freelancing basics,
-            and online tools.
-          </p>
-        </div>
-
-        <div class="feature-box">
-          <h3>Bangladesh Focused</h3>
-          <p>
-            Content designed for Bangladeshi learners who want to build
-            skills and income online.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-section">
-      <div class="container about-box">
-        <h2>Welcome to AliCreationBD</h2>
-        <p>
-          We help beginners learn digital marketing, freelancing, computer
-          basics, and online earning ideas in a simple and practical way.
-          Our goal is to make digital learning easier for everyone.
-        </p>
-      </div>
-    </section>
-
-    <section class="services-section" id="services">
-      <div class="container">
-        <div class="section-title">
-          <h2>Our Services</h2>
-          <p>We focus on skills that are useful, practical, and income-oriented.</p>
-        </div>
-
-        <div class="service-grid">
-          <div class="service-card">
-            <h3>Digital Marketing Learning</h3>
-            <p>
-              Learn Facebook promotion, content planning, audience growth,
-              and simple online marketing strategies.
-            </p>
-          </div>
-
-          <div class="service-card">
-            <h3>Freelancing Beginner Guide</h3>
-            <p>
-              Understand how to choose a skill, create a profile,
-              and start working online step by step.
-            </p>
-          </div>
-
-          <div class="service-card">
-            <h3>Basic Computer Training</h3>
-            <p>
-              Build your foundation with typing, email, file management,
-              internet browsing, and essential computer skills.
-            </p>
-          </div>
-
-          <div class="service-card">
-            <h3>Online Income Tips</h3>
-            <p>
-              Discover realistic online income ideas through services,
-              digital skills, and beginner-friendly opportunities.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-section">
-      <div class="container cta-box">
-        <h2>Start Learning Today</h2>
-        <p>
-          Visit our blog and discover useful tips on freelancing,
-          digital marketing, and online growth.
-        </p>
-        <a href="blog.html" class="btn btn-primary">Read Blog Posts</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
+  <section id="services">
     <div class="container">
-      <p>© 2026 AliCreationBD. All rights reserved.</p>
+      <div class="section-title">
+        <h2>আমাদের সার্ভিস</h2>
+        <p>AliCreationBD এর মাধ্যমে আপনি ডিজিটাল এবং লোকাল কাস্টমার দুই ধরনের সার্ভিসই পেতে পারবেন।</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>ডিজিটাল মার্কেটিং</h3>
+          <p>Facebook page setup, promotion ideas, content planning, basic online branding support.</p>
+        </div>
+        <div class="card">
+          <h3>ফ্রিল্যান্সিং সাপোর্ট</h3>
+          <p>Data entry, copy paste, basic gig setup idea, profile content support and beginner help.</p>
+        </div>
+        <div class="card">
+          <h3>বেসিক কম্পিউটার সার্ভিস</h3>
+          <p>Typing, document formatting, basic design support, online form fill-up and simple office tasks.</p>
+        </div>
+        <div class="card">
+          <h3>লোকাল অর্ডার সার্ভিস</h3>
+          <p>নরসিংদী এলাকায় homemade food এবং seasonal product order নেওয়া হয়।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pitha">
+    <div class="container">
+      <div class="section-title">
+        <h2>Homemade Pitha Order</h2>
+        <p>ঘরোয়া স্বাদের মজার পিঠা এখন অর্ডার করতে পারবেন Facebook ও WhatsApp এর মাধ্যমে।</p>
+      </div>
+      <div class="about-box">
+        <h3 style="color:#0d6efd; margin-bottom:15px;">বর্তমান পিঠার তালিকা</h3>
+        <ul class="price-list">
+          <li>ভাপা পিঠা — ৪ পিস = ৮০ টাকা</li>
+          <li>পাটিসাপটা — ৬ পিস = ১৫০ টাকা</li>
+          <li>চিতই পিঠা — ৬ পিস = ১২০ টাকা</li>
+          <li>দুধ চিতই — ১ বক্স = ১৮০ টাকা</li>
+          <li>মিক্সড পিঠা বক্স — ২৫০ টাকা</li>
+        </ul>
+        <p style="margin-top:18px;">অর্ডার করতে কমপক্ষে ১ দিন আগে জানাতে হবে। লোকেশন: নরসিংদী।</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>আমাদের সম্পর্কে</h2>
+        <p>AliCreationBD একটি growing brand যেখানে ডিজিটাল সার্ভিসের সাথে সাথে লোকাল পণ্য ও homemade food নিয়েও কাজ করা হয়।</p>
+      </div>
+      <div class="about-box">
+        <p><strong>AliCreationBD</strong> এর লক্ষ্য হলো সহজ, সাশ্রয়ী এবং বিশ্বস্ত সার্ভিস প্রদান করা। আপনি যদি digital service নিতে চান বা Facebook এর মাধ্যমে homemade pitha order করতে চান, আমরা আপনাকে সহায়তা করবো।</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>যোগাযোগ</h2>
+        <p>অর্ডার, সার্ভিস বা যেকোনো তথ্যের জন্য আমাদের সাথে যোগাযোগ করুন।</p>
+      </div>
+      <div class="contact-box">
+        <p><strong>Email:</strong> <a href="mailto:alicreationbd2025@gmail.com">alicreationbd2025@gmail.com</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/880132888953" target="_blank">0132888953</a></p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61586306490344" target="_blank">AliCreationBD Facebook Page</a></p>
+        <p><strong>Website:</strong> <a href="https://alicreationbd.com" target="_blank">alicreationbd.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 AliCreationBD | All Rights Reserved</p>
     </div>
   </footer>
 
-  <a class="whatsapp-btn" href="https://wa.me/88018XXXXXXXXXX" target="_blank">WhatsApp</a>
+  <a class="floating-whatsapp" href="https://wa.me/880132888953" target="_blank">WhatsApp</a>
 
 </body>
 </html>
