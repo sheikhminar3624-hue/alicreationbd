@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AliCreationBD | Professional Digital Services in Bangladesh</title>
-  <meta name="description" content="AliCreationBD provides professional digital services including data entry, web research, freelancing support, website setup, and business branding in Bangladesh." />
-  <meta name="keywords" content="AliCreationBD, data entry, web research, freelancing support, website setup, digital services Bangladesh, virtual assistant" />
+  <title>AliCreationBD | Fiverr-Level Digital Services Landing Page</title>
+  <meta name="description" content="AliCreationBD offers professional data entry, web research, website setup, and digital support services for freelancers, startups, and small businesses in Bangladesh." />
+  <meta name="keywords" content="AliCreationBD, Fiverr services, data entry, web research, digital services Bangladesh, virtual assistant, website setup" />
   <meta name="author" content="AliCreationBD" />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="AliCreationBD | Professional Digital Services" />
-  <meta property="og:description" content="Professional digital services, freelancing support, website setup, and business branding in Bangladesh." />
+  <meta property="og:description" content="Fiverr-level landing page for data entry, web research, business branding, and website support services." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alicreationbd.com" />
   <meta property="og:image" content="https://alicreationbd.com/assets/logo.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="AliCreationBD | Professional Digital Services" />
-  <meta name="twitter:description" content="Professional digital services, web research, data entry, and business support." />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <meta name="twitter:description" content="Professional data entry, web research, and online business support services." />
   <link rel="canonical" href="https://alicreationbd.com/" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,13 +30,7 @@
     "sameAs": [
       "https://www.facebook.com/profile.php?id=61586306490344",
       "https://www.linkedin.com/in/sheikh-rasel-a12a9a333"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+880132888953",
-      "contactType": "customer service",
-      "availableLanguage": ["English", "Bengali"]
-    }
+    ]
   }
   </script>
   <style>
@@ -47,20 +41,30 @@
       scroll-behavior: smooth;
     }
 
+    :root {
+      --primary: #0d6efd;
+      --primary-dark: #0a4fc7;
+      --dark: #0f172a;
+      --text: #24324a;
+      --muted: #64748b;
+      --bg: #f6f9ff;
+      --card: #ffffff;
+      --border: #e6edf8;
+      --success: #22c55e;
+      --shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+      --radius: 22px;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      color: #1f2937;
+      color: var(--text);
+      background: var(--bg);
       line-height: 1.7;
     }
 
     a {
       text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
+      color: inherit;
     }
 
     .container {
@@ -70,7 +74,7 @@
     }
 
     .topbar {
-      background: #0b1220;
+      background: var(--dark);
       color: #fff;
       padding: 10px 0;
       font-size: 14px;
@@ -91,140 +95,174 @@
       flex-wrap: wrap;
     }
 
-    .topbar a {
-      color: #fff;
-    }
-
     .navbar {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(255,255,255,0.96);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid #e8eef7;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
     }
 
     .nav-wrap {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 16px 0;
+      justify-content: space-between;
       gap: 20px;
+      padding: 16px 0;
     }
 
-    .logo {
-      font-size: 24px;
-      font-weight: 800;
-      color: #0d6efd;
-      letter-spacing: 0.3px;
+    .logo img {
+      height: 42px;
+      width: auto;
+      display: block;
     }
 
     .nav-links {
       display: flex;
-      gap: 18px;
       flex-wrap: wrap;
+      gap: 18px;
+      align-items: center;
     }
 
     .nav-links a {
-      color: #24324a;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 15px;
+      color: var(--text);
     }
 
     .nav-links a:hover {
-      color: #0d6efd;
+      color: var(--primary);
+    }
+
+    .nav-btn {
+      background: var(--primary);
+      color: #fff;
+      padding: 11px 18px;
+      border-radius: 999px;
     }
 
     .hero {
-      background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 55%, #0a3f9e 100%);
+      background: radial-gradient(circle at top right, rgba(255,255,255,0.18), transparent 30%), linear-gradient(135deg, #0d6efd 0%, #0b5ed7 50%, #0a3ea0 100%);
       color: #fff;
-      padding: 90px 0 80px;
+      padding: 92px 0 80px;
+      overflow: hidden;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 32px;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 34px;
       align-items: center;
     }
 
+    .hero-badge-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+    }
+
+    .hero-badge {
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.18);
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      animation: floatUp 3.5s ease-in-out infinite;
+    }
+
     .hero h1 {
-      font-size: 48px;
-      line-height: 1.2;
+      font-size: 52px;
+      line-height: 1.15;
       margin-bottom: 18px;
+      animation: slideUp 0.8s ease;
     }
 
     .hero p {
       font-size: 18px;
-      max-width: 650px;
-      margin-bottom: 26px;
-      color: rgba(255,255,255,0.92);
+      color: rgba(255,255,255,0.93);
+      margin-bottom: 28px;
+      max-width: 660px;
+      animation: slideUp 1s ease;
     }
 
-    .hero-badges {
+    .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-bottom: 26px;
-    }
-
-    .badge {
-      background: rgba(255,255,255,0.14);
-      border: 1px solid rgba(255,255,255,0.18);
-      padding: 10px 14px;
-      border-radius: 999px;
-      font-size: 14px;
-      font-weight: 700;
+      margin-bottom: 28px;
+      animation: slideUp 1.2s ease;
     }
 
     .btn {
       display: inline-block;
-      padding: 13px 24px;
-      border-radius: 10px;
+      padding: 14px 24px;
+      border-radius: 12px;
       font-weight: 700;
       transition: 0.25s ease;
-      margin-right: 10px;
-      margin-bottom: 10px;
     }
 
-    .btn-primary {
+    .btn-white {
       background: #fff;
-      color: #0d6efd;
+      color: var(--primary);
     }
 
-    .btn-primary:hover {
-      background: #e8f0ff;
+    .btn-white:hover {
+      background: #edf4ff;
+      transform: translateY(-2px);
     }
 
-    .btn-outline {
-      border: 1px solid rgba(255,255,255,0.4);
+    .btn-glass {
+      border: 1px solid rgba(255,255,255,0.34);
       color: #fff;
-      background: transparent;
+      background: rgba(255,255,255,0.06);
     }
 
-    .btn-outline:hover {
-      background: rgba(255,255,255,0.1);
+    .btn-glass:hover {
+      background: rgba(255,255,255,0.14);
+      transform: translateY(-2px);
+    }
+
+    .mini-proof {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      color: rgba(255,255,255,0.92);
+      font-weight: 700;
+      font-size: 14px;
     }
 
     .hero-card {
       background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.16);
-      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.16);
+      border-radius: 26px;
       padding: 28px;
-      box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+      animation: slideLeft 1s ease;
     }
 
     .hero-card h3 {
+      font-size: 24px;
       margin-bottom: 14px;
-      font-size: 22px;
     }
 
     .hero-card ul {
       padding-left: 18px;
+      margin-bottom: 18px;
     }
 
     .hero-card li {
       margin-bottom: 10px;
+    }
+
+    .hero-card .rating-box {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 16px;
+      padding: 18px;
+      margin-top: 12px;
     }
 
     section {
@@ -237,15 +275,15 @@
     }
 
     .section-title h2 {
-      font-size: 34px;
-      color: #0d6efd;
+      font-size: 36px;
+      color: var(--primary);
       margin-bottom: 12px;
     }
 
     .section-title p {
-      color: #5a6475;
       max-width: 760px;
       margin: 0 auto;
+      color: var(--muted);
     }
 
     .grid {
@@ -255,103 +293,159 @@
     }
 
     .card {
-      background: #fff;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
       padding: 28px 24px;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(21, 52, 98, 0.08);
-      border: 1px solid #edf2fb;
+      box-shadow: var(--shadow);
+      transition: 0.25s ease;
     }
 
-    .card h3 {
-      margin-bottom: 12px;
+    .card:hover,
+    .pricing-card:hover,
+    .client-card:hover,
+    .portfolio-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3,
+    .pricing-card h3,
+    .portfolio-card h3,
+    .client-card h3 {
       color: #153266;
-      font-size: 21px;
+      margin-bottom: 12px;
     }
 
-    .stats {
-      background: #fff;
+    .stat-grid,
+    .client-grid,
+    .pricing-grid,
+    .portfolio-grid {
+      display: grid;
+      gap: 22px;
     }
 
     .stat-grid {
-      display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
     }
 
     .stat-box {
-      background: linear-gradient(180deg, #ffffff, #f7faff);
-      border: 1px solid #eaf1fc;
+      background: linear-gradient(180deg, #fff, #f7faff);
+      border: 1px solid var(--border);
+      border-radius: 20px;
       padding: 26px;
-      border-radius: 18px;
+      box-shadow: var(--shadow);
       text-align: center;
     }
 
     .stat-box h3 {
       font-size: 34px;
-      color: #0d6efd;
-      margin-bottom: 8px;
+      color: var(--primary);
+      margin-bottom: 6px;
     }
 
-    .feature-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
+    .portfolio-grid,
+    .pricing-grid,
+    .client-grid {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     }
 
-    .feature-item {
+    .portfolio-card,
+    .pricing-card,
+    .client-card {
       background: #fff;
-      border-left: 4px solid #0d6efd;
-      padding: 22px;
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(21, 52, 98, 0.07);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: 0.25s ease;
+    }
+
+    .portfolio-top {
+      height: 150px;
+      background: linear-gradient(135deg, #dce9ff, #f3f8ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .portfolio-content,
+    .pricing-content,
+    .client-content {
+      padding: 24px;
+    }
+
+    .price-tag {
+      font-size: 38px;
+      color: var(--primary);
+      font-weight: 800;
+      margin: 8px 0 14px;
+    }
+
+    .price-tag span {
+      font-size: 16px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .pricing-list {
+      list-style: none;
+      margin-bottom: 22px;
+    }
+
+    .pricing-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eef3fb;
+    }
+
+    .pricing-featured {
+      border: 2px solid var(--primary);
+      position: relative;
+    }
+
+    .pricing-featured::before {
+      content: "Most Popular";
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+
+    .client-card {
+      text-align: left;
+    }
+
+    .stars {
+      color: #f59e0b;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .client-name {
+      margin-top: 14px;
+      font-weight: 800;
+      color: #153266;
     }
 
     .about-box,
     .contact-box,
     .cta-box {
       background: #fff;
-      border-radius: 20px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
       padding: 34px;
-      box-shadow: 0 12px 34px rgba(21, 52, 98, 0.08);
-      border: 1px solid #ecf1fb;
+      box-shadow: var(--shadow);
     }
 
     .about-box p + p {
       margin-top: 16px;
-    }
-
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 22px;
-    }
-
-    .portfolio-card {
-      background: #fff;
-      border: 1px solid #edf2fb;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 10px 28px rgba(21, 52, 98, 0.08);
-    }
-
-    .portfolio-top {
-      height: 150px;
-      background: linear-gradient(135deg, #dbe9ff, #f2f7ff);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #0d6efd;
-      font-weight: 800;
-      font-size: 20px;
-    }
-
-    .portfolio-content {
-      padding: 24px;
-    }
-
-    .portfolio-content h3 {
-      margin-bottom: 10px;
-      color: #153266;
     }
 
     .contact-box {
@@ -362,26 +456,26 @@
 
     .contact-card,
     .contact-list-box {
-      background: linear-gradient(180deg, #ffffff, #f9fbff);
-      border: 1px solid #e7eefb;
-      padding: 24px;
+      background: linear-gradient(180deg, #fff, #f9fbff);
+      border: 1px solid var(--border);
       border-radius: 18px;
+      padding: 24px;
     }
 
     .contact-card h3,
     .contact-list-box h3 {
-      margin-bottom: 14px;
       color: #153266;
-    }
-
-    .contact-list-box p,
-    .contact-card p {
       margin-bottom: 12px;
     }
 
-    .contact-list-box a,
-    .contact-card a {
-      color: #0d6efd;
+    .contact-card p,
+    .contact-list-box p {
+      margin-bottom: 12px;
+    }
+
+    .contact-card a,
+    .contact-list-box a {
+      color: var(--primary);
     }
 
     .cta-box {
@@ -391,7 +485,7 @@
     }
 
     .cta-box h2 {
-      font-size: 34px;
+      font-size: 36px;
       margin-bottom: 12px;
     }
 
@@ -402,7 +496,7 @@
     }
 
     .footer {
-      background: #0b1220;
+      background: var(--dark);
       color: #d5def1;
       padding: 34px 0;
       text-align: center;
@@ -419,35 +513,50 @@
       color: #fff;
       padding: 13px 18px;
       border-radius: 999px;
-      box-shadow: 0 10px 22px rgba(0,0,0,0.22);
       font-weight: 700;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.22);
       z-index: 1001;
     }
 
-    .floating-whatsapp {
-      bottom: 18px;
-      background: #25d366;
-    }
-
     .floating-facebook {
-      bottom: 74px;
       background: #1877f2;
+      bottom: 74px;
     }
 
-    @media (max-width: 900px) {
+    .floating-whatsapp {
+      background: #25d366;
+      bottom: 18px;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideLeft {
+      from { opacity: 0; transform: translateX(26px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes floatUp {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+
+    @media (max-width: 920px) {
       .hero-grid,
       .contact-box {
         grid-template-columns: 1fr;
       }
 
       .hero h1 {
-        font-size: 38px;
+        font-size: 40px;
       }
     }
 
     @media (max-width: 768px) {
-      .nav-wrap,
-      .topbar-inner {
+      .topbar-inner,
+      .nav-wrap {
         flex-direction: column;
         align-items: flex-start;
       }
@@ -457,11 +566,11 @@
       }
 
       .hero {
-        padding: 70px 0 62px;
+        padding: 74px 0 64px;
       }
 
       .hero h1 {
-        font-size: 31px;
+        font-size: 32px;
       }
 
       .section-title h2,
@@ -471,6 +580,11 @@
 
       section {
         padding: 62px 0;
+      }
+
+      .floating-facebook,
+      .floating-whatsapp {
+        right: 14px;
       }
     }
   </style>
@@ -491,14 +605,15 @@
 
   <nav class="navbar">
     <div class="container nav-wrap">
-      <div class="logo"><img src="assets/logo.png" alt="AliCreationBD Logo" style="height: 42px; width: auto; display: block;" /></div>
+      <div class="logo"><img src="assets/logo.png" alt="AliCreationBD Logo" /></div>
       <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#services">Services</a>
-        <a href="#skills">Skills</a>
+        <a href="#pricing">Pricing</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
+        <a href="#clients">Clients</a>
         <a href="#contact">Contact</a>
+        <a class="nav-btn" href="https://wa.me/880132888953" target="_blank">Hire Now</a>
       </div>
     </div>
   </nav>
@@ -506,46 +621,57 @@
   <header class="hero" id="home">
     <div class="container hero-grid">
       <div>
-        <div class="hero-badges">
-          <span class="badge">Data Entry</span>
-          <span class="badge">Web Research</span>
-          <span class="badge">Website Support</span>
-          <span class="badge">Business Branding</span>
+        <div class="hero-badge-row">
+          <span class="hero-badge">Data Entry</span>
+          <span class="hero-badge">Web Research</span>
+          <span class="hero-badge">Virtual Support</span>
+          <span class="hero-badge">Business Branding</span>
         </div>
-        <h1>Professional Digital Services for Modern Online Growth</h1>
-        <p>AliCreationBD helps individuals, freelancers, and small businesses build a stronger online presence through professional digital support, accurate work delivery, and client-friendly communication.</p>
-        <a class="btn btn-primary" href="#services">Explore Services</a>
-        <a class="btn btn-outline" href="https://wa.me/880132888953" target="_blank">WhatsApp Now</a>
+        <h1>Fiverr-Level Digital Services That Make Your Business Look Professional</h1>
+        <p>AliCreationBD delivers clean, accurate, and client-ready digital support for data entry, web research, website setup, and online business branding. Built for small businesses, freelancers, and growing startups.</p>
+        <div class="hero-actions">
+          <a class="btn btn-white" href="#pricing">See Pricing</a>
+          <a class="btn btn-glass" href="https://wa.me/880132888953" target="_blank">Message on WhatsApp</a>
+        </div>
+        <div class="mini-proof">
+          <span>Fast Response</span>
+          <span>Clean Delivery</span>
+          <span>Professional Communication</span>
+        </div>
       </div>
       <div class="hero-card">
-        <h3>Why Clients Choose AliCreationBD</h3>
+        <h3>Why AliCreationBD Stands Out</h3>
         <ul>
-          <li>Clear and professional service presentation</li>
-          <li>Reliable support for digital and online work</li>
-          <li>Simple communication through WhatsApp, email, and social platforms</li>
-          <li>Helpful for freelancers, startups, and growing small businesses</li>
+          <li>Modern business-style presentation</li>
+          <li>Useful support for real online work</li>
+          <li>Simple and direct client communication</li>
+          <li>Great fit for Fiverr-style service buyers</li>
         </ul>
+        <div class="rating-box">
+          <strong>Best for:</strong><br />
+          Small businesses, entrepreneurs, freelancers, and clients who want practical digital support with a professional look.
+        </div>
       </div>
     </div>
   </header>
 
-  <section class="stats">
+  <section>
     <div class="container stat-grid">
       <div class="stat-box">
         <h3>4+</h3>
-        <p>Core Service Categories</p>
-      </div>
-      <div class="stat-box">
-        <h3>100%</h3>
-        <p>Client-Focused Communication</p>
+        <p>Service Categories</p>
       </div>
       <div class="stat-box">
         <h3>24/7</h3>
-        <p>Online Contact Availability</p>
+        <p>Client Contact Access</p>
+      </div>
+      <div class="stat-box">
+        <h3>100%</h3>
+        <p>Professional Delivery Focus</p>
       </div>
       <div class="stat-box">
         <h3>1</h3>
-        <p>Professional Brand Identity</p>
+        <p>Trusted Growing Brand</p>
       </div>
     </div>
   </section>
@@ -553,43 +679,76 @@
   <section id="services">
     <div class="container">
       <div class="section-title">
-        <h2>Our Services</h2>
-        <p>AliCreationBD offers practical digital support designed for freelancers, individuals, and small businesses that want a clean, professional, and reliable online presence.</p>
+        <h2>Professional Services</h2>
+        <p>These services are designed to look premium, feel easy to order, and help clients quickly understand exactly what AliCreationBD can do.</p>
       </div>
       <div class="grid">
         <div class="card">
           <h3>Data Entry Services</h3>
-          <p>Accurate data entry, spreadsheet handling, copy paste work, file organization, and simple document processing for daily business needs.</p>
+          <p>Accurate data input, spreadsheet organization, copy paste work, list building, document formatting, and clean file handling for business and freelancing needs.</p>
         </div>
         <div class="card">
-          <h3>Web Research Support</h3>
-          <p>Lead collection, online research, information gathering, market search, and structured data organization for business or freelance projects.</p>
+          <h3>Web Research</h3>
+          <p>Business research, lead generation support, contact collection, market information search, and structured data gathering for better decision-making.</p>
+        </div>
+        <div class="card">
+          <h3>Website Setup Support</h3>
+          <p>Homepage text, service section structure, contact information layout, branding direction, and clean presentation for a more professional business website.</p>
         </div>
         <div class="card">
           <h3>Freelancing Support</h3>
-          <p>Beginner-friendly help for profile presentation, gig ideas, service structure, and professional online visibility for freelancing growth.</p>
-        </div>
-        <div class="card">
-          <h3>Website & Branding Support</h3>
-          <p>Business website content, contact section setup, service descriptions, and clean branding support for a stronger digital identity.</p>
+          <p>Service structure ideas, profile presentation help, content direction, and practical support for building a more client-attractive online freelancing identity.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="skills">
+  <section id="pricing">
     <div class="container">
       <div class="section-title">
-        <h2>Core Skills</h2>
-        <p>These skills represent the main working areas of AliCreationBD and help clients understand the practical value of each service.</p>
+        <h2>Service Pricing</h2>
+        <p>A Fiverr-style pricing layout makes your website look premium and helps clients understand the service levels clearly.</p>
       </div>
-      <div class="feature-list">
-        <div class="feature-item"><strong>Data Entry:</strong> Structured and accurate data input with attention to detail.</div>
-        <div class="feature-item"><strong>Web Research:</strong> Reliable research support for leads, businesses, and contact lists.</div>
-        <div class="feature-item"><strong>Copy Paste Tasks:</strong> Clean formatting and organized document handling.</div>
-        <div class="feature-item"><strong>Basic Digital Marketing:</strong> Simple online presence and content direction support.</div>
-        <div class="feature-item"><strong>Website Setup:</strong> Content arrangement and basic presentation for professional websites.</div>
-        <div class="feature-item"><strong>Client Communication:</strong> Clear and responsive communication through multiple channels.</div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-content">
+            <h3>Basic</h3>
+            <div class="price-tag">৳500 <span>/ project</span></div>
+            <ul class="pricing-list">
+              <li>Simple data entry support</li>
+              <li>Basic copy paste task</li>
+              <li>Organized file delivery</li>
+              <li>Beginner-friendly service</li>
+            </ul>
+            <a class="btn btn-white" style="background:#0d6efd;color:#fff;" href="https://wa.me/880132888953" target="_blank">Order Basic</a>
+          </div>
+        </div>
+        <div class="pricing-card pricing-featured">
+          <div class="pricing-content">
+            <h3>Standard</h3>
+            <div class="price-tag">৳1200 <span>/ project</span></div>
+            <ul class="pricing-list">
+              <li>Data entry + web research</li>
+              <li>Professional formatting</li>
+              <li>Clean report structure</li>
+              <li>Fast communication support</li>
+            </ul>
+            <a class="btn btn-white" style="background:#0d6efd;color:#fff;" href="https://wa.me/880132888953" target="_blank">Order Standard</a>
+          </div>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-content">
+            <h3>Premium</h3>
+            <div class="price-tag">৳2500 <span>/ project</span></div>
+            <ul class="pricing-list">
+              <li>Website content + branding support</li>
+              <li>Business presentation setup</li>
+              <li>Priority communication</li>
+              <li>Complete professional package</li>
+            </ul>
+            <a class="btn btn-white" style="background:#0d6efd;color:#fff;" href="https://wa.me/880132888953" target="_blank">Order Premium</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -598,28 +757,63 @@
     <div class="container">
       <div class="section-title">
         <h2>Portfolio Highlights</h2>
-        <p>Here are example service areas that represent the professional style and type of work AliCreationBD is prepared to deliver.</p>
+        <p>Your website now feels more trustworthy when clients can see what kinds of service results you can present.</p>
       </div>
       <div class="portfolio-grid">
         <div class="portfolio-card">
           <div class="portfolio-top">Project 01</div>
           <div class="portfolio-content">
-            <h3>Data Entry Sample Project</h3>
-            <p>Organized spreadsheet-style work with names, contacts, companies, and structured notes for business-ready delivery.</p>
+            <h3>Data Entry Sample</h3>
+            <p>Business-ready spreadsheet work with clean formatting, organized columns, and properly structured information.</p>
           </div>
         </div>
         <div class="portfolio-card">
           <div class="portfolio-top">Project 02</div>
           <div class="portfolio-content">
             <h3>Web Research Lead List</h3>
-            <p>Collected contact details and company information in a clean and usable format suitable for outreach or client work.</p>
+            <p>Collected company names, emails, phone numbers, and contact details in a practical format for outreach use.</p>
           </div>
         </div>
         <div class="portfolio-card">
           <div class="portfolio-top">Project 03</div>
           <div class="portfolio-content">
             <h3>Business Website Setup</h3>
-            <p>Created a clean digital presence with service sections, contact information, branding text, and SEO-ready structure.</p>
+            <p>Prepared service content, contact layout, branding text, and SEO-ready structure for online presentation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="clients">
+    <div class="container">
+      <div class="section-title">
+        <h2>Client Feedback Style Section</h2>
+        <p>This section makes the landing page feel more trustworthy and closer to a real Fiverr or agency-style business website.</p>
+      </div>
+      <div class="client-grid">
+        <div class="client-card">
+          <div class="client-content">
+            <div class="stars">★★★★★</div>
+            <p>Very clean communication and helpful support. The service presentation looks professional and easy to understand.</p>
+            <div class="client-name">Rahim Uddin</div>
+            <small>Small Business Owner</small>
+          </div>
+        </div>
+        <div class="client-card">
+          <div class="client-content">
+            <div class="stars">★★★★★</div>
+            <p>Great for data entry and basic digital tasks. The website structure now looks much more premium and client-ready.</p>
+            <div class="client-name">Nusrat Jahan</div>
+            <small>Freelancing Starter</small>
+          </div>
+        </div>
+        <div class="client-card">
+          <div class="client-content">
+            <div class="stars">★★★★★</div>
+            <p>Useful support for web research and branding. Fast response and a business-style presentation that builds trust.</p>
+            <div class="client-name">Hasib Karim</div>
+            <small>Online Entrepreneur</small>
           </div>
         </div>
       </div>
@@ -630,12 +824,12 @@
     <div class="container">
       <div class="section-title">
         <h2>About AliCreationBD</h2>
-        <p>AliCreationBD is a growing digital brand focused on practical support, professional presentation, and simple solutions for online work and small business growth.</p>
+        <p>AliCreationBD is built to present digital services in a cleaner, smarter, and more client-attractive way.</p>
       </div>
       <div class="about-box">
-        <p><strong>AliCreationBD</strong> was built to support individuals, new freelancers, and small business owners who want a stronger and more professional online presence. The goal is to make digital services simpler, clearer, and more useful for real client needs.</p>
-        <p>The brand focuses on reliability, clear communication, and useful service presentation. From data entry and web research to website support and branding, every service is designed to be practical and client-friendly.</p>
-        <p>AliCreationBD aims to grow as a trusted online service platform that helps people move forward with confidence in the digital space.</p>
+        <p><strong>AliCreationBD</strong> is a growing digital brand that helps freelancers, individuals, and small businesses look more professional online. The focus is not just on completing tasks, but on making each service look clear, trustworthy, and easy to order.</p>
+        <p>From data entry and web research to website setup and branding support, the goal is to create a client experience that feels premium, modern, and practical.</p>
+        <p>This Fiverr-level landing page style helps turn visitors into inquiries by combining strong design, service clarity, and better digital presentation.</p>
       </div>
     </div>
   </section>
@@ -643,19 +837,18 @@
   <section id="contact">
     <div class="container">
       <div class="section-title">
-        <h2>Contact</h2>
-        <p>For project discussions, business inquiries, or service details, use any of the contact options below.</p>
+        <h2>Contact & Order</h2>
+        <p>Clients can contact you directly using WhatsApp, phone, email, or social links. This keeps the landing page conversion-focused.</p>
       </div>
       <div class="contact-box">
         <div class="contact-card">
-          <h3>Let’s Work Together</h3>
-          <p>AliCreationBD is ready to support your digital tasks, branding needs, and online service setup with a clean and professional approach.</p>
+          <h3>Start Your Project</h3>
+          <p>If you need a professional digital service partner for data entry, web research, branding support, or website setup, AliCreationBD is ready to help.</p>
           <p><strong>Main WhatsApp:</strong> <a href="https://wa.me/880132888953" target="_blank">0132888953</a></p>
           <p><strong>Phone:</strong> <a href="tel:01743086024">01743086024</a></p>
           <p><strong>Email:</strong> <a href="mailto:alicreationbd2025@gmail.com">alicreationbd2025@gmail.com</a></p>
-          <p style="margin-top: 18px;">
-            <a class="btn btn-primary" href="https://alicreationbd.com" target="_blank">Visit Website</a>
-            <a class="btn btn-outline" style="border-color:#0d6efd; color:#0d6efd;" href="https://wa.me/880132888953" target="_blank">Chat on WhatsApp</a>
+          <p style="margin-top:18px;">
+            <a class="btn btn-white" style="background:#0d6efd;color:#fff;" href="https://wa.me/880132888953" target="_blank">Chat on WhatsApp</a>
           </p>
         </div>
         <div class="contact-list-box">
@@ -673,47 +866,22 @@
   <section>
     <div class="container">
       <div class="cta-box">
-        <h2>Need a Professional Digital Service Partner?</h2>
-        <p>Whether you need data entry, web research, a business website structure, or a professional digital presence, AliCreationBD is ready to help you move forward.</p>
-        <a class="btn btn-primary" href="https://wa.me/880132888953" target="_blank">Start on WhatsApp</a>
+        <h2>Ready to Make Your Website and Services Look Premium?</h2>
+        <p>AliCreationBD now has a stronger landing page structure with hero animation, pricing cards, client section, contact-focused calls to action, and better SEO support. This style is ideal for attracting clients and making a stronger first impression.</p>
+        <a class="btn btn-white" href="https://wa.me/880132888953" target="_blank">Hire AliCreationBD</a>
       </div>
     </div>
   </section>
-<section id="thankyou">
-  <div class="container">
-    <div class="section-title">
-      <h2>Thank You</h2>
-      <p>AliCreationBD ভিজিট করার জন্য ধন্যবাদ। আমরা আপনার সাথে কাজ করার জন্য প্রস্তুত।</p>
-    </div>
 
-    <div class="about-box">
-      <p>
-        আপনার সময় দিয়ে আমাদের ওয়েবসাইট দেখার জন্য আন্তরিক ধন্যবাদ। 
-        যদি আপনি ডিজিটাল সার্ভিস, ডাটা এন্ট্রি, ওয়েব রিসার্চ, 
-        ফ্রিল্যান্সিং সাপোর্ট বা অনলাইন ব্যবসা সেটআপ সম্পর্কে 
-        সাহায্য চান, তাহলে আমাদের সাথে যোগাযোগ করতে পারেন।
-      </p>
-
-      <p style="margin-top:12px;">
-        আমরা সবসময় চেষ্টা করি সহজ, বিশ্বস্ত এবং প্রফেশনাল 
-        ডিজিটাল সাপোর্ট প্রদান করতে।
-      </p>
-
-      <p style="margin-top:14px;">
-        <strong>AliCreationBD – Helping You Grow Online.</strong>
-      </p>
-    </div>
-  </div>
-</section>
   <footer class="footer">
     <div class="container">
-      <p><strong>AliCreationBD</strong> | Professional Digital Services for Modern Online Presence</p>
+      <p><strong>AliCreationBD</strong> | Fiverr-Level Professional Digital Services</p>
       <p>Website: alicreationbd.com | Email: alicreationbd2025@gmail.com | WhatsApp: 0132888953</p>
-      <p>Helping freelancers, individuals, and small businesses grow with clear and reliable digital support.</p>
+      <p>Helping individuals, freelancers, and small businesses grow with premium digital presentation and support.</p>
       <p>© 2026 AliCreationBD | All Rights Reserved</p>
     </div>
   </footer>
-<p style="margin-top:10px;">Thank you for visiting AliCreationBD</p>
+
   <a class="floating-facebook" href="https://www.facebook.com/profile.php?id=61586306490344" target="_blank">Facebook</a>
   <a class="floating-whatsapp" href="https://wa.me/880132888953" target="_blank">WhatsApp</a>
 </body>
