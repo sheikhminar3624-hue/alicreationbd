@@ -1,7 +1,0 @@
-alicreationbd
-├── index.html
-├── blog.html
-├── about.html
-├── contact.html
-└── assets
-    └── style.css
