@@ -1,39 +1,50 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AliCreationBD | Facebook Boost Service</title>
-  <meta name="description" content="AliCreationBD থেকে প্রফেশনাল Facebook Boost Service নিন। বেশি রিচ, বেশি মেসেজ, বেশি সেলসের জন্য সাশ্রয়ী বুস্ট প্যাকেজ।" />
-  <meta name="keywords" content="Facebook Boost Service Bangladesh, Facebook Ads Service, Boost Page, AliCreationBD" />
+  <title>AliCreationBD | Digital Services, Website Setup & Freelancing Support</title>
+
+  <meta name="description" content="AliCreationBD provides digital marketing, Facebook ad boost, website setup, SEO support, and freelancing help in Bangladesh." />
+  <meta name="keywords" content="AliCreationBD, digital marketing Bangladesh, Facebook ads service BD, website design BD, freelancing support, SEO service Bangladesh" />
   <meta name="author" content="AliCreationBD" />
+
+  <meta property="og:title" content="AliCreationBD | Digital Services & Freelancing Support" />
+  <meta property="og:description" content="Professional digital services including Facebook ads, website setup, SEO, and freelancing support in Bangladesh." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alicreationbd.com/" />
+
+  <link rel="icon" href="favicon.png" type="image/png" />
 
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
-
-    html {
       scroll-behavior: smooth;
     }
 
     body {
       font-family: Arial, sans-serif;
-      background: #f5f8ff;
-      color: #1f2937;
+      background: #0b1020;
+      color: #ffffff;
       line-height: 1.6;
     }
 
     a {
       text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
     }
 
     .container {
       width: 90%;
-      max-width: 1180px;
-      margin: 0 auto;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .btn {
@@ -42,35 +53,58 @@
       border-radius: 10px;
       font-weight: bold;
       transition: 0.3s ease;
+      border: none;
+      cursor: pointer;
     }
 
     .btn-primary {
-      background: #1877f2;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
       color: #fff;
+      box-shadow: 0 10px 30px rgba(0, 114, 255, 0.35);
     }
 
     .btn-primary:hover {
-      background: #0f5fd1;
+      transform: translateY(-2px);
+      opacity: 0.95;
     }
 
-    .btn-secondary {
-      background: #ffffff;
-      color: #1877f2;
-      border: 2px solid #1877f2;
-    }
-
-    .btn-secondary:hover {
-      background: #1877f2;
+    .btn-outline {
+      border: 2px solid #3b82f6;
       color: #fff;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: #3b82f6;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
+      color: #b8c0d4;
+      font-size: 17px;
     }
 
     /* Header */
     header {
-      background: #ffffff;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
       position: sticky;
       top: 0;
-      z-index: 999;
+      z-index: 1000;
+      background: rgba(11, 16, 32, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
     .navbar {
@@ -81,357 +115,417 @@
     }
 
     .logo {
-      font-size: 24px;
+      font-size: 26px;
       font-weight: 800;
-      color: #1877f2;
+      color: #fff;
+    }
+
+    .logo span {
+      color: #38bdf8;
     }
 
     .nav-links {
       display: flex;
-      gap: 22px;
+      gap: 24px;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .nav-links a {
-      color: #374151;
-      font-weight: 600;
+      color: #dbe4ff;
       font-size: 15px;
+      transition: 0.3s;
     }
 
     .nav-links a:hover {
-      color: #1877f2;
+      color: #38bdf8;
     }
 
     /* Hero */
     .hero {
-      background: linear-gradient(135deg, #1877f2, #0f5fd1);
-      color: white;
-      padding: 90px 0;
+      padding: 100px 0 70px;
+      background:
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.15), transparent 30%),
+        radial-gradient(circle at top left, rgba(0, 114, 255, 0.18), transparent 30%),
+        linear-gradient(180deg, #0b1020 0%, #111936 100%);
     }
 
-    .hero-grid {
+    .hero-wrap {
       display: grid;
-      grid-template-columns: 1.2fr 1fr;
+      grid-template-columns: 1.2fr 0.8fr;
       gap: 40px;
       align-items: center;
     }
 
-    .hero h1 {
-      font-size: 48px;
-      line-height: 1.2;
+    .hero-text h1 {
+      font-size: 54px;
+      line-height: 1.15;
       margin-bottom: 20px;
     }
 
-    .hero p {
+    .hero-text h1 span {
+      color: #38bdf8;
+    }
+
+    .hero-text p {
+      color: #c8d3f0;
       font-size: 18px;
       margin-bottom: 28px;
-      max-width: 600px;
-      color: #eaf2ff;
+      max-width: 650px;
     }
 
     .hero-buttons {
       display: flex;
+      gap: 15px;
       flex-wrap: wrap;
-      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .hero-badges {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      color: #dce7ff;
+      font-size: 14px;
+      border: 1px solid rgba(255,255,255,0.08);
     }
 
     .hero-card {
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 18px;
-      padding: 28px;
-      backdrop-filter: blur(8px);
+      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 15px 45px rgba(0,0,0,0.25);
     }
 
     .hero-card h3 {
-      margin-bottom: 14px;
       font-size: 24px;
+      margin-bottom: 15px;
     }
 
     .hero-card ul {
       list-style: none;
+      color: #d8e3ff;
     }
 
     .hero-card ul li {
-      padding: 10px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.15);
+      margin-bottom: 12px;
+      padding-left: 24px;
+      position: relative;
     }
 
-    .hero-card ul li:last-child {
-      border-bottom: none;
+    .hero-card ul li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #38bdf8;
+      font-weight: bold;
+    }
+
+    /* Services */
+    .services-grid,
+    .portfolio-grid,
+    .pricing-grid,
+    .stats-grid {
+      display: grid;
+      gap: 24px;
+    }
+
+    .services-grid {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .card {
+      background: #121a33;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 18px;
+      padding: 28px;
+      transition: 0.35s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(56, 189, 248, 0.45);
+      box-shadow: 0 20px 35px rgba(0,0,0,0.25);
+    }
+
+    .icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-size: 26px;
+      margin-bottom: 18px;
+      background: linear-gradient(135deg, #0ea5e9, #2563eb);
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #b9c4df;
+      font-size: 15px;
     }
 
     /* Stats */
-    .stats {
-      margin-top: -35px;
-      margin-bottom: 40px;
-    }
-
     .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      margin-top: 30px;
     }
 
     .stat-box {
-      background: #fff;
-      padding: 24px;
+      background: #121a33;
+      border-radius: 18px;
+      padding: 25px;
       text-align: center;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border: 1px solid rgba(255,255,255,0.06);
     }
 
     .stat-box h3 {
-      font-size: 28px;
-      color: #1877f2;
+      font-size: 34px;
+      color: #38bdf8;
       margin-bottom: 6px;
     }
 
     .stat-box p {
-      color: #6b7280;
-      font-weight: 600;
-    }
-
-    /* Section */
-    section {
-      padding: 75px 0;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 15px;
-      font-size: 36px;
-      color: #111827;
-    }
-
-    .section-subtitle {
-      text-align: center;
-      max-width: 760px;
-      margin: 0 auto 45px;
-      color: #6b7280;
-      font-size: 17px;
-    }
-
-    /* Services */
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .service-card {
-      background: #fff;
-      padding: 28px;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-      transition: 0.3s ease;
-    }
-
-    .service-card:hover {
-      transform: translateY(-7px);
-    }
-
-    .service-icon {
-      width: 60px;
-      height: 60px;
-      background: #e8f1ff;
-      color: #1877f2;
-      font-size: 28px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 14px;
-      margin-bottom: 18px;
-    }
-
-    .service-card h3 {
-      margin-bottom: 12px;
-      font-size: 22px;
-    }
-
-    .service-card p {
-      color: #6b7280;
+      color: #bfd0ec;
     }
 
     /* Pricing */
-    .pricing {
-      background: #eef5ff;
-    }
-
     .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     }
 
     .price-card {
-      background: #fff;
-      padding: 32px 26px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      background: #121a33;
+      border-radius: 22px;
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,0.08);
       position: relative;
-      transition: 0.3s ease;
+      overflow: hidden;
     }
 
-    .price-card:hover {
-      transform: translateY(-8px);
+    .price-card.featured {
+      border: 1px solid #38bdf8;
+      transform: scale(1.03);
+      box-shadow: 0 18px 40px rgba(56, 189, 248, 0.15);
     }
 
-    .popular {
-      border: 2px solid #1877f2;
-    }
-
-    .badge {
-      position: absolute;
-      top: -12px;
-      right: 20px;
-      background: #1877f2;
-      color: #fff;
-      padding: 7px 14px;
-      border-radius: 50px;
-      font-size: 13px;
+    .price-tag {
+      font-size: 40px;
       font-weight: bold;
-    }
-
-    .price-card h3 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .price {
-      font-size: 38px;
-      color: #1877f2;
-      font-weight: 800;
-      margin-bottom: 16px;
+      color: #fff;
+      margin: 18px 0;
     }
 
     .price-card ul {
       list-style: none;
-      margin-bottom: 24px;
+      margin: 20px 0;
     }
 
     .price-card ul li {
-      padding: 10px 0;
-      border-bottom: 1px solid #edf2f7;
-      color: #4b5563;
+      margin-bottom: 12px;
+      color: #d6e2ff;
+      padding-left: 24px;
+      position: relative;
     }
 
-    /* Why us */
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 28px;
+    .price-card ul li::before {
+      content: "•";
+      position: absolute;
+      left: 8px;
+      color: #38bdf8;
     }
 
-    .why-box {
-      background: #fff;
-      padding: 26px;
-      border-radius: 18px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    .tag-popular {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: #38bdf8;
+      color: #08111f;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 10px;
+      border-radius: 999px;
     }
 
-    .why-box h3 {
-      margin-bottom: 10px;
-      color: #1877f2;
+    /* Portfolio */
+    .portfolio-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
-    /* CTA */
-    .cta {
-      background: linear-gradient(135deg, #0f5fd1, #1877f2);
+    .portfolio-item {
+      background: #121a33;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .portfolio-thumb {
+      height: 200px;
+      background: linear-gradient(135deg, #0f172a, #1d4ed8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: #fff;
-      text-align: center;
-      border-radius: 24px;
-      padding: 60px 30px;
+      font-size: 22px;
+      font-weight: bold;
     }
 
-    .cta h2 {
-      font-size: 38px;
+    .portfolio-content {
+      padding: 22px;
+    }
+
+    .portfolio-content h3 {
+      margin-bottom: 10px;
+    }
+
+    .portfolio-content p {
+      color: #b9c4df;
+    }
+
+    /* About */
+    .about-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .about-box {
+      background: #121a33;
+      padding: 30px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .about-box p {
+      color: #cad5ef;
       margin-bottom: 16px;
     }
 
-    .cta p {
-      max-width: 700px;
-      margin: 0 auto 25px;
-      color: #e5eeff;
-      font-size: 17px;
+    .about-list {
+      list-style: none;
+    }
+
+    .about-list li {
+      margin-bottom: 12px;
+      color: #d6e2ff;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .about-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #38bdf8;
+      font-weight: bold;
     }
 
     /* Contact */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-    }
-
     .contact-box {
-      background: #fff;
-      border-radius: 18px;
-      padding: 28px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-    }
-
-    .contact-box h3 {
-      margin-bottom: 14px;
-      font-size: 24px;
+      max-width: 850px;
+      margin: auto;
+      background: #121a33;
+      padding: 40px;
+      border-radius: 24px;
+      border: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
     }
 
     .contact-box p {
-      margin-bottom: 12px;
-      color: #4b5563;
+      color: #c9d5ef;
+      margin: 16px 0 24px;
+      font-size: 17px;
     }
 
-    .contact-box strong {
-      color: #111827;
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
     /* Footer */
     footer {
-      background: #0f172a;
-      color: #cbd5e1;
       padding: 30px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
       text-align: center;
-      margin-top: 40px;
+      color: #9fb0d0;
+      background: #0a0f1d;
     }
 
-    footer p {
-      margin-bottom: 8px;
+    /* WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      z-index: 1000;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+    }
+
+    /* Animation */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: all 0.8s ease;
+    }
+
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     /* Responsive */
-    @media (max-width: 992px) {
-      .hero-grid,
-      .contact-grid,
-      .why-grid,
-      .service-grid,
-      .pricing-grid,
-      .stats-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .hero h1 {
-        font-size: 38px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-      }
-
-      .hero-grid,
-      .contact-grid,
-      .why-grid,
-      .service-grid,
-      .pricing-grid,
-      .stats-grid {
+    @media (max-width: 900px) {
+      .hero-wrap,
+      .about-wrap {
         grid-template-columns: 1fr;
       }
 
-      .hero {
-        padding: 70px 0;
+      .hero-text h1 {
+        font-size: 40px;
       }
 
-      .hero h1 {
+      .navbar {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .nav-links {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 80px 0 50px;
+      }
+
+      .hero-text h1 {
         font-size: 32px;
       }
 
@@ -439,8 +533,8 @@
         font-size: 28px;
       }
 
-      .cta h2 {
-        font-size: 30px;
+      .contact-box {
+        padding: 28px 20px;
       }
     }
   </style>
@@ -449,243 +543,272 @@
 
   <header>
     <div class="container navbar">
-      <div class="logo">AliCreationBD</div>
+      <div class="logo">AliCreation<span>BD</span></div>
       <nav class="nav-links">
-        <a href="#services">সার্ভিস</a>
-        <a href="#pricing">প্যাকেজ</a>
-        <a href="#why">কেন আমাদের</a>
-        <a href="#contact">যোগাযোগ</a>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <h1>Facebook Boost Service দিয়ে আপনার ব্যবসার রিচ ও সেলস বাড়ান</h1>
+  <section class="hero" id="home">
+    <div class="container hero-wrap">
+      <div class="hero-text fade-up">
+        <h1>Grow Your Brand With <span>Professional Digital Services</span></h1>
         <p>
-          AliCreationBD আপনাকে দিচ্ছে সাশ্রয়ী ও প্রফেশনাল Facebook Boost Service।
-          আপনার পোস্ট, পেজ বা অফার সঠিক অডিয়েন্সের কাছে পৌঁছে দিয়ে আমরা
-          ব্যবসা বাড়াতে সহায়তা করি।
+          AliCreationBD helps you grow online with Facebook ads, website setup, SEO support,
+          and freelancing guidance. Build trust, get clients, and scale your digital presence professionally.
         </p>
+
         <div class="hero-buttons">
-          <a href="https://wa.me/8801234567890" class="btn btn-secondary">WhatsApp Order</a>
-          <a href="#pricing" class="btn btn-primary">প্যাকেজ দেখুন</a>
+          <a href="#contact" class="btn btn-primary">Get Service Now</a>
+          <a href="https://wa.me/8800000000000" class="btn btn-outline" target="_blank">WhatsApp Now</a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="badge">Facebook Ads Support</div>
+          <div class="badge">Website Setup</div>
+          <div class="badge">Freelancing Help</div>
+          <div class="badge">SEO Friendly</div>
         </div>
       </div>
 
-      <div class="hero-card">
-        <h3>আমাদের সার্ভিসে যা পাবেন</h3>
+      <div class="hero-card fade-up">
+        <h3>Why Choose AliCreationBD?</h3>
         <ul>
-          <li>✔ Target Audience Setup</li>
-          <li>✔ পোস্ট বুস্ট ও ক্যাম্পেইন গাইড</li>
-          <li>✔ Business Goal অনুযায়ী Strategy</li>
-          <li>✔ Budget Friendly Service</li>
-          <li>✔ Quick Response Support</li>
+          <li>Professional and responsive landing page design</li>
+          <li>Digital marketing support for business growth</li>
+          <li>Affordable pricing for startups and individuals</li>
+          <li>Fast communication and easy support process</li>
+          <li>Perfect for local business, freelancers, and online sellers</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <div class="stats">
+  <section class="section" id="services">
     <div class="container">
-      <div class="stats-grid">
+      <h2 class="section-title fade-up">Our Services</h2>
+      <p class="section-subtitle fade-up">
+        We provide practical digital solutions to help you start, grow, and manage your online business professionally.
+      </p>
+
+      <div class="services-grid">
+        <div class="card fade-up">
+          <div class="icon">📢</div>
+          <h3>Facebook Ads Boost</h3>
+          <p>Run effective ad campaigns for your products, services, and local business promotions.</p>
+        </div>
+
+        <div class="card fade-up">
+          <div class="icon">💻</div>
+          <h3>Website Setup</h3>
+          <p>Professional landing page and business website setup for freelancers, brands, and startups.</p>
+        </div>
+
+        <div class="card fade-up">
+          <div class="icon">🔍</div>
+          <h3>SEO Support</h3>
+          <p>Basic search engine optimization to help your website become more visible on Google.</p>
+        </div>
+
+        <div class="card fade-up">
+          <div class="icon">🎯</div>
+          <h3>Freelancing Support</h3>
+          <p>Guidance for Fiverr profile setup, gig planning, portfolio ideas, and digital service presentation.</p>
+        </div>
+      </div>
+
+      <div class="stats-grid fade-up">
         <div class="stat-box">
-          <h3>24/7</h3>
-          <p>সাপোর্ট</p>
+          <h3>4+</h3>
+          <p>Core Services</p>
         </div>
         <div class="stat-box">
-          <h3>3+</h3>
-          <p>Boost Package</p>
+          <h3>100%</h3>
+          <p>Responsive Design</p>
         </div>
         <div class="stat-box">
           <h3>Fast</h3>
-          <p>Order Processing</p>
+          <p>Support Process</p>
         </div>
         <div class="stat-box">
           <h3>Pro</h3>
-          <p>Service Quality</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section id="services">
-    <div class="container">
-      <h2 class="section-title">আমাদের Facebook Boost Services</h2>
-      <p class="section-subtitle">
-        ছোট ব্যবসা, অনলাইন শপ, লোকাল ব্র্যান্ড এবং ব্যক্তিগত প্রোমোশনের জন্য
-        উপযোগী ফেসবুক বুস্ট সার্ভিস।
-      </p>
-
-      <div class="service-grid">
-        <div class="service-card">
-          <div class="service-icon">📢</div>
-          <h3>Post Boost</h3>
-          <p>
-            আপনার নির্দিষ্ট পোস্টের reach, engagement এবং message response
-            বাড়াতে focused boost setup।
-          </p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🎯</div>
-          <h3>Audience Targeting</h3>
-          <p>
-            বয়স, লোকেশন, আগ্রহ ও business goal অনুযায়ী audience select করে
-            boost efficiency বাড়ানো হয়।
-          </p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">📈</div>
-          <h3>Business Promotion</h3>
-          <p>
-            পেজ promotion, offer campaign, product awareness এবং local business
-            visibility বৃদ্ধির জন্য service।
-          </p>
+          <p>Brand Look</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="pricing" id="pricing">
+  <section class="section" id="pricing">
     <div class="container">
-      <h2 class="section-title">Boost Packages</h2>
-      <p class="section-subtitle">
-        আপনার বাজেট অনুযায়ী সহজ ৩টি প্যাকেজ। প্রয়োজন হলে কাস্টম প্যাকেজও করা যাবে।
+      <h2 class="section-title fade-up">Pricing Plans</h2>
+      <p class="section-subtitle fade-up">
+        Choose a package based on your business need. You can also request a custom service package.
       </p>
 
       <div class="pricing-grid">
-        <div class="price-card">
-          <h3>Starter</h3>
-          <div class="price">৳500</div>
+        <div class="price-card fade-up">
+          <h3>Basic</h3>
+          <div class="price-tag">৳500</div>
+          <p>Perfect for simple support and starter tasks.</p>
           <ul>
-            <li>১টি পোস্ট বুস্ট গাইড</li>
-            <li>Basic audience setup</li>
-            <li>Budget suggestion</li>
-            <li>1 campaign support</li>
-            <li>WhatsApp consultation</li>
+            <li>Basic consultation</li>
+            <li>1 service support</li>
+            <li>Simple setup help</li>
+            <li>Message support</li>
           </ul>
-          <a href="https://wa.me/8801234567890?text=I%20want%20Starter%20Facebook%20Boost%20Package" class="btn btn-primary">Order Now</a>
+          <a href="#contact" class="btn btn-outline">Choose Plan</a>
         </div>
 
-        <div class="price-card popular">
-          <span class="badge">Most Popular</span>
+        <div class="price-card featured fade-up">
+          <div class="tag-popular">Most Popular</div>
           <h3>Standard</h3>
-          <div class="price">৳1000</div>
+          <div class="price-tag">৳1500</div>
+          <p>Best for freelancers and small business owners.</p>
           <ul>
-            <li>২টি পোস্ট/অফার promotion support</li>
-            <li>Advanced targeting guide</li>
-            <li>Business goal suggestion</li>
-            <li>Better optimization support</li>
-            <li>Priority WhatsApp support</li>
+            <li>Professional landing page support</li>
+            <li>Facebook ad help</li>
+            <li>Basic SEO setup</li>
+            <li>Priority response</li>
           </ul>
-          <a href="https://wa.me/8801234567890?text=I%20want%20Standard%20Facebook%20Boost%20Package" class="btn btn-primary">Order Now</a>
+          <a href="#contact" class="btn btn-primary">Choose Plan</a>
         </div>
 
-        <div class="price-card">
+        <div class="price-card fade-up">
           <h3>Premium</h3>
-          <div class="price">৳2000</div>
+          <div class="price-tag">৳3000</div>
+          <p>Ideal for complete digital presence setup.</p>
           <ul>
-            <li>Multiple campaign planning</li>
-            <li>Audience strategy support</li>
-            <li>Page growth consultation</li>
-            <li>Offer/promo campaign ideas</li>
-            <li>Premium response support</li>
+            <li>Full website service support</li>
+            <li>Brand presentation improvement</li>
+            <li>Freelancing profile guidance</li>
+            <li>Advanced assistance</li>
           </ul>
-          <a href="https://wa.me/8801234567890?text=I%20want%20Premium%20Facebook%20Boost%20Package" class="btn btn-primary">Order Now</a>
+          <a href="#contact" class="btn btn-outline">Choose Plan</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="why">
+  <section class="section" id="portfolio">
     <div class="container">
-      <h2 class="section-title">কেন AliCreationBD?</h2>
-      <p class="section-subtitle">
-        আমরা শুধু সার্ভিস দেই না, আপনার business growth mindset নিয়ে কাজ করি।
+      <h2 class="section-title fade-up">Portfolio / Work Preview</h2>
+      <p class="section-subtitle fade-up">
+        Showcase your service proof, project samples, screenshots, or client work here to build trust.
       </p>
 
-      <div class="why-grid">
-        <div class="why-box">
-          <h3>সাশ্রয়ী প্যাকেজ</h3>
-          <p>
-            নতুন উদ্যোক্তা ও ছোট ব্যবসার জন্য budget-friendly package তৈরি করা হয়েছে।
-          </p>
+      <div class="portfolio-grid">
+        <div class="portfolio-item fade-up">
+          <div class="portfolio-thumb">Project Preview 01</div>
+          <div class="portfolio-content">
+            <h3>Business Landing Page</h3>
+            <p>Professional website layout for digital service presentation and lead generation.</p>
+          </div>
         </div>
 
-        <div class="why-box">
-          <h3>লোকাল মার্কেট ফোকাস</h3>
-          <p>
-            বাংলাদেশি audience, local business এবং online seller-দের জন্য উপযোগী strategy।
-          </p>
+        <div class="portfolio-item fade-up">
+          <div class="portfolio-thumb">Project Preview 02</div>
+          <div class="portfolio-content">
+            <h3>Freelancing Profile Support</h3>
+            <p>Service presentation setup for Fiverr-style profile and package structure improvement.</p>
+          </div>
         </div>
 
-        <div class="why-box">
-          <h3>সহজ অর্ডার প্রসেস</h3>
-          <p>
-            WhatsApp-এ সরাসরি যোগাযোগ করে দ্রুত order confirm করা যায়।
-          </p>
-        </div>
-
-        <div class="why-box">
-          <h3>Professional Presentation</h3>
-          <p>
-            Fiverr, Facebook page এবং personal branding-এর জন্যও এই service structure উপকারী।
-          </p>
+        <div class="portfolio-item fade-up">
+          <div class="portfolio-thumb">Project Preview 03</div>
+          <div class="portfolio-content">
+            <h3>Promotion Setup</h3>
+            <p>Digital promotion support for products, services, and social media business marketing.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="cta">
-        <h2>আজই আপনার Boost Service শুরু করুন</h2>
-        <p>
-          আপনার ব্যবসা, পেজ, পোস্ট অথবা অফারকে আরও বেশি মানুষের কাছে পৌঁছে দিতে
-          এখনই যোগাযোগ করুন। দ্রুত, সহজ ও প্রফেশনাল সাপোর্ট পাবেন।
+  <section class="section" id="about">
+    <div class="container about-wrap">
+      <div class="fade-up">
+        <h2 class="section-title" style="text-align:left;">About AliCreationBD</h2>
+        <p class="section-subtitle" style="text-align:left; margin: 0 0 20px 0;">
+          AliCreationBD is focused on helping individuals, freelancers, and businesses grow online with affordable and practical digital services.
         </p>
-        <a href="https://wa.me/8801234567890" class="btn btn-secondary">WhatsApp এ যোগাযোগ করুন</a>
+
+        <div class="about-box">
+          <p>
+            Our goal is to make digital support simple, professional, and accessible. Whether you need a landing page,
+            Facebook promotion support, or freelancing guidance, we are here to help you build a stronger online presence.
+          </p>
+          <ul class="about-list">
+            <li>Simple and professional service delivery</li>
+            <li>Friendly communication and easy process</li>
+            <li>Affordable support for beginners and startups</li>
+            <li>Brand-focused and growth-oriented mindset</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about-box fade-up">
+        <h3 style="font-size:28px; margin-bottom: 16px;">Why This Website Matters</h3>
+        <p>
+          A professional website helps you look more trustworthy, attract more clients, and present your services clearly.
+        </p>
+        <p>
+          This platform can work as your online brand hub where people can learn about your services, pricing, and contact options.
+        </p>
+        <p>
+          It also supports your Fiverr, Facebook, and WhatsApp marketing efforts by giving clients one place to visit and trust.
+        </p>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section class="section" id="contact">
     <div class="container">
-      <h2 class="section-title">যোগাযোগ</h2>
-      <p class="section-subtitle">
-        অর্ডার করতে বা বিস্তারিত জানতে নিচের যেকোনো মাধ্যমে যোগাযোগ করুন।
-      </p>
+      <div class="contact-box fade-up">
+        <h2 class="section-title">Contact Us</h2>
+        <p>
+          Ready to grow your brand or start your online journey? Contact AliCreationBD today for professional digital support.
+        </p>
 
-      <div class="contact-grid">
-        <div class="contact-box">
-          <h3>Contact Info</h3>
-          <p><strong>Business Name:</strong> AliCreationBD</p>
-          <p><strong>Email:</strong> alicreationbd2025@gmail.com</p>
-          <p><strong>WhatsApp:</strong> +8801234567890</p>
-          <p><strong>Facebook:</strong> Your Facebook Page Link</p>
+        <div class="contact-links">
+          <a href="mailto:alicreationbd2025@gmail.com" class="btn btn-primary">Email Us</a>
+          <a href="https://wa.me/8800000000000" target="_blank" class="btn btn-outline">WhatsApp</a>
+          <a href="https://www.facebook.com/profile.php?id=61586306490344" target="_blank" class="btn btn-outline">Facebook Page</a>
         </div>
 
-        <div class="contact-box">
-          <h3>Order করতে যা লাগবে</h3>
-          <p>১. আপনার Page/Post link</p>
-          <p>২. আপনার budget</p>
-          <p>৩. Target location</p>
-          <p>৪. Service goal (message / reach / sales)</p>
-          <p>৫. যোগাযোগের active number</p>
-        </div>
+        <p style="margin-top: 25px; font-size: 15px; color: #9fb0d0;">
+          Email: alicreationbd2025@gmail.com
+        </p>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 AliCreationBD. All Rights Reserved.</p>
-      <p>Professional Facebook Boost Service for Bangladesh</p>
+      <p>© 2026 AliCreationBD. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <a href="https://wa.me/01743086024" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">💬</a>
+
+  <script>
+    const faders = document.querySelectorAll('.fade-up');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    faders.forEach((el) => observer.observe(el));
+  </script>
 
 </body>
 </html>
