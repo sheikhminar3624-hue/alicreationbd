@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,613 +14,94 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alicreationbd.com/" />
 
-  <link rel="icon" href="favicon.png" type="image/png" />
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #0b1020;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 26px;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: 0.3s ease;
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #00c6ff, #0072ff);
-      color: #fff;
-      box-shadow: 0 10px 30px rgba(0, 114, 255, 0.35);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      opacity: 0.95;
-    }
-
-    .btn-outline {
-      border: 2px solid #3b82f6;
-      color: #fff;
-      background: transparent;
-    }
-
-    .btn-outline:hover {
-      background: #3b82f6;
-    }
-
-    .section {
-      padding: 80px 0;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 36px;
-      margin-bottom: 15px;
-      color: #ffffff;
-    }
-
-    .section-subtitle {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 50px;
-      color: #b8c0d4;
-      font-size: 17px;
-    }
-
-    /* Header */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(11, 16, 32, 0.95);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 0;
-    }
-
-    .logo {
-      font-size: 26px;
-      font-weight: 800;
-      color: #fff;
-    }
-
-    .logo span {
-      color: #38bdf8;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      color: #dbe4ff;
-      font-size: 15px;
-      transition: 0.3s;
-    }
-
-    .nav-links a:hover {
-      color: #38bdf8;
-    }
-
-    /* Hero */
-    .hero {
-      padding: 100px 0 70px;
-      background:
-        radial-gradient(circle at top right, rgba(56, 189, 248, 0.15), transparent 30%),
-        radial-gradient(circle at top left, rgba(0, 114, 255, 0.18), transparent 30%),
-        linear-gradient(180deg, #0b1020 0%, #111936 100%);
-    }
-
-    .hero-wrap {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .hero-text h1 {
-      font-size: 54px;
-      line-height: 1.15;
-      margin-bottom: 20px;
-    }
-
-    .hero-text h1 span {
-      color: #38bdf8;
-    }
-
-    .hero-text p {
-      color: #c8d3f0;
-      font-size: 18px;
-      margin-bottom: 28px;
-      max-width: 650px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin-bottom: 28px;
-    }
-
-    .hero-badges {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .badge {
-      padding: 10px 16px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.06);
-      color: #dce7ff;
-      font-size: 14px;
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .hero-card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 24px;
-      padding: 30px;
-      box-shadow: 0 15px 45px rgba(0,0,0,0.25);
-    }
-
-    .hero-card h3 {
-      font-size: 24px;
-      margin-bottom: 15px;
-    }
-
-    .hero-card ul {
-      list-style: none;
-      color: #d8e3ff;
-    }
-
-    .hero-card ul li {
-      margin-bottom: 12px;
-      padding-left: 24px;
-      position: relative;
-    }
-
-    .hero-card ul li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: #38bdf8;
-      font-weight: bold;
-    }
-
-    /* Services */
-    .services-grid,
-    .portfolio-grid,
-    .pricing-grid,
-    .stats-grid {
-      display: grid;
-      gap: 24px;
-    }
-
-    .services-grid {
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }
-
-    .card {
-      background: #121a33;
-      border: 1px solid rgba(255,255,255,0.07);
-      border-radius: 18px;
-      padding: 28px;
-      transition: 0.35s;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      border-color: rgba(56, 189, 248, 0.45);
-      box-shadow: 0 20px 35px rgba(0,0,0,0.25);
-    }
-
-    .icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 14px;
-      display: grid;
-      place-items: center;
-      font-size: 26px;
-      margin-bottom: 18px;
-      background: linear-gradient(135deg, #0ea5e9, #2563eb);
-    }
-
-    .card h3 {
-      font-size: 22px;
-      margin-bottom: 12px;
-    }
-
-    .card p {
-      color: #b9c4df;
-      font-size: 15px;
-    }
-
-    /* Stats */
-    .stats-grid {
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      margin-top: 30px;
-    }
-
-    .stat-box {
-      background: #121a33;
-      border-radius: 18px;
-      padding: 25px;
-      text-align: center;
-      border: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .stat-box h3 {
-      font-size: 34px;
-      color: #38bdf8;
-      margin-bottom: 6px;
-    }
-
-    .stat-box p {
-      color: #bfd0ec;
-    }
-
-  /* Portfolio */
-    .portfolio-grid {
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-
-    .portfolio-item {
-      background: #121a33;
-      border-radius: 20px;
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .portfolio-thumb {
-      height: 200px;
-      background: linear-gradient(135deg, #0f172a, #1d4ed8);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      font-size: 22px;
-      font-weight: bold;
-    }
-
-    .portfolio-content {
-      padding: 22px;
-    }
-
-    .portfolio-content h3 {
-      margin-bottom: 10px;
-    }
-
-    .portfolio-content p {
-      color: #b9c4df;  /* Pricing */
-    .pricing-grid {
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    }
-
-    .price-card {
-      background: #121a33;
-      border-radius: 22px;
-      padding: 30px;
-      border: 1px solid rgba(255,255,255,0.08);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .price-card.featured {
-      border: 1px solid #38bdf8;
-      transform: scale(1.03);
-      box-shadow: 0 18px 40px rgba(56, 189, 248, 0.15);
-    }
-
-    .price-tag {
-      font-size: 40px;
-      font-weight: bold;
-      color: #fff;
-      margin: 18px 0;
-    }
-
-    .price-card ul {
-      list-style: none;
-      margin: 20px 0;
-    }
-
-    .price-card ul li {
-      margin-bottom: 12px;
-      color: #d6e2ff;
-      padding-left: 24px;
-      position: relative;
-    }
-
-    .price-card ul li::before {
-      content: "•";
-      position: absolute;
-      left: 8px;
-      color: #38bdf8;
-    }
-
-    .tag-popular {
-      position: absolute;
-      top: 16px;
-      right: 16px;
-      background: #38bdf8;
-      color: #08111f;
-      font-size: 12px;
-      font-weight: 700;
-      padding: 6px 10px;
-      border-radius: 999px;
-    }<section id="contact" class="contact-section">
-  <div class="container">
-    <h2>Contact AliCreationBD</h2>
-    <p>Get in touch for website setup, Facebook ads support, SEO help, freelancing support, and digital services.</p>
-
-    <div class="contact-grid">
-      <div class="contact-card">
-        <h3>Call Number</h3>
-        <p><a href="tel:+8801743086024">+880 1743-086024</a></p>
-      </div>
-
-      <div class="contact-card">
-        <h3>Business WhatsApp</h3>
-        <p><a href="https://wa.me/8801345288953" target="_blank">Chat on WhatsApp</a></p>
-      </div>
-<a href="https://wa.me/8801345288953?text=Hello%20AliCreationBD%2C%20I%20need%20your%20service" target="_blank">
-  WhatsApp Now
-</a>
-      <div class="contact-card">
-        <h3>Fiverr Profile</h3>
-        <p><a href="https://www.fiverr.com/s/Q7mbZ9P" target="_blank">Open Fiverr Profile</a></p>
-      </div>
-
-      <div class="contact-card">
-        <h3>Freelancer Profile</h3>
-        <p><a href="https://www.freelancer.com/u/sheikhr76" target="_blank">Open Freelancer Profile</a></p>
-      </div>
-
-      <div class="contact-card">
-        <h3>PeoplePerHour Profile</h3>
-        <p><a href="https://www.peopleperhour.com/freelancer/sheikh-rasel-data-entry-logo-design-copy-past-zyjvnjma" target="_blank">Open PeoplePerHour Profile</a></p>
-      </div>
-
-      <div class="contact-card">
-        <h3>Email Address</h3>
-        <p><a href="mailto:alicreationbd2024@gmail.com">alicreationbd2024@gmail.com</a></p>
-      </div>
-    </div>
-  </div>
-</section>
-    }
-
-    .about-box {
-      background: #121a33;
-      padding: 30px;
-      border-radius: 20px;
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .about-box p {
-      color: #cad5ef;
-      margin-bottom: 16px;
-    }
-
-    .about-list {
-      list-style: none;
-    }
-
-    .about-list li {
-      margin-bottom: 12px;
-      color: #d6e2ff;
-      padding-left: 24px;
-      position: relative;
-    }
-
-    .about-list li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: #38bdf8;
-      font-weight: bold;
-    }
-
-    /* Contact */
-    .contact-box {
-      max-width: 850px;
-      margin: auto;
-      background: #121a33;
-      padding: 40px;
-      border-radius: 24px;
-      border: 1px solid rgba(255,255,255,0.08);
-      text-align: center;
-    }
-
-    .contact-box p {
-      color: #c9d5ef;
-      margin: 16px 0 24px;
-      font-size: 17px;
-    }
-
-    .contact-links {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    /* Footer */
-    footer {
-      padding: 30px 0;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      text-align: center;
-      color: #9fb0d0;
-      background: #0a0f1d;
-    }
-
-    /* WhatsApp Button */
-    .whatsapp-float {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      background: #25D366;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 28px;
-      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
-      z-index: 1000;
-    }
-
-    .whatsapp-float:hover {
-      transform: scale(1.08);
-    }
-
-    /* Animation */
-    .fade-up {
-      opacity: 0;
-      transform: translateY(25px);
-      transition: all 0.8s ease;
-    }
-
-    .fade-up.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      .hero-wrap,
-      .about-wrap {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-text h1 {
-        font-size: 40px;
-      }
-
-      .navbar {
-        flex-direction: column;
-        gap: 15px;
-      }
-
-      .nav-links {
-        justify-content: center;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .hero {
-        padding: 80px 0 50px;
-      }
-
-      .hero-text h1 {
-        font-size: 32px;
-      }
-
-      .section-title {
-        font-size: 28px;
-      }
-
-      .contact-box {
-        padding: 28px 20px;
-      }
-    }
-  </style>
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-<header>
-  <div class="container navbar">
 
-    <!-- LOGO FIXED -->
-    <a href="#home" class="logo" style="display:flex; align-items:center; gap:10px;">
-     <img src="assets/logo.png" alt="AliCreationBD Logo" class="logo-img">
-      <span style="font-size:22px; font-weight:700;">
-        AliCreation<span style="color:#38bdf8;">BD</span>
-      </span>
-    </a>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="#home" class="brand">
+        <img src="assets/logo.png" alt="AliCreationBD Logo" class="brand-logo-img" />
+        <div class="brand-text">
+          <span class="brand-name">AliCreation</span><span class="brand-highlight">BD</span>
+        </div>
+      </a>
 
-    <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-       <a href="#portfolio">Portfolio</a>
-      <a href="#pricing">Pricing</a>
-     
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-<div class="logo-text">
-  AliCreation<span style="color:#38bdf8;">BD</span>
-</div>
-  </div>
-</header>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <section class="hero" id="home">
-    <div class="container hero-wrap">
-      <div class="hero-text fade-up">
-        <h1>Grow Your Brand With <span>Professional Digital Services</span></h1>
+    <div class="container hero-grid">
+      <div class="hero-left fade-up">
+        <div class="hero-badge">Professional Digital Support in Bangladesh</div>
+        <h1>
+          Grow Your Brand With
+          <span>Professional Digital Services</span>
+        </h1>
         <p>
-          AliCreationBD helps you grow online with Facebook ads, website setup, SEO support,
-          and freelancing guidance. Build trust, get clients, and scale your digital presence professionally.
+          AliCreationBD helps you build a stronger online presence with Facebook ads support,
+          business website setup, SEO basics, and freelancing guidance. Simple, affordable,
+          and professional digital solutions for modern businesses.
         </p>
 
-       <div class="hero-buttons">
-  <a href="https://wa.me/8801345288953" target="_blank" class="btn primary">WhatsApp Now</a>
-  <a href="tel:+8801743086024" class="btn secondary">Call Now</a>
-  <a href="https://www.fiverr.com/s/Q7mbZ9P" target="_blank" class="btn outline">View Fiverr</a>
-</div> 
-        
-        <div class="hero-badges">
-          <div class="badge">Facebook Ads Support</div>
-          <div class="badge">Website Setup</div>
-          <div class="badge">Freelancing Help</div>
-          <div class="badge">SEO Friendly</div>
-       <img src="assets/logo.png" alt="AliCreationBD Logo" style="height:45px;"> </div>
+        <div class="hero-buttons">
+          <a href="https://wa.me/8801345288953?text=Hello%20AliCreationBD%2C%20I%20want%20to%20know%20more%20about%20your%20service." target="_blank" class="btn btn-primary">WhatsApp Now</a>
+          <a href="tel:+8801743086024" class="btn btn-outline">Call Now</a>
+          <a href="https://www.fiverr.com/s/Q7mbZ9P" target="_blank" class="btn btn-outline">View Fiverr</a>
+        </div>
+
+        <div class="hero-points">
+          <span>Facebook Ads Support</span>
+          <span>Website Setup</span>
+          <span>SEO Friendly</span>
+          <span>Freelancing Help</span>
+        </div>
       </div>
 
-      <div class="hero-card fade-up">
-        <h3>Why Choose AliCreationBD?</h3>
-        <ul>
-          <li>Professional and responsive landing page design</li>
-          <li>Digital marketing support for business growth</li>
-          <li>Affordable pricing for startups and individuals</li>
-          <li>Fast communication and easy support process</li>
-          <li>Perfect for local business, freelancers, and online sellers</li>
-        </ul>
+      <div class="hero-right fade-up">
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <img src="assets/logo.png" alt="AliCreationBD Brand Logo" />
+          </div>
+          <h3>Why Choose AliCreationBD?</h3>
+          <ul>
+            <li>Professional and responsive landing page design</li>
+            <li>Digital marketing support for business growth</li>
+            <li>Affordable pricing for startups and individuals</li>
+            <li>Fast communication and easy support process</li>
+            <li>Perfect for local business, freelancers, and online sellers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="container stats-grid fade-up">
+      <div class="stat-box">
+        <h3>4+</h3>
+        <p>Core Services</p>
+      </div>
+      <div class="stat-box">
+        <h3>100%</h3>
+        <p>Responsive Layout</p>
+      </div>
+      <div class="stat-box">
+        <h3>Fast</h3>
+        <p>Support Process</p>
+      </div>
+      <div class="stat-box">
+        <h3>Pro</h3>
+        <p>Brand Look</p>
       </div>
     </div>
   </section>
@@ -634,47 +114,63 @@
       </p>
 
       <div class="services-grid">
-        <div class="card fade-up">
-          <div class="icon">📢</div>
+        <div class="service-card fade-up">
+          <div class="service-icon">📢</div>
           <h3>Facebook Ads Boost</h3>
-          <p>Run effective ad campaigns for your products, services, and local business promotions.</p>
+          <p>Run effective ad campaigns for your products, services, and local business promotions with better visibility and more engagement.</p>
         </div>
 
-        <div class="card fade-up">
-          <div class="icon">💻</div>
+        <div class="service-card fade-up">
+          <div class="service-icon">💻</div>
           <h3>Website Setup</h3>
-          <p>Professional landing page and business website setup for freelancers, brands, and startups.</p>
+          <p>Professional landing page and business website setup for freelancers, startups, and service brands.</p>
         </div>
 
-        <div class="card fade-up">
-          <div class="icon">🔍</div>
+        <div class="service-card fade-up">
+          <div class="service-icon">🔍</div>
           <h3>SEO Support</h3>
-          <p>Basic search engine optimization to help your website become more visible on Google.</p>
+          <p>Basic search engine optimization to help your website become more visible on Google and look more trustworthy.</p>
         </div>
 
-        <div class="card fade-up">
-          <div class="icon">🎯</div>
+        <div class="service-card fade-up">
+          <div class="service-icon">🎯</div>
           <h3>Freelancing Support</h3>
           <p>Guidance for Fiverr profile setup, gig planning, portfolio ideas, and digital service presentation.</p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="stats-grid fade-up">
-        <div class="stat-box">
-          <h3>4+</h3>
-          <p>Core Services</p>
+  <section class="section portfolio-section" id="portfolio">
+    <div class="container">
+      <h2 class="section-title fade-up">Portfolio Highlights</h2>
+      <p class="section-subtitle fade-up">
+        Explore sample service presentation blocks for brand growth, freelancing profile support, and modern landing page style.
+      </p>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card fade-up">
+          <div class="portfolio-thumb gradient-one">Landing Page Design</div>
+          <div class="portfolio-content">
+            <h3>Business Landing Page</h3>
+            <p>Clean and modern website layout designed for service promotion, lead generation, and brand trust.</p>
+          </div>
         </div>
-        <div class="stat-box">
-          <h3>100%</h3>
-          <p>Responsive Design</p>
+
+        <div class="portfolio-card fade-up">
+          <div class="portfolio-thumb gradient-two">Freelancing Support</div>
+          <div class="portfolio-content">
+            <h3>Freelancing Profile Setup</h3>
+            <p>Professional profile presentation support for Fiverr, Freelancer, and PeoplePerHour style services.</p>
+          </div>
         </div>
-        <div class="stat-box">
-          <h3>Fast</h3>
-          <p>Support Process</p>
-        </div>
-        <div class="stat-box">
-          <h3>Pro</h3>
-          <p>Brand Look</p>
+
+        <div class="portfolio-card fade-up">
+          <div class="portfolio-thumb gradient-three">Digital Promotion</div>
+          <div class="portfolio-content">
+            <h3>Promotion Campaign Setup</h3>
+            <p>Promotional campaign structure for social media visibility, service outreach, and digital marketing support.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -684,7 +180,7 @@
     <div class="container">
       <h2 class="section-title fade-up">Pricing Plans</h2>
       <p class="section-subtitle fade-up">
-        Choose a package based on your business need. You can also request a custom service package.
+        Choose a package based on your business need. You can also request a custom service plan.
       </p>
 
       <div class="pricing-grid">
@@ -702,7 +198,7 @@
         </div>
 
         <div class="price-card featured fade-up">
-          <div class="tag-popular">Most Popular</div>
+          <span class="popular-tag">Most Popular</span>
           <h3>Standard</h3>
           <div class="price-tag">৳1500</div>
           <p>Best for freelancers and small business owners.</p>
@@ -730,131 +226,105 @@
       </div>
     </div>
   </section>
-}
- <section class="section" id="portfolio">
-  <div class="container">
-    <h2 class="section-title fade-up">Portfolio</h2>
-    <p class="section-subtitle fade-up">
-      Explore sample work previews that highlight design quality, digital service presentation, and brand-focused project layout.
-    </p>
 
-    <div class="portfolio-grid image-box-grid">
+  <section class="section testimonials-section">
+    <div class="container">
+      <h2 class="section-title fade-up">Why Clients Like This Style</h2>
+      <p class="section-subtitle fade-up">
+        A strong digital presentation helps you look more trusted, organized, and ready for business.
+      </p>
 
-      <div class="portfolio-item fade-up">
-        <div class="portfolio-image-box">
-          <img src="assets/portfolio1.jpg" alt="Business Landing Page Project">
-          <div class="portfolio-overlay">
-            <span>Landing Page Design</span>
-          </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-up">
+          <p>“A professional website gives your business a stronger first impression and helps people trust your services faster.”</p>
+          <h4>Trust Building</h4>
         </div>
-        <div class="portfolio-content">
-          <h3>Business Landing Page</h3>
-          <p>Clean and modern website layout designed for service promotion, lead generation, and brand trust.</p>
+
+        <div class="testimonial-card fade-up">
+          <p>“A good landing page makes your service look clear, structured, and easier to understand for clients.”</p>
+          <h4>Better Presentation</h4>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <p>“Your website can support your Fiverr, Facebook, and WhatsApp marketing by giving clients one place to visit.”</p>
+          <h4>Stronger Branding</h4>
         </div>
       </div>
-
-      <div class="portfolio-item fade-up">
-        <div class="portfolio-image-box">
-          <img src="assets/portfolio2.jpg" alt="Freelancing Profile Support Project">
-          <div class="portfolio-overlay">
-            <span>Freelancing Profile Setup</span>
-          </div>
-        </div>
-        <div class="portfolio-content">
-          <h3>Freelancing Profile Support</h3>
-          <p>Professional profile presentation support for Fiverr, Freelancer, and PeoplePerHour style services.</p>
-        </div>
-      </div>
-
-      <div class="portfolio-item fade-up">
-        <div class="portfolio-image-box">
-          <img src="assets/portfolio3.jpg" alt="Digital Promotion Campaign Project">
-          <div class="portfolio-overlay">
-            <span>Promotion Campaign Support</span>
-          </div>
-        </div>
-        <div class="portfolio-content">
-          <h3>Digital Promotion Setup</h3>
-          <p>Promotional campaign structure for social media visibility, service outreach, and product marketing.</p>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
-}
+  </section>
+
   <section class="section" id="about">
-    <div class="container about-wrap">
-      <div class="fade-up">
-        <h2 class="section-title" style="text-align:left;">About AliCreationBD</h2>
-        <p class="section-subtitle" style="text-align:left; margin: 0 0 20px 0;">
+    <div class="container about-grid">
+      <div class="about-left fade-up">
+        <h2 class="section-title left-align">About AliCreationBD</h2>
+        <p class="about-text">
           AliCreationBD is focused on helping individuals, freelancers, and businesses grow online with affordable and practical digital services.
         </p>
+        <p class="about-text">
+          Our goal is to make digital support simple, professional, and accessible. Whether you need a landing page, Facebook promotion support, or freelancing guidance, we are here to help you build a stronger online presence.
+        </p>
 
-        <div class="about-box">
-          <p>
-            Our goal is to make digital support simple, professional, and accessible. Whether you need a landing page,
-            Facebook promotion support, or freelancing guidance, we are here to help you build a stronger online presence.
-          </p>
-          <ul class="about-list">
-            <li>Simple and professional service delivery</li>
-            <li>Friendly communication and easy process</li>
-            <li>Affordable support for beginners and startups</li>
-            <li>Brand-focused and growth-oriented mindset</li>
-          </ul>
-        </div>
+        <ul class="about-list">
+          <li>Simple and professional service delivery</li>
+          <li>Friendly communication and easy process</li>
+          <li>Affordable support for beginners and startups</li>
+          <li>Brand-focused and growth-oriented mindset</li>
+        </ul>
       </div>
 
-      <div class="about-box fade-up">
-        <h3 style="font-size:28px; margin-bottom: 16px;">Why This Website Matters</h3>
-        <p>
-          A professional website helps you look more trustworthy, attract more clients, and present your services clearly.
-        </p>
-        <p>
-          This platform can work as your online brand hub where people can learn about your services, pricing, and contact options.
-        </p>
-        <p>
-          It also supports your Fiverr, Facebook, and WhatsApp marketing efforts by giving clients one place to visit and trust.
-        </p>
+      <div class="about-right fade-up">
+        <div class="about-card">
+          <img src="assets/logo.png" alt="AliCreationBD Logo" />
+          <h3>One Place for Your Digital Growth</h3>
+          <p>
+            This platform can work as your online brand hub where people can learn about your services, pricing, and contact options.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="contact">
+  <section class="section contact-section" id="contact">
     <div class="container">
       <div class="contact-box fade-up">
-        <h2 class="section-title">Contact Us</h2>
+        <h2>Contact AliCreationBD</h2>
         <p>
-          Ready to grow your brand or start your online journey? Contact AliCreationBD today for professional digital support.
+          Get in touch for website setup, Facebook ads support, SEO help, freelancing support, and digital services.
         </p>
 
-        <div class="contact-links">
-          <a href="mailto:alicreationbd2025@gmail.com" class="btn btn-primary">Email Us</a>
-          <a href="https://wa.me/8800000000000" target="_blank" class="btn btn-outline">WhatsApp</a>
-          <a href="https://www.facebook.com/profile.php?id=61586306490344" target="_blank" class="btn btn-outline">Facebook Page</a>
+        <div class="contact-buttons">
+          <a href="tel:+8801743086024" class="btn btn-outline">Call Now</a>
+          <a href="https://wa.me/8801345288953?text=Hello%20AliCreationBD%2C%20I%20want%20to%20know%20more%20about%20your%20service." target="_blank" class="btn btn-primary">WhatsApp</a>
+          <a href="mailto:alicreationbd2024@gmail.com" class="btn btn-outline">Email</a>
         </div>
 
-        <p style="margin-top: 25px; font-size: 15px; color: #9fb0d0;">
-          Email: alicreationbd2025@gmail.com
-        </p>
+        <div class="platform-links">
+          <a href="https://www.fiverr.com/s/Q7mbZ9P" target="_blank">Fiverr</a>
+          <a href="https://www.freelancer.com/u/sheikhr76" target="_blank">Freelancer</a>
+          <a href="https://www.peopleperhour.com/freelancer/sheikh-rasel-data-entry-logo-design-copy-past-zyjvnjma" target="_blank">PeoplePerHour</a>
+          <a href="https://www.facebook.com/profile.php?id=61586306490344" target="_blank">Facebook</a>
+        </div>
+
+        <div class="contact-info">
+          <p>Email: alicreationbd2024@gmail.com</p>
+          <p>Phone: +880 1743-086024</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="container">
+  <footer class="site-footer">
+    <div class="container footer-wrap">
       <p>© 2026 AliCreationBD. All Rights Reserved.</p>
     </div>
   </footer>
 
- <div class="footer-links">
-  <a href="https://www.fiverr.com/s/Q7mbZ9P" target="_blank">Fiverr</a>
-  <a href="https://www.freelancer.com/u/sheikhr76" target="_blank">Freelancer</a>
-  <a href="https://www.peopleperhour.com/freelancer/sheikh-rasel-data-entry-logo-design-copy-past-zyjvnjma" target="_blank">PeoplePerHour</a>
-  <a href="https://wa.me/8801345288953" target="_blank">WhatsApp</a>
-  <a href="tel:+8801743086024">Call</a>
-  <a href="mailto:alicreationbd2024@gmail.com">Email</a>
-</div>
+  <a
+    href="https://wa.me/8801345288953?text=Hello%20AliCreationBD%2C%20I%20want%20to%20know%20more%20about%20your%20service."
+    class="floating-btn whatsapp-float"
+    target="_blank"
+    aria-label="Chat on WhatsApp"
+  >💬</a>
 
   <script>
     const faders = document.querySelectorAll('.fade-up');
@@ -869,26 +339,6 @@
 
     faders.forEach((el) => observer.observe(el));
   </script>
-<a href="https://wa.me/8801345288953" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-  💬<a href="mailto:info@alicreationbd.com" class="email-float">
-  ✉️
-</a>
-<!-- Floating Contact Buttons Start -->
-<div class="floating-contact-wrap">
-  <a href="https://wa.me/8801345288953?text=Hello%20AliCreationBD%2C%20I%20want%20to%20know%20more%20about%20your%20service."
-     class="floating-btn whatsapp-btn"
-     target="_blank"
-     aria-label="Chat on WhatsApp">
-    <span class="floating-icon">💬</span>
-    <span class="floating-text">WhatsApp</span>
-  </a>
 
-  <a href="mailto:info@alicreationbd.com?subject=Service%20Inquiry&body=Hello%20AliCreationBD,%20I%20want%20to%20know%20more%20about%20your%20service."
-     class="floating-btn email-btn"
-     aria-label="Send Email">
-    <span class="floating-icon">✉️</span>
-    <span class="floating-text">Email</span>
-  </a>
-</div>
-<!-- Floating Contact Buttons End --></body>
+</body>
 </html>
