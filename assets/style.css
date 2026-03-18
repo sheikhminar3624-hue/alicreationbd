@@ -304,7 +304,23 @@ body {
   .about-box h2,
   .section-title h2,
   .cta-box h2,
-  .content-box h2 {
+  .content-box h2 {  
     font-size: 28px;
   }
+}
+.email-float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0ea5e9;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  text-decoration: none;
 }
