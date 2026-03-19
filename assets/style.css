@@ -452,7 +452,7 @@ a {
 .contact-box {
   max-width: 920px;
   margin: auto;
-  background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.04));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.04));
   border: 1px solid var(--card-border);
   border-radius: 24px;
   padding: 42px;
@@ -517,8 +517,8 @@ a {
 }
 
 .fade-up {
-  opacity: 0;
-  transform: translateY(28px);
+  opacity: 1;
+  transform: translateY(0);
   transition: all 0.8s ease;
 }
 
@@ -593,19 +593,3 @@ a {
     font-size: 16px;
   }
 }
-              const fadeElements = document.querySelectorAll(".fade-up");
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  },
-  {
-    threshold: 0.15
-  }
-);
-
-fadeElements.forEach((el) => observer.observe(el));        түзеп full dao final code 3ta fill a for   index,style,script 
