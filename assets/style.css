@@ -707,5 +707,11 @@ a {
   .hero-left p,
   .section-subtitle {
     font-size: 16px;
-  }
+  }.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
 }
