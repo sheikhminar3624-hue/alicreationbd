@@ -1,109 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AliCreationBD | Online Services</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AliCreationBD | Digital Services & Domain Setup</title>
+  <meta name="description" content="AliCreationBD provides domain setup, website setup, Facebook page setup, Fiverr setup and online business support." />
 
-<style>
-body {
-  font-family: Arial;
-  margin: 0;
-  background: #f5f7fb;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
 
-header {
-  background: linear-gradient(135deg,#0d6efd,#0b5ed7);
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1e293b;
+      line-height: 1.6;
+    }
 
-section {
-  padding: 40px 20px;
-  text-align: center;
-}
+    a {
+      text-decoration: none;
+    }
 
-.card {
-  background: white;
-  margin: 15px;
-  padding: 20px;
-  border-radius: 10px;
-  display: inline-block;
-  width: 260px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
+    .container {
+      width: 90%;
+      max-width: 1180px;
+      margin: auto;
+    }
 
-.btn {
-  background: #0d6efd;
-  color: white;
-  padding: 10px 15px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-  border-radius: 5px;
-}
-</style>
+    .navbar {
+      background: #ffffff;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .nav-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #0d6efd;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #334155;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .nav-links a:hover {
+      color: #0d6efd;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+      padding: 90px 0 80px;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      max-width: 620px;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background: #ffffff;
+      color: #0d6efd;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 2px solid #ffffff;
+      color: #ffffff;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.12);
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 24px;
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-card h3 {
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+
+    .hero-card ul {
+      list-style: none;
+    }
+
+    .hero-card li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 75px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .section-title p {
+      color: #64748b;
+      font-size: 16px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 28px 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .card p {
+      color: #64748b;
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-size: 28px;
+      font-weight: bold;
+      color: #0d6efd;
+      margin-bottom: 15px;
+    }
+
+    .small-list {
+      list-style: none;
+      margin-bottom: 18px;
+    }
+
+    .small-list li {
+      margin-bottom: 8px;
+      color: #334155;
+      font-size: 14px;
+    }
+
+    .btn-card {
+      display: inline-block;
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+      padding: 11px 20px;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    .highlight {
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+    }
+
+    .highlight .price,
+    .highlight p,
+    .highlight h3,
+    .highlight li {
+      color: white;
+    }
+
+    .payment-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .pay-box,
+    .order-box {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+
+    .pay-box h3,
+    .order-box h3 {
+      margin-bottom: 16px;
+      font-size: 28px;
+      color: #0f172a;
+    }
+
+    .pay-item {
+      background: #f8fafc;
+      border-left: 4px solid #0d6efd;
+      padding: 14px 16px;
+      border-radius: 12px;
+      margin-bottom: 14px;
+    }
+
+    .pay-item strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 17px;
+      color: #0f172a;
+    }
+
+    form input,
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 14px 14px;
+      margin-bottom: 14px;
+      border: 1px solid #dbe2ea;
+      border-radius: 12px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 110px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      border: none;
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      opacity: 0.95;
+    }
+
+    .info-strip {
+      background: #0f172a;
+      color: white;
+      padding: 18px 0;
+    }
+
+    .info-strip .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .info-strip div {
+      font-size: 15px;
+    }
+
+    footer {
+      background: #ffffff;
+      padding: 28px 0;
+      text-align: center;
+      color: #64748b;
+      border-top: 1px solid #e8edf3;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      background: #25d366;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 999px;
+      font-weight: bold;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+      z-index: 999;
+    }
+
+    .whatsapp-float:hover {
+      opacity: 0.92;
+    }
+
+    @media (max-width: 992px) {
+      .hero-content,
+      .payment-wrap,
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .nav-wrap {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .nav-links {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero {
+        padding: 70px 0 60px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .section-title h2 {
+        font-size: 28px;
+      }
+
+      .logo {
+        font-size: 24px;
+      }
+
+      .btn,
+      .btn-card {
+        width: 100%;
+        text-align: center;
+      }
+
+      .hero-btns {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-  <h1>AliCreationBD</h1>
-  <p>Start Your Online Business Today 🚀</p>
-</header>
+  <nav class="navbar">
+    <div class="container nav-wrap">
+      <div class="logo">AliCreationBD</div>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#domains">Domains</a>
+        <a href="#combo">Combo</a>
+        <a href="#payment">Payment</a>
+        <a href="#order">Order</a>
+      </div>
+    </div>
+  </nav>
 
-<section>
-  <h2>🔥 Our Services</h2>
+  <header class="hero">
+    <div class="container hero-content">
+      <div>
+        <h1>Start Your Online Business With AliCreationBD</h1>
+        <p>
+          We help you buy domain, setup website, create Facebook business page,
+          and launch your online service professionally.
+        </p>
 
-  <div class="card">
-    <h3>Facebook Setup</h3>
-    <p>499৳</p>
-    <a class="btn" href="https://wa.me/8801345288953">Order</a>
+        <div class="hero-btns">
+          <a href="#order" class="btn btn-primary">Place Order</a>
+          <a href="https://wa.me/8801345288953" class="btn btn-outline" target="_blank">WhatsApp Now</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Why Choose Us?</h3>
+        <ul>
+          <li>✔ Fast setup support</li>
+          <li>✔ Budget friendly pricing</li>
+          <li>✔ Domain + website combo available</li>
+          <li>✔ WhatsApp direct communication</li>
+          <li>✔ Beginner business support</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="info-strip">
+    <div class="container">
+      <div>✅ Domain Setup Support</div>
+      <div>✅ Website Setup</div>
+      <div>✅ Facebook Business Help</div>
+      <div>✅ Fiverr Setup</div>
+    </div>
   </div>
 
-  <div class="card">
-    <h3>Website Setup</h3>
-    <p>1500৳</p>
-    <a class="btn" href="https://wa.me/8801345288953">Order</a>
-  </div>
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Choose the service you need to start online</p>
+      </div>
 
-  <div class="card">
-    <h3>Fiverr Setup</h3>
-    <p>800৳</p>
-    <a class="btn" href="https://wa.me/8801345288953">Order</a>
-  </div>
+      <div class="cards">
+        <div class="card">
+          <h3>Facebook Setup</h3>
+          <p>Business page setup and basic optimization support.</p>
+          <div class="price">499৳</div>
+          <ul class="small-list">
+            <li>✔ Page setup</li>
+            <li>✔ Basic info add</li>
+            <li>✔ Contact button setup</li>
+          </ul>
+          <a href="https://wa.me/8801345288953?text=I%20want%20Facebook%20Setup" class="btn-card" target="_blank">Order Now</a>
+        </div>
 
-</section>
+        <div class="card">
+          <h3>Website Setup</h3>
+          <p>Simple business website or landing page setup.</p>
+          <div class="price">1500৳</div>
+          <ul class="small-list">
+            <li>✔ Basic landing page</li>
+            <li>✔ Mobile friendly</li>
+            <li>✔ Contact section</li>
+          </ul>
+          <a href="https://wa.me/8801345288953?text=I%20want%20Website%20Setup" class="btn-card" target="_blank">Order Now</a>
+        </div>
 
-<section>
-  <h2>🌐 Buy Domain</h2>
+        <div class="card">
+          <h3>Fiverr Setup</h3>
+          <p>Profile and gig setup help for beginners.</p>
+          <div class="price">800৳</div>
+          <ul class="small-list">
+            <li>✔ Profile optimization</li>
+            <li>✔ Gig title help</li>
+            <li>✔ Basic description support</li>
+          </ul>
+          <a href="https://wa.me/8801XXXXXXXXX?text=I%20want%20Fiverr%20Setup" class="btn-card" target="_blank">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="card">
-    <h3>.com Domain</h3>
-    <p>1500৳</p>
-    <a class="btn" href="https://wa.me/8801345288953">Buy Now</a>
-  </div>
+  <section id="domains" style="background:#eef4ff;">
+    <div class="container">
+      <div class="section-title">
+        <h2>Buy Domain</h2>
+        <p>Get your own domain name for personal or business use</p>
+      </div>
 
-  <div class="card">
-    <h3>.xyz Domain</h3>
-    <p>400৳</p>
-    <a class="btn" href="https://wa.me/8801345288953">Buy Now</a>
-  </div>
+      <div class="cards">
+        <div class="card">
+          <h3>.com Domain</h3>
+          <p>Best for business and professional branding.</p>
+          <div class="price">1500৳</div>
+          <ul class="small-list">
+            <li>✔ 1 year registration</li>
+            <li>✔ DNS support</li>
+            <li>✔ Basic guidance</li>
+          </ul>
+          <a href="https://wa.me/8801345288953?text=I%20want%20a%20.com%20domain" class="btn-card" target="_blank">Buy Now</a>
+        </div>
 
-</section>
+        <div class="card">
+          <h3>.xyz Domain</h3>
+          <p>Budget friendly option for personal or starter use.</p>
+          <div class="price">400৳</div>
+          <ul class="small-list">
+            <li>✔ Low price</li>
+            <li>✔ Fast setup</li>
+            <li>✔ DNS support</li>
+          </ul>
+          <a href="https://wa.me/8801345288953?text=I%20want%20a%20.xyz%20domain" class="btn-card" target="_blank">Buy Now</a>
+        </div>
 
-<section>
-  <h2>🔥 Combo Offer</h2>
+        <div class="card highlight" id="combo">
+          <h3>Business Starter Pack</h3>
+          <p>Best combo for launching an online business quickly.</p>
+          <div class="price">2499৳</div>
+          <ul class="small-list">
+            <li>✔ 1 domain</li>
+            <li>✔ Basic website</li>
+            <li>✔ Facebook setup</li>
+          </ul>
+          <a href="https://wa.me/8801345288953?text=I%20want%20Business%20Starter%20Pack" class="btn-card" target="_blank" style="background:white;color:#0d6efd;">Get Combo</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="card">
-    <h3>Business Starter Pack</h3>
-    <p>Domain + Website + FB Setup</p>
-    <h2>2499৳</h2>
-    <a class="btn" href="https://wa.me/8801345288953">Order Now</a>
-  </div>
+  <section id="payment">
+    <div class="container">
+      <div class="section-title">
+        <h2>Payment & Order</h2>
+        <p>Send payment details and place your order easily</p>
+      </div>
 
-</section>
+      <div class="payment-wrap">
+        <div class="pay-box">
+          <h3>Payment Methods</h3>
 
+          <div class="pay-item">
+            <strong>bKash</strong>
+            01743086024
+          </div>
+
+          <div class="pay-item">
+            <strong>Nagad</strong>
+            01743086024
+          </div>
+
+          <div class="pay-item">
+            <strong>Upay</strong>
+            01743086024
+          </div>
+
+          <div class="pay-item">
+            <strong>Note</strong>
+            Payment করার পরে WhatsApp এ transaction screenshot পাঠান।
+          </div>
+        </div>
+
+        <div class="order-box" id="order">
+          <h3>Order Form</h3>
+
+          <form onsubmit="sendToWhatsApp(); return false;">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="text" id="phone" placeholder="Your Phone Number" required />
+
+            <select id="service" required>
+              <option value="">Select Service</option>
+              <option>Facebook Setup</option>
+              <option>Website Setup</option>
+              <option>Fiverr Setup</option>
+              <option>.com Domain</option>
+              <option>.xyz Domain</option>
+              <option>Business Starter Pack</option>
+            </select>
+
+            <textarea id="details" placeholder="Write your details here..." required></textarea>
+
+            <button type="submit" class="submit-btn">Submit on WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 AliCreationBD. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/8801345288953" target="_blank">WhatsApp</a>
+
+  <script>
+    function sendToWhatsApp() {
+      var name = document.getElementById("name").value;
+      var phone = document.getElementById("phone").value;
+      var service = document.getElementById("service").value;
+      var details = document.getElementById("details").value;
+
+      var message =
+        "New Order%0A%0A" +
+        "Name: " + encodeURIComponent(name) + "%0A" +
+        "Phone: " + encodeURIComponent(phone) + "%0A" +
+        "Service: " + encodeURIComponent(service) + "%0A" +
+        "Details: " + encodeURIComponent(details);
+
+      var whatsappNumber = "8801345288953";
+      var url = "https://wa.me/" + whatsappNumber + "?text=" + message;
+
+      window.open(url, "_blank");
+    }
+  </script>
 </body>
 </html>
