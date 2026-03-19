@@ -592,4 +592,24 @@ a {
   .section-subtitle {
     font-size: 16px;
   }
+}.hero-starting-price {
+  margin-top: 10px;
+}
+
+.hero-starting-price span {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(37, 211, 102, 0.12);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  color: #dfffea;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.service-card strong {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--primary);
+  font-size: 16px;
 }
