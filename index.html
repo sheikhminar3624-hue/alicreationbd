@@ -3,355 +3,197 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AliCreationBD | Digital Services & BIGO Live</title>
-
+  <title>BIGO Live | AliCreationBD</title>
   <meta
     name="description"
-    content="AliCreationBD provides website setup, domain setup, Facebook page setup, Fiverr setup, BIGO live access and online business support."
+    content="Join my BIGO live directly from AliCreationBD."
   />
-  <meta name="monetag" content="87fb4ad8e6021273ae773b95b851f9ef" />
-
   <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <link rel="stylesheet" href="assets/style.css" />
 
-  <script
-    src="https://quge5.com/88/tag.min.js"
-    data-zone="221894"
-    async
-    data-cfasync="false"
-  ></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #0b1020;
+      --card: rgba(255,255,255,0.08);
+      --border: rgba(255,255,255,0.10);
+      --text: #ffffff;
+      --muted: #cbd5e1;
+      --live1: #ff0050;
+      --live2: #ff7a00;
+      --shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top left, rgba(255, 0, 80, 0.14), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(255, 122, 0, 0.14), transparent 30%),
+        linear-gradient(180deg, #070d1a 0%, #0f172a 100%);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 26px;
+      padding: 42px 28px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .live-badge {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--live1), var(--live2));
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 18px;
+      animation: pulse 1.6s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 0, 80, 0.45); }
+      70% { box-shadow: 0 0 0 18px rgba(255, 0, 80, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 0, 80, 0); }
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 620px;
+      margin: 0 auto 24px;
+    }
+
+    .info-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+
+    .info-box h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .info-box p {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      min-width: 220px;
+      padding: 15px 24px;
+      border-radius: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-live {
+      background: linear-gradient(135deg, var(--live1), var(--live2));
+      color: #fff;
+      box-shadow: 0 10px 28px rgba(255, 0, 80, 0.30);
+    }
+
+    .btn-home {
+      background: transparent;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .small-text {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        padding: 32px 20px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .btn {
+        width: 100%;
+        min-width: unset;
+      }
+    }
+  </style>
 </head>
-<body id="top">
+<body>
+  <div class="card">
+    <div class="live-badge">🔴 LIVE READY</div>
 
-  <header class="site-header">
-    <div class="container header-wrap">
-      <a href="#top" class="brand">
-        <img src="assets/logo.png" alt="AliCreationBD Logo" class="brand-logo-img" />
-        <div class="brand-text">AliCreation<span class="brand-highlight">BD</span></div>
+    <h1>Join My BIGO Live</h1>
+
+    <p>
+      Welcome to my live page. Tap the button below to open my official BIGO profile and join the live stream directly.
+    </p>
+
+    <div class="info-box">
+      <h3>Profile: Araf Ahmed Ali</h3>
+      <p>
+        Watch live, connect with my profile, and stay updated from one clean premium page.
+      </p>
+    </div>
+
+    <div class="button-group">
+      <a class="btn btn-live" href="https://www.bigo.tv/user/1103003504" target="_blank">
+        🚀 Watch on BIGO
       </a>
 
-      <nav class="nav">
-        <a href="#top">Home</a>
-        <a href="#services">Services</a>
-        <a href="#domains">Domains</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <a class="btn btn-home" href="index.html">
+        ← Back to Home
+      </a>
     </div>
-  </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-left fade-up">
-        <span class="hero-badge">Professional Digital Services in Bangladesh</span>
-
-        <h1>
-          Grow Your Online Business With <span>AliCreationBD</span>
-        </h1>
-
-        <p>
-          We help you set up domains, websites, Facebook pages, Fiverr profiles,
-          and build a premium online presence. You can also join my BIGO live
-          and access special offers directly from this website.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Place Order</a>
-          <a href="live.html" class="btn btn-live">🔴 Join BIGO Live</a>
-          <a href="offer.html" class="btn btn-offer">🎁 Claim Offer</a>
-          <a href="https://wa.me/8801345288953" class="btn btn-outline" target="_blank">WhatsApp Now</a>
-        </div>
-
-        <div class="hero-points">
-          <span>Website Setup</span>
-          <span>Domain Support</span>
-          <span>Facebook Business</span>
-          <span>Fiverr Help</span>
-          <span>BIGO Promotion</span>
-        </div>
-
-        <div class="hero-starting-price">
-          <span>Starting from 499৳ only</span>
-        </div>
-      </div>
-
-      <div class="hero-card fade-up">
-        <div class="hero-card-top">
-          <img src="assets/pro.png" alt="Professional Support" />
-        </div>
-
-        <h3>Why Choose Us?</h3>
-        <ul>
-          <li>Fast setup support</li>
-          <li>Premium modern design</li>
-          <li>Budget friendly pricing</li>
-          <li>Direct WhatsApp communication</li>
-          <li>Beginner friendly guidance</li>
-        </ul>
-      </div>
+    <div class="small-text">
+      Powered by AliCreationBD
     </div>
-  </section>
-
-  <section class="quick-links">
-    <div class="container">
-      <div class="quick-grid">
-        <div class="quick-card fade-up">
-          <h3>🔴 BIGO Live</h3>
-          <p>Open my BIGO profile and join live instantly from a clean premium page.</p>
-          <a href="live.html" class="btn btn-live">Open Live Page</a>
-        </div>
-
-        <div class="quick-card fade-up">
-          <h3>🎁 Special Offer</h3>
-          <p>Visit the offer page and continue to the active promotion quickly.</p>
-          <a href="offer.html" class="btn btn-offer">Go to Offer</a>
-        </div>
-
-        <div class="quick-card fade-up">
-          <h3>💬 Direct Contact</h3>
-          <p>Need fast help with website, domain, or setup support? Message us directly.</p>
-          <a href="https://wa.me/8801345288953" target="_blank" class="btn btn-primary">Chat on WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="stats-section">
-    <div class="container stats-grid">
-      <div class="stat-box fade-up">
-        <h3>100+</h3>
-        <p>Support Tasks Completed</p>
-      </div>
-
-      <div class="stat-box fade-up">
-        <h3>24/7</h3>
-        <p>Message Response Support</p>
-      </div>
-
-      <div class="stat-box fade-up">
-        <h3>1 Day</h3>
-        <p>Fast Setup Delivery</p>
-      </div>
-
-      <div class="stat-box fade-up">
-        <h3>Low Cost</h3>
-        <p>Budget Friendly Plans</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="section">
-    <div class="container">
-      <h2 class="section-title fade-up">Our Services</h2>
-      <p class="section-subtitle fade-up">
-        Choose the service you need to launch your online business quickly and professionally.
-      </p>
-
-      <div class="services-grid">
-        <div class="service-card fade-up">
-          <div class="service-icon">📘</div>
-          <h3>Facebook Setup</h3>
-          <p>Business page setup, basic info update, and contact button integration.</p>
-          <strong>Starting at 499৳</strong>
-        </div>
-
-        <div class="service-card fade-up">
-          <div class="service-icon">💻</div>
-          <h3>Website Setup</h3>
-          <p>Simple landing page or business website setup with mobile-friendly design.</p>
-          <strong>Starting at 1500৳</strong>
-        </div>
-
-        <div class="service-card fade-up">
-          <div class="service-icon">🎯</div>
-          <h3>Fiverr Setup</h3>
-          <p>Profile optimization, gig title support, and beginner-friendly guidance.</p>
-          <strong>Starting at 800৳</strong>
-        </div>
-
-        <div class="service-card fade-up">
-          <div class="service-icon">🌐</div>
-          <h3>Domain Setup</h3>
-          <p>Domain purchase guidance, DNS setup, and website connection support.</p>
-          <strong>Starting at 400৳</strong>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="domains" class="section portfolio-section">
-    <div class="container">
-      <h2 class="section-title fade-up">Domain Options</h2>
-      <p class="section-subtitle fade-up">
-        Get your domain and start building your online identity today.
-      </p>
-
-      <div class="pricing-grid">
-        <div class="price-card fade-up">
-          <h3>.com Domain</h3>
-          <div class="price-tag">1500৳</div>
-          <p>Best for business branding and professional websites.</p>
-          <ul>
-            <li>1 year registration</li>
-            <li>DNS support</li>
-            <li>Basic setup help</li>
-          </ul>
-          <a href="https://wa.me/8801345288953?text=I%20want%20a%20.com%20domain" class="btn btn-primary" target="_blank">Buy Now</a>
-        </div>
-
-        <div class="price-card fade-up">
-          <h3>.xyz Domain</h3>
-          <div class="price-tag">400৳</div>
-          <p>Budget-friendly option for starter brands and personal projects.</p>
-          <ul>
-            <li>Affordable price</li>
-            <li>Fast setup</li>
-            <li>DNS support</li>
-          </ul>
-          <a href="https://wa.me/8801345288953?text=I%20want%20a%20.xyz%20domain" class="btn btn-primary" target="_blank">Buy Now</a>
-        </div>
-
-        <div class="price-card featured fade-up">
-          <span class="popular-tag">Popular</span>
-          <h3>Starter Combo</h3>
-          <div class="price-tag">2499৳</div>
-          <p>Complete startup combo for small business owners.</p>
-          <ul>
-            <li>1 Domain</li>
-            <li>Basic Website</li>
-            <li>Facebook Setup</li>
-          </ul>
-          <a href="https://wa.me/8801345288953?text=I%20want%20Business%20Starter%20Pack" class="btn btn-primary" target="_blank">Get Combo</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="portfolio" class="section">
-    <div class="container">
-      <h2 class="section-title fade-up">Portfolio Preview</h2>
-      <p class="section-subtitle fade-up">
-        Sample style of service presentation and project setup.
-      </p>
-
-      <div class="portfolio-grid">
-        <div class="portfolio-card fade-up">
-          <div class="portfolio-thumb">
-            <img src="assets/portfolio1.jpg" alt="Portfolio 1" />
-          </div>
-          <div class="portfolio-content">
-            <h3>Business Website</h3>
-            <p>Simple and clean business landing page setup for online presence.</p>
-          </div>
-        </div>
-
-        <div class="portfolio-card fade-up">
-          <div class="portfolio-thumb">
-            <img src="assets/portfolio2.jpg" alt="Portfolio 2" />
-          </div>
-          <div class="portfolio-content">
-            <h3>Service Promotion</h3>
-            <p>Professional digital service presentation for client trust and conversion.</p>
-          </div>
-        </div>
-
-        <div class="portfolio-card fade-up">
-          <div class="portfolio-thumb">
-            <img src="assets/portfolio3.jpg" alt="Portfolio 3" />
-          </div>
-          <div class="portfolio-content">
-            <h3>Brand Identity</h3>
-            <p>Modern visual style for online branding and business setup support.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="pricing" class="section">
-    <div class="container">
-      <h2 class="section-title fade-up">Service Pricing</h2>
-      <p class="section-subtitle fade-up">
-        Affordable plans to get your business started.
-      </p>
-
-      <div class="pricing-grid">
-        <div class="price-card fade-up">
-          <h3>Facebook Setup</h3>
-          <div class="price-tag">499৳</div>
-          <p>Perfect for new Facebook business pages.</p>
-          <ul>
-            <li>Page setup</li>
-            <li>Basic information add</li>
-            <li>Contact button setup</li>
-          </ul>
-          <a href="https://wa.me/8801345288953?text=I%20want%20Facebook%20Setup" class="btn btn-primary" target="_blank">Order Now</a>
-        </div>
-
-        <div class="price-card fade-up">
-          <h3>Website Setup</h3>
-          <div class="price-tag">1500৳</div>
-          <p>Simple business website with responsive design.</p>
-          <ul>
-            <li>Landing page</li>
-            <li>Mobile friendly</li>
-            <li>Contact section</li>
-          </ul>
-          <a href="https://wa.me/8801345288953?text=I%20want%20Website%20Setup" class="btn btn-primary" target="_blank">Order Now</a>
-        </div>
-
-        <div class="price-card fade-up">
-          <h3>Fiverr Setup</h3>
-          <div class="price-tag">800৳</div>
-          <p>Beginner-friendly Fiverr profile improvement support.</p>
-          <ul>
-            <li>Profile optimization</li>
-            <li>Gig title help</li>
-            <li>Description support</li>
-          </ul>
-          <a href="https://wa.me/8801345288953?text=I%20want%20Fiverr%20Setup" class="btn btn-primary" target="_blank">Order Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <div class="contact-box fade-up">
-        <h2>Let’s Work Together</h2>
-        <p>
-          Need domain, website, Facebook setup, Fiverr support, or BIGO promotion help?
-          Contact us directly now.
-        </p>
-
-        <div class="contact-buttons">
-          <a href="https://wa.me/8801345288953" class="btn btn-primary" target="_blank">WhatsApp</a>
-          <a href="mailto:alicreationbd2025@gmail.com" class="btn btn-outline">Email Us</a>
-        </div>
-
-        <div class="contact-info">
-          <p><strong>Email:</strong> alicreationbd2025@gmail.com</p>
-          <p><strong>WhatsApp:</strong> +880 1345-288953</p>
-          <p><strong>bKash / Nagad / Upay:</strong> 01743086024</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>© 2026 AliCreationBD. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <a
-    class="floating-btn whatsapp-float"
-    href="https://wa.me/8801345288953"
-    target="_blank"
-    aria-label="WhatsApp"
-  >✆</a>
-
-  <script src="assets/script.js"></script>
+  </div>
 </body>
 </html>
