@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("show");
+            observer.unobserve(entry.target);
           }
         });
       },
