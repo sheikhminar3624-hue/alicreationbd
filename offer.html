@@ -1,22 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Special Offer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Special Offer | AliCreationBD</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #052e16, #14532d, #166534);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card {
+      max-width: 650px;
+      width: 100%;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 24px;
+      padding: 36px 24px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.28);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #22c55e;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: #dcfce7;
+      font-size: 17px;
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 28px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      margin: 8px;
+    }
+
+    .btn-back {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      .btn {
+        display: block;
+      }
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family:sans-serif; background:#111; color:#fff;">
+<body>
+  <div class="card">
+    <div class="badge">🎁 LIMITED OFFER</div>
+    <h1>Claim Your Special Offer</h1>
+    <p>
+      Click below to continue to the offer page.
+    </p>
 
-  <h1>🎁 Special Offer</h1>
-  <p>Click the button below to continue</p>
-
-  <a href="https://omg10.com/4/10758974" target="_blank">
-    <button style="padding:15px 30px; font-size:18px; background:red; color:white; border:none; border-radius:5px;">
-      Continue
-    </button>
-  </a>
-
-  <p style="margin-top:20px; font-size:12px; color:gray;">
-    Please click to proceed
-  </p>
-
+    <a class="btn" href="https://omg10.com/4/10758974" target="_blank">🎁 Continue to Offer</a>
+    <a class="btn btn-back" href="index.html">← Back to Home</a>
+  </div>
 </body>
 </html>
