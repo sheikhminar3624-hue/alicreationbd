@@ -3,1098 +3,403 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AliCreationBD — ডিজিটাল ক্রিয়েটিভ বিডি</title> <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" /> <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="google" content="notranslate" />
 
-  <meta name="description" content="AliCreationBD — ওয়েব ডিজাইন, গ্রাফিক্স, সোশ্যাল মিডিয়া ম্যানেজমেন্ট এবং ডিজিটাল মার্কেটিং সার্ভিস।" />
+  <title>AliCreationBD | Premium Digital Services</title>
+  <meta
+    name="description"
+    content="AliCreationBD offers premium web design, graphic design, branding, and digital business solutions for modern brands and businesses."
+  />
+
+  <meta property="og:title" content="AliCreationBD | Premium Digital Services" />
+  <meta
+    property="og:description"
+    content="Premium web design, branding, digital services, and online business solutions."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alicreationbd.com/" />
+  <meta property="og:image" content="https://alicreationbd.com/assets/logo.png" />
+
   <link rel="icon" type="image/png" href="assets/favicon.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --bg:        #060c18;
-      --bg2:       #0a1224;
-      --card:      rgba(255,255,255,0.04);
-      --border:    rgba(255,255,255,0.07);
-      --text:      #f0f4ff;
-      --muted:     #8fa3c8;
-      --primary:   #38bdf8;
-      --blue:      #2563eb;
-      --accent:    #a78bfa;
-      --green:     #22c55e;
-      --red:       #ff3b6b;
-      --orange:    #fb923c;
-      --shadow:    0 20px 50px rgba(0,0,0,0.35);
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-      overflow-x: hidden;
-    }
-
-    /* ── Noise Texture Overlay ── */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 0;
-      opacity: 0.5;
-    }
-
-    a { text-decoration: none; color: inherit; }
-    img { max-width: 100%; display: block; }
-    .container { width: 92%; max-width: 1160px; margin: auto; position: relative; z-index: 1; }
-
-    /* ════════════════════════════
-       HEADER
-    ════════════════════════════ */
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      background: rgba(6, 12, 24, 0.85);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .header-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 0;
-      gap: 16px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .brand img {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      object-fit: cover;
-      background: #fff;
-      padding: 3px;
-    }
-
-    .brand-name {
-      font-family: 'Syne', sans-serif;
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-    }
-
-    .brand-name span { color: var(--primary); }
-
-    nav { display: flex; gap: 24px; align-items: center; }
-    nav a {
-      font-size: 14.5px;
-      color: var(--muted);
-      font-weight: 500;
-      transition: color 0.25s;
-    }
-    nav a:hover { color: var(--text); }
-
-    .nav-cta {
-      padding: 9px 20px;
-      border-radius: 10px;
-      background: linear-gradient(135deg, var(--primary), var(--blue));
-      color: #fff !important;
-      font-weight: 600;
-      font-size: 14px !important;
-      box-shadow: 0 6px 20px rgba(37,99,235,0.3);
-      transition: transform 0.2s, box-shadow 0.2s !important;
-    }
-    .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 10px 28px rgba(37,99,235,0.4) !important; }
-
-    /* ════════════════════════════
-       HERO
-    ════════════════════════════ */
-    .hero {
-      padding: 110px 0 80px;
-      position: relative;
-    }
-
-    /* Glow blobs */
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -80px; right: -120px;
-      width: 600px; height: 600px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(56,189,248,0.12) 0%, transparent 65%);
-      pointer-events: none;
-    }
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: -150px;
-      width: 500px; height: 500px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(37,99,235,0.1) 0%, transparent 65%);
-      pointer-events: none;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 48px;
-      align-items: center;
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 16px;
-      border-radius: 999px;
-      background: rgba(56,189,248,0.08);
-      border: 1px solid rgba(56,189,248,0.22);
-      color: #c6eeff;
-      font-size: 13px;
-      margin-bottom: 22px;
-    }
-
-    .hero-badge .dot {
-      width: 7px; height: 7px;
-      border-radius: 50%;
-      background: var(--primary);
-      animation: blink 1.8s ease infinite;
-    }
-
-    @keyframes blink {
-      0%,100% { opacity: 1; }
-      50% { opacity: 0.3; }
-    }
-
-    .hero-left h1 {
-      font-family: 'Syne', sans-serif;
-      font-size: 58px;
-      font-weight: 800;
-      line-height: 1.08;
-      letter-spacing: -1.5px;
-      margin-bottom: 20px;
-    }
-
-    .hero-left h1 .line2 { color: var(--primary); }
-    .hero-left h1 .line3 { color: var(--accent); }
-
-    .hero-desc {
-      color: var(--muted);
-      font-size: 17px;
-      max-width: 560px;
-      margin-bottom: 32px;
-    }
-
-    .hero-btns {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 38px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 14px 26px;
-      border-radius: 12px;
-      font-weight: 600;
-      font-size: 15px;
-      transition: transform 0.25s, box-shadow 0.25s;
-      border: 1px solid transparent;
-      cursor: pointer;
-    }
-    .btn:hover { transform: translateY(-2px); }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--primary), var(--blue));
-      color: #fff;
-      box-shadow: 0 10px 30px rgba(37,99,235,0.35);
-    }
-    .btn-primary:hover { box-shadow: 0 14px 40px rgba(37,99,235,0.5); }
-
-    .btn-ghost {
-      background: rgba(255,255,255,0.05);
-      border-color: var(--border);
-      color: var(--text);
-    }
-    .btn-ghost:hover { background: rgba(255,255,255,0.09); border-color: rgba(56,189,248,0.4); }
-
-    .btn-live {
-      background: linear-gradient(135deg, var(--red), var(--orange));
-      color: #fff;
-      box-shadow: 0 10px 28px rgba(255,59,107,0.3);
-      animation: pulse-live 2.5s infinite;
-    }
-    @keyframes pulse-live {
-      0%,100% { box-shadow: 0 10px 28px rgba(255,59,107,0.3); }
-      50% { box-shadow: 0 14px 40px rgba(255,59,107,0.55); }
-    }
-
-    .hero-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .chip {
-      padding: 9px 16px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid var(--border);
-      color: #c5d8f8;
-      font-size: 13px;
-      font-weight: 500;
-    }
-
-    /* Hero card */
-    .hero-card {
-      background: linear-gradient(145deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02));
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 32px;
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-card::before {
-      content: '';
-      position: absolute;
-      top: -1px; left: -1px; right: -1px;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(56,189,248,0.5), transparent);
-    }
-
-    .hero-card-avatar {
-      width: 88px;
-      height: 88px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin: 0 auto 18px;
-      border: 3px solid rgba(56,189,248,0.35);
-      display: block;
-    }
-
-    .hero-card h3 {
-      font-family: 'Syne', sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      text-align: center;
-      margin-bottom: 6px;
-    }
-
-    .hero-card .sub {
-      text-align: center;
-      color: var(--muted);
-      font-size: 13.5px;
-      margin-bottom: 22px;
-    }
-
-    .card-features {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 11px;
-    }
-
-    .card-features li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #d4e4ff;
-      font-size: 14px;
-    }
-
-    .card-features li .icon {
-      width: 28px;
-      height: 28px;
-      border-radius: 8px;
-      background: linear-gradient(135deg, rgba(56,189,248,0.2), rgba(37,99,235,0.2));
-      border: 1px solid rgba(56,189,248,0.2);
-      display: grid;
-      place-items: center;
-      font-size: 14px;
-      flex-shrink: 0;
-    }
-
-    /* ════════════════════════════
-       STATS
-    ════════════════════════════ */
-    .stats-section {
-      padding: 0 0 75px;
-    }
-
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .stat-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 26px 22px;
-      text-align: center;
-    }
-
-    .stat-card .num {
-      font-family: 'Syne', sans-serif;
-      font-size: 40px;
-      font-weight: 800;
-      color: var(--primary);
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-
-    .stat-card .label { color: var(--muted); font-size: 14px; }
-
-    /* ════════════════════════════
-       SECTION HEADER
-    ════════════════════════════ */
-    .section { padding: 80px 0; }
-
-    .sec-header {
-      text-align: center;
-      margin-bottom: 52px;
-    }
-
-    .sec-label {
-      display: inline-block;
-      padding: 7px 16px;
-      border-radius: 999px;
-      background: rgba(167,139,250,0.1);
-      border: 1px solid rgba(167,139,250,0.25);
-      color: #d8caff;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 14px;
-    }
-
-    .sec-title {
-      font-family: 'Syne', sans-serif;
-      font-size: 42px;
-      font-weight: 800;
-      letter-spacing: -1px;
-      line-height: 1.12;
-      margin-bottom: 12px;
-    }
-
-    .sec-sub {
-      color: var(--muted);
-      font-size: 16.5px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    /* ════════════════════════════
-       SERVICES
-    ════════════════════════════ */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .service-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 30px;
-      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .service-card::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(56,189,248,0.04), transparent);
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(56,189,248,0.3);
-      box-shadow: 0 24px 55px rgba(0,0,0,0.3);
-    }
-    .service-card:hover::after { opacity: 1; }
-
-    .svc-icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 16px;
-      display: grid;
-      place-items: center;
-      font-size: 26px;
-      margin-bottom: 20px;
-    }
-
-    .ic1 { background: linear-gradient(135deg, #0ea5e9, #2563eb); }
-    .ic2 { background: linear-gradient(135deg, #a78bfa, #7c3aed); }
-    .ic3 { background: linear-gradient(135deg, #22c55e, #16a34a); }
-    .ic4 { background: linear-gradient(135deg, #f59e0b, #d97706); }
-    .ic5 { background: linear-gradient(135deg, #ec4899, #db2777); }
-    .ic6 { background: linear-gradient(135deg, #ff3b6b, #fb923c); }
-
-    .service-card h3 {
-      font-family: 'Syne', sans-serif;
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .service-card p { color: var(--muted); font-size: 14.5px; margin-bottom: 16px; }
-
-    .svc-price {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--primary);
-      padding: 7px 14px;
-      border-radius: 999px;
-      background: rgba(56,189,248,0.1);
-      border: 1px solid rgba(56,189,248,0.2);
-      display: inline-block;
-    }
-
-    /* ════════════════════════════
-       PORTFOLIO
-    ════════════════════════════ */
-    .portfolio-bg {
-      background: linear-gradient(180deg, transparent, rgba(255,255,255,0.02), transparent);
-    }
-
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .port-card {
-      border-radius: 20px;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      background: var(--card);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .port-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 28px 60px rgba(0,0,0,0.4);
-    }
-
-    .port-thumb {
-      height: 200px;
-      overflow: hidden;
-    }
-
-    .port-thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s;
-    }
-
-    .port-card:hover .port-thumb img { transform: scale(1.06); }
-
-    .port-body { padding: 22px; }
-
-    .port-tag {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--primary);
-      margin-bottom: 8px;
-    }
-
-    .port-body h3 {
-      font-family: 'Syne', sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .port-body p { color: var(--muted); font-size: 13.5px; }
-
-    /*
-<section class="portfolio">
-
-  <!-- Card 1 -->
-  <div class="portfolio-card">
-    <div class="icon-box">
-      <i class="fa-solid fa-cart-shopping"></i>
-    </div>
-    <h3>E-commerce Website</h3>
-    <p>Modern design full online shopping platform.</p>
-  </div>
-
-  <!-- Card 2 -->
-  <div class="portfolio-card">
-    <div class="icon-box">
-      <i class="fa-solid fa-pen-nib"></i>
-    </div>
-    <h3>Brand Identity</h3>
-    <p>Complete logo & branding package design.</p>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="portfolio-card">
-    <div class="icon-box">
-      <i class="fa-solid fa-code"></i>
-    </div>
-    <h3>Web Development</h3>
-    <p>Fast, responsive and modern websites.</p>
-  </div>
-
-</section> ════════════════════════════
-       PRICING
-    ════════════════════════════ */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      align-items: start;
-    }
-
-    .price-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 32px;
-      position: relative;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .price-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow);
-    }
-
-    .price-card.featured {
-      background: linear-gradient(145deg, rgba(56,189,248,0.1), rgba(37,99,235,0.08));
-      border-color: rgba(56,189,248,0.4);
-      transform: scale(1.04);
-    }
-    .price-card.featured:hover { transform: scale(1.04) translateY(-4px); }
-
-    .price-badge {
-      position: absolute;
-      top: -12px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: linear-gradient(135deg, var(--primary), var(--blue));
-      color: #fff;
-      padding: 5px 18px;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    .price-card h3 {
-      font-family: 'Syne', sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .price-card .desc { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
-
-    .price-amount {
-      font-family: 'Syne', sans-serif;
-      font-size: 46px;
-      font-weight: 800;
-      line-height: 1;
-      margin-bottom: 4px;
-    }
-
-    .price-card .cur { font-size: 22px; vertical-align: super; color: var(--primary); }
-    .price-card .period { font-size: 14px; color: var(--muted); margin-bottom: 22px; }
-
-    .price-features {
-      list-style: none;
-      margin-bottom: 26px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .price-features li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #d5e4ff;
-      font-size: 14px;
-    }
-
-    .price-features li::before {
-      content: '✓';
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: rgba(56,189,248,0.15);
-      border: 1px solid rgba(56,189,248,0.3);
-      display: grid;
-      place-items: center;
-      font-size: 11px;
-      color: var(--primary);
-      flex-shrink: 0;
-    }
-
-    .price-features li.off { color: var(--muted); }
-    .price-features li.off::before {
-      content: '✕';
-      background: rgba(255,255,255,0.04);
-      border-color: var(--border);
-      color: var(--muted);
-    }
-
-    /* ════════════════════════════
-       CONTACT
-    ════════════════════════════ */
-    .contact-wrap {
-      max-width: 860px;
-      margin: auto;
-      background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
-      border: 1px solid var(--border);
-      border-radius: 28px;
-      padding: 52px 44px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .contact-wrap::before {
-      content: '';
-      position: absolute;
-      top: -1px; left: 20%; right: 20%;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(56,189,248,0.6), transparent);
-    }
-
-    .contact-wrap h2 {
-      font-family: 'Syne', sans-serif;
-      font-size: 38px;
-      font-weight: 800;
-      letter-spacing: -1px;
-      margin-bottom: 12px;
-    }
-
-    .contact-wrap p { color: var(--muted); font-size: 16px; margin-bottom: 30px; }
-
-    .contact-btns {
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-bottom: 24px;
-    }
-
-    .contact-info {
-      color: var(--muted);
-      font-size: 14px;
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-
-    .contact-info span { display: flex; align-items: center; gap: 6px; }
-
-    /* ════════════════════════════
-       FOOTER
-    ════════════════════════════ */
-    .site-footer {
-      border-top: 1px solid var(--border);
-      background: rgba(0,0,0,0.2);
-      padding: 28px 0;
-      text-align: center;
-    }
-
-    .footer-inner p { color: var(--muted); font-size: 14px; }
-    .footer-inner a { color: var(--primary); }
-
-    /* ════════════════════════════
-       FLOATING WHATSAPP
-    ════════════════════════════ */
-    .wa-float {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: #25d366;
-      display: grid;
-      place-items: center;
-      font-size: 26px;
-      box-shadow: 0 10px 28px rgba(37,211,102,0.4);
-      z-index: 1000;
-      transition: transform 0.25s, box-shadow 0.25s;
-      color: #fff;
-    }
-    .wa-float:hover {
-      transform: scale(1.1);
-      box-shadow: 0 14px 40px rgba(37,211,102,0.55);
-    }
-
-    /* ════════════════════════════
-       ANIMATIONS
-    ════════════════════════════ */
-    .fade-up {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.75s ease, transform 0.75s ease;
-    }
-    .fade-up.show { opacity: 1; transform: translateY(0); }
-
-    /* ════════════════════════════
-       RESPONSIVE
-    ════════════════════════════ */
-    @media (max-width: 1024px) {
-      .stats-grid { grid-template-columns: repeat(2, 1fr); }
-      .services-grid { grid-template-columns: repeat(2, 1fr); }
-      .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
-      .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin: auto; }
-      .price-card.featured { transform: none; }
-    }
-
-    @media (max-width: 900px) {
-      .hero-grid { grid-template-columns: 1fr; }
-      .hero-left h1 { font-size: 44px; }
-      .sec-title { font-size: 34px; }
-    }
-
-    @media (max-width: 768px) {
-      .header-inner { flex-direction: column; align-items: flex-start; }
-      nav { gap: 16px; flex-wrap: wrap; }
-      .hero { padding: 80px 0 60px; }
-      .hero-left h1 { font-size: 36px; }
-      .services-grid, .portfolio-grid { grid-template-columns: 1fr; }
-      .contact-wrap { padding: 32px 20px; }
-      .contact-wrap h2 { font-size: 28px; }
-    }
-
-    @media (max-width: 480px) {
-      .hero-left h1 { font-size: 30px; }
-      .btn { width: 100%; justify-content: center; }
-      .stats-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-  </style>
-<meta name="google" content="notranslate">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <!-- ─── HEADER ─── -->
+  <!-- HEADER -->
   <header class="site-header">
-    <div class="container">
-      <div class="header-inner">
-        <div class="brand">
-          <img src="assets/logo.png" alt="AliCreationBD Logo" />
-          <span class="brand-name">Ali<span>Creation</span>BD</span>
-        </div>
-        <nav>
-          <a href="#services">সার্ভিস</a>
-          <a href="#portfolio">পোর্টফোলিও</a>
-          <a href="#pricing">মূল্য</a>
-          <a href="live.html">🔴 Live</a>
-          <a href="#contact" class="nav-cta">যোগাযোগ করুন</a>
-        </nav>
-      </div>
+    <div class="container header-wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="AliCreationBD Logo" class="brand-logo-img" />
+        <div class="brand-text">Ali<span class="brand-highlight">CreationBD</span></div>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <!-- ─── HERO ─── -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-left fade-up">
-          <div class="hero-badge">
-            <span class="dot"></span>
-            বাংলাদেশের প্রিমিয়াম ডিজিটাল স্টুডিও
-          </div>
-          <h1>
-            আপনার ব্র্যান্ডকে<br/>
-            <span class="line2">ডিজিটাল দুনিয়ায়</span><br/>
-            <span class="line3">এগিয়ে নিন</span>
-          </h1>
-          <p class="hero-desc">
-            ওয়েব ডিজাইন থেকে সোশ্যাল মিডিয়া ম্যানেজমেন্ট — আপনার ব্যবসার ডিজিটাল উপস্থিতি তৈরি করতে আমরা সর্বদা প্রস্তুত।
-          </p>
-          <div class="hero-btns">
-            <a href="#services" class="btn btn-primary">🚀 আমাদের সার্ভিস দেখুন</a>
-            <a href="live.html" class="btn btn-live">🔴 BIGO Live</a>
-            <a href="#contact" class="btn btn-ghost">📞 কথা বলুন</a>
-          </div>
-          <div class="hero-chips">
-            <span class="chip">⚡ দ্রুত ডেলিভারি</span>
-            <span class="chip">✅ ১০০% সন্তুষ্টি গ্যারান্টি</span>
-            <span class="chip">🛡️ নির্ভরযোগ্য সার্ভিস</span>
-            <span class="chip">💰 সাশ্রয়ী মূল্য</span>
-          </div>
+    <div class="container hero-grid">
+      <div class="hero-left fade-up">
+        <div class="hero-badge">Premium Digital Service Studio</div>
+
+        <h1>
+          Build a <span>Premium Online Presence</span> for Your Business
+        </h1>
+
+        <p>
+          AliCreationBD helps brands and growing businesses with premium web design,
+          branding, graphic design, and digital presentation solutions that look modern,
+          trusted, and conversion-focused.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn btn-primary">
+            <i class="fa-solid fa-briefcase"></i>
+            View Portfolio
+          </a>
+
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-paper-plane"></i>
+            Get in Touch
+          </a>
+
+          <a href="offer.html" class="btn btn-offer">
+            <i class="fa-solid fa-gift"></i>
+            Special Offer
+          </a>
         </div>
 
-        <div class="hero-card fade-up" style="transition-delay:0.15s">
-          <img class="hero-card-avatar" src="assets/pro.png" alt="Sheikh Ali" />
-          <h3>Sheikh Ali</h3>
-          <p class="sub">Founder & Creative Director</p>
-          <ul class="card-features">
-            <li><span class="icon">🎨</span> ওয়েব ডিজাইন ও ডেভেলপমেন্ট</li>
-            <li><span class="icon">📱</span> সোশ্যাল মিডিয়া ম্যানেজমেন্ট</li>
-            <li><span class="icon">🖼️</span> গ্রাফিক্স ডিজাইন</li>
-            <li><span class="icon">🔮</span> ডিজিটাল মার্কেটিং</li>
-            <li><span class="icon">🔴</span> BIGO Live সাপোর্ট</li>
+        <div class="hero-points">
+          <span><i class="fa-solid fa-check"></i> Modern UI</span>
+          <span><i class="fa-solid fa-check"></i> Mobile Friendly</span>
+          <span><i class="fa-solid fa-check"></i> Premium Branding</span>
+          <span><i class="fa-solid fa-check"></i> Fast Delivery</span>
+        </div>
+
+        <div class="hero-starting-price">
+          <span>Starting from affordable custom packages</span>
+        </div>
+      </div>
+
+      <div class="hero-right fade-up">
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <img src="assets/logo.png" alt="AliCreationBD Profile" />
+          </div>
+
+          <h3>Why Choose AliCreationBD</h3>
+
+          <ul>
+            <li>Premium website design for personal brands and businesses</li>
+            <li>Professional brand identity and graphic design support</li>
+            <li>Clean and responsive layouts for all screen sizes</li>
+            <li>Focused on trust, visual quality, and modern presentation</li>
+            <li>Suitable for portfolios, services, and e-commerce projects</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── STATS ─── -->
-  <section class="stats-section">
+  <!-- QUICK LINKS -->
+  <section class="quick-links">
     <div class="container">
-      <div class="stats-grid fade-up">
-        <div class="stat-card">
-          <div class="num">25+</div>
-          <div class="label">সন্তুষ্ট ক্লায়েন্ট</div>
+      <div class="quick-grid">
+        <div class="quick-card fade-up">
+          <h3>Web Design</h3>
+          <p>Premium landing pages, portfolios, and business websites designed for modern brands.</p>
+          <a href="#services" class="btn btn-outline">Explore</a>
         </div>
-        <div class="stat-card">
-          <div class="num">50+</div>
-          <div class="label">সম্পন্ন প্রজেক্ট</div>
+
+        <div class="quick-card fade-up">
+          <h3>Brand Identity</h3>
+          <p>Professional logo direction, visual consistency, and polished design presentation.</p>
+          <a href="#portfolio" class="btn btn-outline">See Work</a>
         </div>
-        <div class="stat-card">
-          <div class="num">4+</div>
-          <div class="label">বছরের অভিজ্ঞতা</div>
-        </div>
-        <div class="stat-card">
-          <div class="num">24/7</div>
-          <div class="label">সাপোর্ট সার্ভিস</div>
+
+        <div class="quick-card fade-up">
+          <h3>Business Support</h3>
+          <p>Digital presentation improvements to make your online business look stronger and more trusted.</p>
+          <a href="#contact" class="btn btn-outline">Start Now</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── SERVICES ─── -->
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-box fade-up">
+          <h3>3+</h3>
+          <p>Core Service Categories</p>
+        </div>
+        <div class="stat-box fade-up">
+          <h3>100%</h3>
+          <p>Responsive Design Focus</p>
+        </div>
+        <div class="stat-box fade-up">
+          <h3>24/7</h3>
+          <p>Online Availability</p>
+        </div>
+        <div class="stat-box fade-up">
+          <h3>Fast</h3>
+          <p>Project Delivery Support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
   <section class="section" id="services">
     <div class="container">
-      <div class="sec-header fade-up">
-  <h1>Our Services</h1>
-<p>We provide digital marketing services</p>
-<h2 class="sec-title">আপনার জন্য যা দরকার</h2>
-        <p class="sec-sub">প্রিমিয়াম মানের ডিজিটাল সার্ভিস যা আপনার ব্যবসাকে এগিয়ে নিয়ে যাবে</p>
-      </div>
+      <h2 class="section-title fade-up">Services</h2>
+      <p class="section-subtitle fade-up">
+        Premium digital services tailored for creators, businesses, and online brands.
+      </p>
 
       <div class="services-grid">
         <div class="service-card fade-up">
-          <div class="svc-icon ic1">🌐</div>
-          <h3>ওয়েব ডিজাইন</h3>
-          <p>আধুনিক, রেসপন্সিভ ও আকর্ষণীয় ওয়েবসাইট তৈরি করি। আপনার ব্র্যান্ডের জন্য পার্ফেক্ট ডিজাইন।</p>
-          <span class="svc-price">৳ 2500 থেকে শুরু</span>
+          <div class="service-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3>Website Design</h3>
+          <p>
+            Premium landing pages, service websites, and portfolio designs that feel modern,
+            polished, and brand-focused.
+          </p>
+          <strong>Modern & Responsive</strong>
         </div>
-        <div class="service-card fade-up" style="transition-delay:0.1s">
-          <div class="svc-icon ic2">🎨</div>
-          <h3>গ্রাফিক্স ডিজাইন</h3>
-          <p>লোগো, ব্যানার, সোশ্যাল মিডিয়া পোস্ট ও যেকোনো ক্রিয়েটিভ ডিজাইন প্রফেশনালি তৈরি করা হয়।</p>
-          <span class="svc-price">৳ ৫০০ থেকে শুরু</span>
-        </div>
-        <div class="service-card fade-up" style="transition-delay:0.2s">
-          <div class="svc-icon ic3">📱</div>
-          <h3>সোশ্যাল মিডিয়া</h3>
-          <p>Facebook, Instagram, YouTube পেজ ম্যানেজমেন্ট এবং কন্টেন্ট ক্রিয়েশন সার্ভিস।</p>
-          <span class="svc-price">৳ ২,০০০
-<span>
-        </div>
+
         <div class="service-card fade-up">
-          <div class="svc-icon ic4">📈</div>
-          <h3>ডিজিটাল মার্কেটিং</h3>
-          <p>Facebook Ads, Google Ads এবং SEO এর মাধ্যমে আপনার ব্যবসার প্রচার বাড়ানো হয়।</p>
-          <span class="svc-price">৳ 2700 থেকে শুরু</span>
+          <div class="service-icon">
+            <i class="fa-solid fa-pen-ruler"></i>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>
+            High-quality visuals for branding, promotional content, presentation cards,
+            and digital identity systems.
+          </p>
+          <strong>Clean Visual Identity</strong>
         </div>
-        <div class="service-card fade-up" style="transition-delay:0.1s">
-          <div class="svc-icon ic5">🎬</div>
-          <h3>ভিডিও এডিটিং</h3>
-          <p>প্রফেশনাল ভিডিও এডিটিং, থাম্বনেইল ডিজাইন এবং ইউটিউব চ্যানেল ব্র্যান্ডিং।</p>
-          <span class="svc-price">৳ 1200থেকে শুরু</span>
+
+        <div class="service-card fade-up">
+          <div class="service-icon">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <h3>Brand Identity</h3>
+          <p>
+            Complete identity direction including logo style, visual tone, color system,
+            and premium business presentation.
+          </p>
+          <strong>Premium Branding</strong>
         </div>
-        <div class="service-card fade-up" style="transition-delay:0.2s">
-          <div class="svc-icon ic6">🔴</div>
-          <h3>BIGO Live সাপোর্ট</h3>
-          <p>BIGO Live প্রোফাইল সেটআপ, ডেকোরেশন এবং লাইভ স্ট্রিম সম্পর্কিত সকল সাপোর্ট।</p>
-          <span class="svc-price">৳ 500 থেকে শুরু</span>
+
+        <div class="service-card fade-up">
+          <div class="service-icon">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <h3>E-commerce Setup</h3>
+          <p>
+            Professional online shop presentation with clean product-focused layout and
+            a strong first impression for visitors.
+          </p>
+          <strong>Sales-Focused Layout</strong>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── PORTFOLIO ─── -->
-  <section class="section portfolio-bg" id="portfolio">
+  <!-- PORTFOLIO -->
+  <section class="section portfolio-section" id="portfolio">
     <div class="container">
-      <div class="sec-header fade-up">
-        <div class="sec-label">পোর্টফোলিও</div>
-        <h2 class="sec-title">আমাদের কাজের নমুনা</h2>
-        <p class="sec-sub">আমাদের সেরা কাজগুলো দেখুন</p>
-      </div>
+      <h2 class="section-title fade-up">Portfolio</h2>
+      <p class="section-subtitle fade-up">
+        Selected premium digital projects crafted for modern brands and businesses.
+      </p>
 
       <div class="portfolio-grid">
-        <div class="port-card fade-up">
-          <div class="port-thumb">
-            <img src="assets/portfolio1.jpg" alt="Portfolio 1" />
+        <div class="portfolio-card fade-up">
+          <div class="portfolio-top">
+            <div class="portfolio-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
           </div>
-          <div class="port-body">
-            <div class="port-tag">ওয়েব ডিজাইন</div>
-            <h3>ই-কমার্স ওয়েবসাইট</h3>
-            <p>আধুনিক ডিজাইনের সম্পূর্ণ অনলাইন শপিং প্ল্যাটফর্ম।</p>
-          </div>
-        </div>
-        <div class="port-card fade-up" style="transition-delay:0.1s">
-          <div class="port-thumb">
-            <img src="assets/portfolio2.jpg" alt="Portfolio 2" />
-          </div>
-          <div class="port-body">
-            <div class="port-tag">গ্রাফিক্স ডিজাইন</div>
-            <h3>ব্র্যান্ড আইডেন্টিটি</h3>
-            <p>সম্পূর্ণ লোগো ও ব্র্যান্ডিং প্যাকেজ ডিজাইন।</p>
+          <div class="portfolio-content">
+            <span class="portfolio-label">Web Design</span>
+            <h3>E-commerce Website</h3>
+            <p>
+              Modern and premium online shopping website design focused on user experience,
+              trust, and mobile performance.
+            </p>
           </div>
         </div>
-        <div class="port-card fade-up" style="transition-delay:0.2s">
-          <div class="port-thumb">
-            <img src="assets/portfolio3.jpg" alt="Portfolio 3" />
+
+        <div class="portfolio-card fade-up">
+          <div class="portfolio-top">
+            <div class="portfolio-icon">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
           </div>
-          <div class="port-body">
-            <div class="port-tag">সোশ্যাল মিডিয়া</div>
-            <h3>সোশ্যাল মিডিয়া ক্যাম্পেইন</h3>
-            <p>ফেসবুক পেজ ম্যানেজমেন্ট ও কন্টেন্ট ক্রিয়েশন।</p>
+          <div class="portfolio-content">
+            <span class="portfolio-label">Graphic Design</span>
+            <h3>Brand Identity</h3>
+            <p>
+              Complete logo direction, visual language, and branding presentation package
+              for a polished business image.
+            </p>
+          </div>
+        </div>
+
+        <div class="portfolio-card fade-up">
+          <div class="portfolio-top">
+            <div class="portfolio-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-label">Development</span>
+            <h3>Web Development</h3>
+            <p>
+              Responsive and performance-focused website development built for speed,
+              clarity, and business conversion.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── PRICING ─── -->
+  <!-- PRICING -->
   <section class="section" id="pricing">
     <div class="container">
-      <div class="sec-header fade-up">
-        <div class="sec-label">মূল্য তালিকা</div>
-        <h2 class="sec-title">সাশ্রয়ী প্যাকেজ বেছে নিন</h2>
-        <p class="sec-sub">আপনার বাজেট অনুযায়ী সেরা প্যাকেজ</p>
-      </div>
+      <h2 class="section-title fade-up">Pricing</h2>
+      <p class="section-subtitle fade-up">
+        Flexible packages for individuals, startups, and growing businesses.
+      </p>
 
       <div class="pricing-grid">
         <div class="price-card fade-up">
-          <h3>বেসিক</h3>
-          <p class="desc">ছোট ব্যবসা ও ব্যক্তিগত প্রজেক্টের জন্য</p>
-          <div class="price-amount"><span class="cur">৳</span> ২,৫০০</div>
-          <p class="period">এককালীন পেমেন্ট</p>
-          <ul class="price-features">
-            <li>১ পেজ ওয়েবসাইট</li>
-            <li>মোবাইল রেসপন্সিভ</li>
-            <li>লোগো ডিজাইন</li>
-            <li>৩০ দিন সাপোর্ট</li>
-            <li class="off">ডোমেইন সেটআপ</li>
-            <li class="off">SEO অপটিমাইজেশন</li>
+          <h3>Starter</h3>
+          <div class="price-tag">$49</div>
+          <p>Simple and clean digital presentation setup.</p>
+          <ul>
+            <li>Basic landing page</li>
+            <li>Mobile responsive layout</li>
+            <li>Clean section design</li>
+            <li>Fast delivery support</li>
           </ul>
-          <a href="#contact" class="btn btn-ghost" style="width:100%;justify-content:center">অর্ডার করুন</a>
+          <a href="#contact" class="btn btn-outline">Choose Plan</a>
         </div>
 
-        <div class="price-card featured fade-up" style="transition-delay:0.1s">
-          <div class="price-badge">⭐ সবচেয়ে জনপ্রিয়</div>
-          <h3>প্রিমিয়াম</h3>
-          <p class="desc">মাঝারি ব্যবসা ও প্রফেশনালদের জন্য</p>
-          <div class="price-amount"><span class="cur">৳</span> 4000</div>
-          <p class="period">এককালীন পেমেন্ট</p>
-          <ul class="price-features">
-            <li>৫ পেজ ওয়েবসাইট</li>
-            <li>মোবাইল রেসপন্সিভ</li>
-            <li>লোগো + ব্র্যান্ডিং</li>
-            <li>৬০ দিন সাপোর্ট</li>
-            <li>ডোমেইন সেটআপ</li>
-            <li>SEO অপটিমাইজেশন</li>
+        <div class="price-card featured fade-up">
+          <div class="popular-tag">Most Popular</div>
+          <h3>Professional</h3>
+          <div class="price-tag">$99</div>
+          <p>Perfect for business branding and premium service presentation.</p>
+          <ul>
+            <li>Premium landing page</li>
+            <li>Brand-focused design style</li>
+            <li>Portfolio or service section</li>
+            <li>Priority layout support</li>
           </ul>
-          <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center">অর্ডার করুন</a>
+          <a href="#contact" class="btn btn-primary">Choose Plan</a>
         </div>
 
-        <div class="price-card fade-up" style="transition-delay:0.2s">
-          <h3>এন্টারপ্রাইজ</h3>
-          <p class="desc">বড় প্রতিষ্ঠান ও ই-কমার্সের জন্য</p>
-          <div class="price-amount"><span class="cur">৳</span> 10,000</div>
-          <p class="period">এককালীন পেমেন্ট</p>
-          <ul class="price-features">
-            <li>আনলিমিটেড পেজ</li>
-            <li>মোবাইল রেসপন্সিভ</li>
-            <li>পূর্ণ ব্র্যান্ডিং প্যাকেজ</li>
-            <li>১ বছর সাপোর্ট</li>
-            <li>ডোমেইন + হোস্টিং</li>
-            <li>Advanced SEO</li>
+        <div class="price-card fade-up">
+          <h3>Business</h3>
+          <div class="price-tag">$149</div>
+          <p>Complete premium presentation for brands and online businesses.</p>
+          <ul>
+            <li>Advanced multi-section website</li>
+            <li>Premium visual styling</li>
+            <li>Custom branding presentation</li>
+            <li>Business-ready layout structure</li>
           </ul>
-          <a href="#contact" class="btn btn-ghost" style="width:100%;justify-content:center">অর্ডার করুন</a>
+          <a href="#contact" class="btn btn-outline">Choose Plan</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── CONTACT ─── -->
-  <section class="section contact-section" id="contact">
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
     <div class="container">
-      <div class="contact-wrap fade-up">
-        <h2>আজই শুরু করুন</h2>
-        <p>আপনার প্রজেক্ট নিয়ে কথা বলতে এখনই যোগাযোগ করুন। আমরা দ্রুত সাড়া দেব।</p>
-        <div class="contact-btns">
-          <a href="https://wa.me/8801345288953" target="_blank" class="btn btn-primary">
-            💬 WhatsApp করুন
+      <div class="contact-box fade-up">
+        <h2>Let’s Build Something Premium</h2>
+        <p>
+          Ready to improve your online brand image, website design, or digital presentation?
+          Get in touch and let’s start your next project.
+        </p>
+
+        <div class="contact-buttons">
+          <a href="mailto:alicreationbd2024@gmail.com" class="btn btn-primary">
+            <i class="fa-solid fa-envelope"></i>
+            Email Now
           </a>
-          <a href="https://m.me/AliCreationBD" target="_blank" class="btn btn-ghost">
-            📘 Facebook Messenger
+
+          <a href="tel:01743086024" class="btn btn-outline">
+            <i class="fa-solid fa-phone"></i>
+            Call Now
           </a>
-          <a href="live.html" class="btn btn-live">
-            🔴 BIGO Live দেখুন
+
+          <a
+            href="https://wa.me/8801345288953"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-live"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
           </a>
         </div>
+
         <div class="contact-info">
-          <span>📧 alicreationbd@gmail.com</span>
-          <span>📍 বাংলাদেশ</span>
-          <span>⏰ 24/7 Hours </span>
+          <p>Email: alicreationbd2024@gmail.com</p>
+          <p>Phone: 01743086024</p>
+          <p>Website: alicreationbd.com</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── FOOTER ─── -->
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <p>© 2025 <a href="#">AliCreationBD</a>. সর্বস্বত্ব সংরক্ষিত। ❤️ Made in Bangladesh</p>
-      </div>
+    <div class="container footer-wrap">
+      <p>&copy; 2026 AliCreationBD. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- WhatsApp Float -->
-  <a href="https://wa.me/8801345288953" target="_blank" class="wa-float" title="WhatsApp">💬</a>
+  <!-- FLOATING WHATSAPP -->
+  <a
+    href="https://wa.me/8801345288953"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="floating-btn whatsapp-float"
+    aria-label="Chat on WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
-  <!-- Script -->
-  <script src="assets/script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
