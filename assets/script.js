@@ -3,16 +3,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
-      (entries) => {
+      (entries, observerRef) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("show");
-            observer.unobserve(entry.target);
+            observerRef.unobserve(entry.target);
           }
         });
       },
       {
-        threshold: 0.15
+        threshold: 0.15,
+        rootMargin: "0px 0px -40px 0px"
       }
     );
 
