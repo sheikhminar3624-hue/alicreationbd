@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate" />
   <title>Blog | AliCreationBD</title>
   <meta name="description" content="Read helpful blog posts from AliCreationBD about freelancing, digital services, online business setup, and website improvement." />
   <meta property="og:title" content="Blog | AliCreationBD" />
@@ -12,31 +12,281 @@
   <meta property="og:url" content="https://alicreationbd.com/blog.html" />
   <meta property="og:image" content="https://alicreationbd.com/assets/logo.png" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
-    *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-    body{font-family:Arial,sans-serif;background:#f6f9ff;color:#24324a;line-height:1.7}
-    a{text-decoration:none;color:inherit}.container{width:90%;max-width:1180px;margin:0 auto}
-    .topbar{background:#0f172a;color:#fff;padding:10px 0;font-size:14px}.topbar-inner,.nav-wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-    .navbar{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid #e6edf8}.nav-wrap{padding:16px 0}.logo img{height:42px}.nav-links{display:flex;gap:18px;flex-wrap:wrap}.nav-links a{font-weight:700}.nav-links a:hover,.active{color:#0d6efd}
-    .hero{background:linear-gradient(135deg,#0d6efd,#0a4fc7);color:#fff;padding:88px 0 72px;text-align:center}.hero h1{font-size:46px;margin-bottom:14px}.hero p{max-width:760px;margin:0 auto;color:rgba(255,255,255,.92)}
-    section{padding:76px 0}.section-title{text-align:center;margin-bottom:42px}.section-title h2{font-size:34px;color:#0d6efd;margin-bottom:12px}.section-title p{max-width:760px;margin:0 auto;color:#64748b}
-    .blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}.blog-card{background:#fff;border:1px solid #e6edf8;border-radius:22px;overflow:hidden;box-shadow:0 16px 40px rgba(15,23,42,.08)}
-    .blog-top{height:160px;background:linear-gradient(135deg,#dce9ff,#f2f7ff);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:800;color:#0d6efd}
-    .blog-content{padding:24px}.blog-content h3{color:#153266;margin-bottom:10px}.meta{font-size:14px;color:#64748b;margin-bottom:10px}.btn{display:inline-block;background:#0d6efd;color:#fff;padding:11px 18px;border-radius:12px;font-weight:700;margin-top:12px}
-    .footer{background:#0f172a;color:#d5def1;padding:34px 0;text-align:center}.footer p+p{margin-top:10px}
-    @media(max-width:768px){.hero h1{font-size:32px}.section-title h2{font-size:28px}}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(13,110,253,0.12), transparent 35%),
+        linear-gradient(180deg, #f7faff 0%, #eef4ff 100%);
+      color: #24324a;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid #e6edf8;
+    }
+
+    .nav-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      padding: 16px 0;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      height: 44px;
+      width: 44px;
+      border-radius: 12px;
+      object-fit: cover;
+      background: #fff;
+      padding: 4px;
+      box-shadow: 0 10px 22px rgba(13, 23, 42, 0.10);
+    }
+
+    .brand span {
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: #12284d;
+      letter-spacing: -0.4px;
+    }
+
+    .brand strong {
+      color: #0d6efd;
+      font-weight: 800;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-weight: 700;
+      color: #49627f;
+      position: relative;
+      transition: color 0.25s;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background: #0d6efd;
+      transition: width 0.25s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #0d6efd;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .hero {
+      padding: 88px 0 72px;
+      text-align: center;
+      background: linear-gradient(135deg, #0d6efd, #0a4fc7);
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 48px;
+      line-height: 1.1;
+      margin-bottom: 14px;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: rgba(255,255,255,0.92);
+      font-size: 17px;
+    }
+
+    section {
+      padding: 76px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+    .section-title h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 36px;
+      color: #153266;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+
+    .section-title p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #64748b;
+      font-size: 16px;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .blog-card {
+      background: rgba(255,255,255,0.85);
+      border: 1px solid #e6edf8;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 16px 40px rgba(15,23,42,0.08);
+      transition: transform 0.28s, box-shadow 0.28s;
+      backdrop-filter: blur(10px);
+    }
+
+    .blog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 22px 48px rgba(15,23,42,0.12);
+    }
+
+    .blog-top {
+      height: 160px;
+      background: linear-gradient(135deg, #dce9ff, #f2f7ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: #0d6efd;
+    }
+
+    .blog-content {
+      padding: 24px;
+    }
+
+    .blog-content h3 {
+      font-family: 'Poppins', sans-serif;
+      color: #153266;
+      margin-bottom: 10px;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: #64748b;
+      margin-bottom: 10px;
+    }
+
+    .blog-content p {
+      color: #5b6f8a;
+      font-size: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #0d6efd;
+      color: #fff;
+      padding: 11px 18px;
+      border-radius: 12px;
+      font-weight: 700;
+      margin-top: 14px;
+      transition: transform 0.25s, box-shadow 0.25s;
+      box-shadow: 0 10px 24px rgba(13,110,253,0.18);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(13,110,253,0.24);
+    }
+
+    .footer {
+      background: #0f172a;
+      color: #d5def1;
+      padding: 34px 0;
+      text-align: center;
+    }
+
+    .footer p + p {
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .section-title h2 {
+        font-size: 28px;
+      }
+
+      .nav-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        gap: 14px;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <div><a href="mailto:alicreationbd2025@gmail.com">alicreationbd2025@gmail.com</a> | <a href="tel:01743086024">01743086024</a></div>
-      <div><a href="https://www.facebook.com/profile.php?id=61586306490344" target="_blank">Facebook</a> | <a href="https://www.linkedin.com/in/sheikh-rasel-a12a9a333" target="_blank">LinkedIn</a></div>
-    </div>
-  </div>
+
   <nav class="navbar">
     <div class="container nav-wrap">
-      <div class="logo"><a href="index.html"><img src="assets/logo.png" alt="AliCreationBD Logo" /></a></div>
+      <div class="brand">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="AliCreationBD Logo" />
+        </a>
+        <span>Ali<strong>CreationBD</strong></span>
+      </div>
+
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -45,17 +295,61 @@
       </div>
     </div>
   </nav>
+
   <header class="hero">
     <div class="container">
       <h1>AliCreationBD Blog</h1>
-      <p>Helpful articles and tips on freelancing, digital services, website presentation, and online growth.</p>
+      <p>Helpful articles and insights about freelancing, digital services, website presentation, and online growth.</p>
     </div>
   </header>
+
   <section>
     <div class="container">
       <div class="section-title">
         <h2>Latest Articles</h2>
-        <p>You can later convert each post into a separate single blog page if you want stronger SEO.</p>
+        <p>Clean and professional blog content designed to build trust, improve SEO, and support your brand image.</p>
       </div>
+
       <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-top">Freelancing</div>
+          <div class="blog-content">
+            <div class="meta">Updated • 2026</div>
+            <h3>How to Build a Strong Freelance Profile</h3>
+            <p>Learn how to make your online profile look more trusted, professional, and attractive to new clients.</p>
+            <a class="btn" href="#">Read More</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-top">Web Design</div>
+          <div class="blog-content">
+            <div class="meta">Updated • 2026</div>
+            <h3>Why a Premium Landing Page Matters</h3>
+            <p>A good landing page can improve trust, conversions, and the first impression of your business online.</p>
+            <a class="btn" href="#">Read More</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-top">Branding</div>
+          <div class="blog-content">
+            <div class="meta">Updated • 2026</div>
+            <h3>Simple Branding Tips for Small Businesses</h3>
+            <p>Discover how logo, color choice, and visual consistency help a business look more premium and reliable.</p>
+            <a class="btn" href="#">Read More</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 AliCreationBD. All rights reserved.</p>
+      <p>Email: alicreationbd2025@gmail.com | Phone: 01743086024</p>
+    </div>
+  </footer>
+
+</body>
 </html>
