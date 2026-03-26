@@ -3,489 +3,418 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google" content="notranslate" />
+  <title>AliCreationBD | Digital Services</title>
+  <meta name="description" content="AliCreationBD provides professional Data Entry, Web Research, Virtual Assistant, and Website Support services." />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-  <title>AliCreationBD | Premium Website Design & Branding</title>
-  <meta
-    name="description"
-    content="AliCreationBD helps businesses with premium website design, branding, graphic design, and conversion-focused digital solutions."
-  />
+    body {
+      background: #f5f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
 
-  <meta property="og:title" content="AliCreationBD | Premium Website Design & Branding" />
-  <meta
-    property="og:description"
-    content="Modern website design, branding, and digital solutions for businesses that want to look premium and grow online."
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://alicreationbd.com/" />
-  <meta property="og:image" content="https://alicreationbd.com/assets/logo.png" />
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: white;
+      padding: 20px 8%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
 
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-  <link rel="stylesheet" href="assets/style.css" /><script src="https://upcomingperusehike.com/21/22/c4/2122c4bfbe7c6f091ded9c2c827ba6ce.js"></script>
-<script src="https://quge5.com/88/tag.min.js" data-zone="221894" async data-cfasync="false"></script>
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: #38bdf8;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 8%;
+      background: linear-gradient(rgba(15, 23, 42, 0.82), rgba(30, 58, 138, 0.75)),
+        url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80') center/cover;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 18px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 28px;
+      color: #e2e8f0;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 26px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    .btn-primary:hover {
+      background: #0ea5e9;
+      color: white;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .btn-secondary:hover {
+      background: white;
+      color: #0f172a;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 15px;
+      color: #0f172a;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #555;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px 22px;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #1e3a8a;
+      font-size: 22px;
+    }
+
+    .about-box {
+      background: white;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .profiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .profile-card {
+      background: white;
+      border-radius: 14px;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    .profile-card h3 {
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .profile-card a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .fiverr {
+      background: #1dbf73;
+    }
+
+    .linkedin {
+      background: #0077b5;
+    }
+
+    .freelancer {
+      background: #0e76a8;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #1e3a8a, #0f172a);
+      color: white;
+      text-align: center;
+      border-radius: 18px;
+      padding: 50px 25px;
+    }
+
+    .cta h2 {
+      font-size: 34px;
+      margin-bottom: 14px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #dbeafe;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 40px;
+    }
+
+    .offer-btn {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #ef4444;
+      color: white;
+      text-decoration: none;
+      padding: 14px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      z-index: 999;
+    }
+
+    .offer-btn:hover {
+      background: #dc2626;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .section-title {
+        font-size: 28px;
+      }
+
+      .cta h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container header-wrap">
-      <a href="index.html" class="brand">
-        <img src="assets/logo.png" alt="AliCreationBD Logo" class="brand-logo-img" />
-        <div class="brand-text">Ali<span class="brand-highlight">CreationBD</span></div>
-      </a>
-
-      <nav class="nav">
-        <a href="index.html" class="active">Home</a>
+  <header>
+    <nav>
+      <div class="logo">AliCreation<span>BD</span></div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
         <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#pricing">Pricing</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+        <a href="#about">About</a>
+        <a href="#profiles">Profiles</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
   </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-left fade-up">
-        <div class="hero-badge">Premium Digital Service Studio</div>
-
-        <h1>
-          Get a <span>Modern Business Website</span> That Builds Trust & Brings Clients
-        </h1>
-
-        <p>
-          AliCreationBD designs premium websites, branding, and digital visuals for businesses
-          that want to look professional, attract customers, and grow online with confidence.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#portfolio" class="btn btn-primary">
-            <i class="fa-solid fa-briefcase"></i>
-            View Portfolio
-          </a>
-
-          <a href="contact.html" class="btn btn-outline">
-            <i class="fa-solid fa-paper-plane"></i>
-            Start Your Project
-          </a>
-
-          <a
-            href="https://wa.me/8801743086024?text=Hi%20I%20want%20to%20build%20a%20website"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-offer"
-          >
-            <i class="fa-brands fa-whatsapp"></i>
-            Chat on WhatsApp
-          </a>
-        </div>
-
-        <div class="hero-points">
-          <span><i class="fa-solid fa-check"></i> Modern UI</span>
-          <span><i class="fa-solid fa-check"></i> Mobile Friendly</span>
-          <span><i class="fa-solid fa-check"></i> Fast Delivery</span>
-          <span><i class="fa-solid fa-check"></i> Business Focused</span>
-        </div>
-
-        <div class="hero-starting-price">
-          <span>Website packages starting from $49</span>
-        </div>
-      </div>
-
-      <div class="hero-right fade-up">
-        <div class="hero-card">
-          <div class="hero-card-top">
-            <img src="assets/logo.png" alt="AliCreationBD Profile" />
-          </div>
-
-          <h3>Why Businesses Choose AliCreationBD</h3>
-
-          <ul>
-            <li>Clean and premium websites designed for trust and conversion</li>
-            <li>Responsive layouts that work smoothly on mobile, tablet, and desktop</li>
-            <li>Brand-focused design support for a stronger online identity</li>
-            <li>Simple process, quick communication, and delivery-focused workflow</li>
-            <li>Suitable for service brands, portfolios, and e-commerce businesses</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="quick-links">
-    <div class="container">
-      <div class="quick-grid">
-        <div class="quick-card fade-up">
-          <h3>Business Website Design</h3>
-          <p>High-quality landing pages and business websites that help you present your brand professionally.</p>
-          <a href="#services" class="btn btn-outline">Explore Services</a>
-        </div>
-
-        <div class="quick-card fade-up">
-          <h3>Brand Identity Support</h3>
-          <p>Better visual direction, cleaner branding, and stronger presentation for your business image.</p>
-          <a href="#portfolio" class="btn btn-outline">See Projects</a>
-        </div>
-
-        <div class="quick-card fade-up">
-          <h3>Fast Project Start</h3>
-          <p>Need a clean website or digital upgrade? Start quickly through WhatsApp, email, or phone.</p>
-          <a href="contact.html" class="btn btn-outline">Contact Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="stats-section">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-box fade-up">
-          <h3>3+</h3>
-          <p>Core Service Categories</p>
-        </div>
-        <div class="stat-box fade-up">
-          <h3>100%</h3>
-          <p>Responsive Design Focus</p>
-        </div>
-        <div class="stat-box fade-up">
-          <h3>24/7</h3>
-          <p>Client Communication Support</p>
-        </div>
-        <div class="stat-box fade-up">
-          <h3>Fast</h3>
-          <p>Delivery Workflow</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="services">
-    <div class="container">
-      <h2 class="section-title fade-up">Services</h2>
-      <p class="section-subtitle fade-up">
-        Premium digital services for modern businesses that need a stronger online presence.
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Professional Data Entry, Web Research & Virtual Assistant Services</h1>
+      <p>
+        Welcome to AliCreationBD. I help businesses and individuals with accurate data entry,
+        quality web research, product listing, and online support services.
       </p>
-
-      <div class="services-grid">
-        <div class="service-card fade-up">
-          <div class="service-icon">
-            <i class="fa-solid fa-laptop-code"></i>
-          </div>
-          <h3>Website Design</h3>
-          <p>
-            Modern landing pages, company websites, and portfolio sites designed to look professional,
-            trustworthy, and conversion-ready.
-          </p>
-          <strong>Modern & Responsive</strong>
-        </div>
-
-        <div class="service-card fade-up">
-          <div class="service-icon">
-            <i class="fa-solid fa-pen-ruler"></i>
-          </div>
-          <h3>Graphic Design</h3>
-          <p>
-            Clean social media graphics, promotional visuals, presentation materials,
-            and digital assets that improve your brand image.
-          </p>
-          <strong>Clean Visual Identity</strong>
-        </div>
-
-        <div class="service-card fade-up">
-          <div class="service-icon">
-            <i class="fa-solid fa-palette"></i>
-          </div>
-          <h3>Brand Identity</h3>
-          <p>
-            Logo direction, color consistency, typography choice, and polished visual presentation
-            for a stronger business identity.
-          </p>
-          <strong>Premium Branding</strong>
-        </div>
-
-        <div class="service-card fade-up">
-          <div class="service-icon">
-            <i class="fa-solid fa-store"></i>
-          </div>
-          <h3>E-commerce Setup</h3>
-          <p>
-            Product-focused layouts and clean store presentation that help online businesses
-            look more credible and easier to shop from.
-          </p>
-          <strong>Sales-Focused Layout</strong>
-        </div>
+      <div class="btn-group">
+        <a href="https://www.fiverr.com/s/5rjp504" target="_blank" class="btn btn-primary">Hire Me on Fiverr</a>
+        <a href="#services" class="btn btn-secondary">View Services</a>
       </div>
     </div>
   </section>
 
-  <section class="section portfolio-section" id="portfolio">
-    <div class="container">
-      <h2 class="section-title fade-up">Portfolio Highlights</h2>
-      <p class="section-subtitle fade-up">
-        Selected project styles that reflect premium design, clean structure, and business-ready presentation.
+  <section id="services">
+    <h2 class="section-title">My Services</h2>
+    <p class="section-subtitle">
+      I provide reliable digital support services with attention to detail, fast communication, and timely delivery.
+    </p>
+
+    <div class="services">
+      <div class="card">
+        <h3>Data Entry</h3>
+        <p>Accurate and organized data entry for spreadsheets, web panels, documents, and databases.</p>
+      </div>
+
+      <div class="card">
+        <h3>Web Research</h3>
+        <p>Professional online research for leads, products, company information, and market insights.</p>
+      </div>
+
+      <div class="card">
+        <h3>Virtual Assistant</h3>
+        <p>Administrative support, online task handling, file management, and business assistance.</p>
+      </div>
+
+      <div class="card">
+        <h3>Product Listing</h3>
+        <p>Product upload and listing support for e-commerce platforms with clear formatting and details.</p>
+      </div>
+
+      <div class="card">
+        <h3>Website Support</h3>
+        <p>Basic website content updates, page editing, and support for HTML/CSS-based websites.</p>
+      </div>
+
+      <div class="card">
+        <h3>Branding Support</h3>
+        <p>Simple branding assistance, online presence setup, and content presentation improvement.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About AliCreationBD</h2>
+    <div class="about-box">
+      <p>
+        AliCreationBD is a digital service platform focused on helping clients with practical online support.
+        My goal is to provide affordable, honest, and efficient services that help businesses save time and grow faster.
       </p>
-
-      <div class="portfolio-grid">
-        <div class="portfolio-card fade-up">
-          <div class="portfolio-top">
-            <div class="portfolio-icon">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-          </div>
-          <div class="portfolio-content">
-            <span class="portfolio-label">E-commerce</span>
-            <h3>Online Store Website</h3>
-            <p>
-              Clean shopping-focused layout designed for trust, mobile browsing,
-              and a better first impression for visitors.
-            </p>
-          </div>
-        </div>
-
-        <div class="portfolio-card fade-up">
-          <div class="portfolio-top">
-            <div class="portfolio-icon">
-              <i class="fa-solid fa-pen-nib"></i>
-            </div>
-          </div>
-          <div class="portfolio-content">
-            <span class="portfolio-label">Brand Identity</span>
-            <h3>Business Branding Package</h3>
-            <p>
-              Complete visual direction including premium logo treatment,
-              brand consistency, and polished presentation design.
-            </p>
-          </div>
-        </div>
-
-        <div class="portfolio-card fade-up">
-          <div class="portfolio-top">
-            <div class="portfolio-icon">
-              <i class="fa-solid fa-code"></i>
-            </div>
-          </div>
-          <div class="portfolio-content">
-            <span class="portfolio-label">Web Development</span>
-            <h3>Service Business Website</h3>
-            <p>
-              Performance-focused multi-section website built for clarity,
-              fast loading, and higher conversion potential.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="pricing">
-    <div class="container">
-      <h2 class="section-title fade-up">Pricing</h2>
-      <p class="section-subtitle fade-up">
-        Clear website packages for individuals, service providers, and growing businesses.
+      <br />
+      <p>
+        I work with dedication, fast response, and quality service delivery. Whether you need data entry,
+        web research, virtual assistance, or product listing support, I am ready to help.
       </p>
+    </div>
+  </section>
 
-      <div class="pricing-grid">
-        <div class="price-card fade-up">
-          <h3>Starter</h3>
-          <div class="price-tag">$49</div>
-          <p>Best for personal landing pages and simple online presence.</p>
-          <ul>
-            <li>1 page website</li>
-            <li>Mobile responsive design</li>
-            <li>Basic modern layout</li>
-            <li>Delivery in 3 days</li>
-            <li>1 revision</li>
-          </ul>
-          <a href="contact.html" class="btn btn-outline">Choose Starter</a>
-        </div>
+  <section id="profiles">
+    <h2 class="section-title">Professional Profiles</h2>
+    <p class="section-subtitle">
+      You can hire me directly from these trusted freelance and professional platforms.
+    </p>
 
-        <div class="price-card featured fade-up">
-          <div class="popular-tag">Most Popular</div>
-          <h3>Professional</h3>
-          <div class="price-tag">$99</div>
-          <p>Perfect for service brands and businesses that want a stronger image.</p>
-          <ul>
-            <li>3 to 5 page website</li>
-            <li>Premium business design</li>
-            <li>Portfolio or service sections</li>
-            <li>Delivery in 4 days</li>
-            <li>2 revisions</li>
-          </ul>
-          <a href="contact.html" class="btn btn-primary">Choose Professional</a>
-        </div>
+    <div class="profiles">
+      <div class="profile-card">
+        <h3>Fiverr</h3>
+        <p>Order my services directly on Fiverr with a secure and trusted process.</p>
+        <a class="fiverr" href="https://www.fiverr.com/s/5rjp504" target="_blank">Open Fiverr</a>
+      </div>
 
-        <div class="price-card fade-up">
-          <h3>Business</h3>
-          <div class="price-tag">$149</div>
-          <p>For brands that need a complete premium website presentation.</p>
-          <ul>
-            <li>Multi-section business website</li>
-            <li>Custom premium styling</li>
-            <li>E-commerce ready structure</li>
-            <li>Delivery in 5 days</li>
-            <li>Priority support</li>
-          </ul>
-          <a href="contact.html" class="btn btn-outline">Choose Business</a>
-        </div>
+      <div class="profile-card">
+        <h3>LinkedIn</h3>
+        <p>Connect with me professionally and view my profile for networking and business opportunities.</p>
+        <a class="linkedin" href="https://www.linkedin.com/in/sheikh-rasel-a12a9a333" target="_blank">Open LinkedIn</a>
+      </div>
+
+      <div class="profile-card">
+        <h3>Freelancer</h3>
+        <p>Hire me on Freelancer for project-based work and long-term remote collaboration.</p>
+        <a class="freelancer" href="https://www.freelancer.com/u/sheikhr76?sb=t" target="_blank">Open Freelancer</a>
       </div>
     </div>
   </section>
 
-  <section class="section trust-section" id="process">
-    <div class="container">
-      <h2 class="section-title fade-up">How It Works</h2>
-      <p class="section-subtitle fade-up">
-        A simple process designed to help you start quickly and receive your project smoothly.
+  <section id="contact">
+    <div class="cta">
+      <h2>Ready to Work Together?</h2>
+      <p>
+        I am available for Data Entry, Web Research, Virtual Assistance, Product Listing, and Website Support projects.
+        Let’s discuss your requirements and start your project today.
       </p>
-
-      <div class="process-grid">
-        <div class="process-card fade-up">
-          <div class="process-number">01</div>
-          <h3>Contact Us</h3>
-          <p>Tell us what type of website or design support you need.</p>
-        </div>
-
-        <div class="process-card fade-up">
-          <div class="process-number">02</div>
-          <h3>We Plan</h3>
-          <p>We discuss structure, style, pages, and your business goal.</p>
-        </div>
-
-        <div class="process-card fade-up">
-          <div class="process-number">03</div>
-          <h3>We Design</h3>
-          <p>Your project is built with a clean, responsive, premium layout.</p>
-        </div>
-
-        <div class="process-card fade-up">
-          <div class="process-number">04</div>
-          <h3>Delivery</h3>
-          <p>You review the work, request edits if needed, and go live.</p>
-        </div>
+      <div class="btn-group">
+        <a href="https://www.fiverr.com/s/5rjp504" target="_blank" class="btn btn-primary">Hire on Fiverr</a>
+        <a href="https://www.linkedin.com/in/sheikh-rasel-a12a9a333" target="_blank" class="btn btn-secondary">Connect on LinkedIn</a>
       </div>
     </div>
   </section>
 
-  <section class="section testimonials-section">
-    <div class="container">
-      <h2 class="section-title fade-up">Client Impression</h2>
-      <p class="section-subtitle fade-up">
-        Simple review-style content that helps build trust and confidence.
-      </p>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card fade-up">
-          <p>“Very clean and professional design. The website looks much more premium now.”</p>
-          <h4>— Small Business Owner</h4>
-        </div>
-        <div class="testimonial-card fade-up">
-          <p>“Fast communication and smooth delivery. Good for anyone who wants a stylish business website.”</p>
-          <h4>— Service Brand Client</h4>
-        </div>
-        <div class="testimonial-card fade-up">
-          <p>“The layout feels modern and mobile-friendly. Much better presentation than before.”</p>
-          <h4>— Online Business Client</h4>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section faq-section">
-    <div class="container">
-      <h2 class="section-title fade-up">Frequently Asked Questions</h2>
-      <p class="section-subtitle fade-up">
-        Quick answers to common questions before starting your project.
-      </p>
-
-      <div class="faq-grid">
-        <div class="faq-card fade-up">
-          <h3>How long does delivery take?</h3>
-          <p>Most projects are delivered within 3 to 5 days depending on the package and content provided.</p>
-        </div>
-        <div class="faq-card fade-up">
-          <h3>Do you provide revisions?</h3>
-          <p>Yes. Revisions depend on the package, and extra changes can also be discussed if needed.</p>
-        </div>
-        <div class="faq-card fade-up">
-          <h3>Can you make mobile responsive websites?</h3>
-          <p>Yes. All website packages are designed to work smoothly across mobile, tablet, and desktop.</p>
-        </div>
-        <div class="faq-card fade-up">
-          <h3>How can I start?</h3>
-          <p>You can start by messaging on WhatsApp, sending an email, or visiting the contact page.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact-section" id="contact">
-    <div class="container">
-      <div class="contact-box fade-up">
-        <h2>Let’s Build Something Premium</h2>
-        <p>
-          Ready to improve your website, branding, or online business presentation?
-          Let’s talk and start your project today.
-        </p>
-
-        <div class="contact-buttons">
-          <a href="mailto:alicreationbd2024@gmail.com" class="btn btn-primary">
-            <i class="fa-solid fa-envelope"></i>
-            Email Now
-          </a>
-
-          <a href="tel:01743086024" class="btn btn-outline">
-            <i class="fa-solid fa-phone"></i>
-            Call Now
-          </a>
-
-          <a
-            href="https://wa.me/8801743086024?text=Hi%20I%20want%20to%20build%20a%20website"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-live"
-          >
-            <i class="fa-brands fa-whatsapp"></i>
-            WhatsApp
-          </a>
-        </div>
-
-        <div class="contact-info">
-          <p>Email: alicreationbd2024@gmail.com</p>
-          <p>Phone: 01743086024</p>
-          <p>Website: alicreationbd.com</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>&copy; 2026 AliCreationBD. All rights reserved.</p>
-    </div>
+  <footer>
+    <p>&copy; 2026 AliCreationBD. All Rights Reserved.</p>
   </footer>
 
-  <a
-    href="https://wa.me/8801743086024?text=Hi%20I%20want%20to%20build%20a%20website"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="floating-btn whatsapp-float"
-    aria-label="Chat on WhatsApp"
-  >
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+  <a href="offer.html" class="offer-btn">🎁 Special Offer</a>
 
-  <script src="assets/script.js"></script>
 </body>
 </html>
