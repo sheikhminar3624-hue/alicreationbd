@@ -1,6 +1,5 @@
 /* ═══════════════════════════════════════════════
-   AliCreationBD — Premium Clean Style Sheet v4.0
-   Font: Poppins + Inter
+   AliCreationBD — Premium Clean Style Sheet v5.0
 ═══════════════════════════════════════════════ */
 
 *,
@@ -78,9 +77,6 @@ a {
   padding: 88px 0;
 }
 
-/* ─────────────────────────────────────────
-   SECTION TITLES
-───────────────────────────────────────── */
 .section-title {
   font-family: 'Poppins', sans-serif;
   text-align: center;
@@ -94,16 +90,13 @@ a {
 
 .section-subtitle {
   text-align: center;
-  max-width: 640px;
+  max-width: 680px;
   margin: 0 auto 52px;
   color: var(--muted);
   font-size: 16px;
   line-height: 1.75;
 }
 
-/* ─────────────────────────────────────────
-   HEADER
-───────────────────────────────────────── */
 .site-header {
   position: sticky;
   top: 0;
@@ -183,17 +176,16 @@ a {
   transition: width 0.28s;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav a.active {
   color: #fff;
 }
 
-.nav a:hover::after {
+.nav a:hover::after,
+.nav a.active::after {
   width: 100%;
 }
 
-/* ─────────────────────────────────────────
-   HERO
-───────────────────────────────────────── */
 .hero {
   padding: 100px 0 72px;
   position: relative;
@@ -213,7 +205,7 @@ a {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1.18fr 0.82fr;
   gap: 44px;
   align-items: center;
 }
@@ -276,9 +268,6 @@ a {
   margin-bottom: 28px;
 }
 
-/* ─────────────────────────────────────────
-   BUTTONS
-───────────────────────────────────────── */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -289,7 +278,7 @@ a {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 15px;
-  transition: transform 0.25s, box-shadow 0.25s;
+  transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
   border: 1px solid transparent;
   cursor: pointer;
 }
@@ -346,9 +335,6 @@ a {
   box-shadow: 0 14px 38px rgba(34,197,94,0.5);
 }
 
-/* ─────────────────────────────────────────
-   HERO POINTS
-───────────────────────────────────────── */
 .hero-points {
   display: flex;
   flex-wrap: wrap;
@@ -386,9 +372,6 @@ a {
   font-weight: 700;
 }
 
-/* ─────────────────────────────────────────
-   HERO CARD
-───────────────────────────────────────── */
 .hero-card {
   background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
   border: 1px solid rgba(255,255,255,0.08);
@@ -462,9 +445,6 @@ a {
   top: 1px;
 }
 
-/* ─────────────────────────────────────────
-   QUICK LINKS
-───────────────────────────────────────── */
 .quick-links {
   padding: 12px 0 24px;
 }
@@ -475,7 +455,10 @@ a {
   gap: 20px;
 }
 
-.quick-card {
+.quick-card,
+.process-card,
+.testimonial-card,
+.faq-card {
   background: var(--card);
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
@@ -484,28 +467,33 @@ a {
   box-shadow: var(--shadow-sm);
 }
 
-.quick-card:hover {
+.quick-card:hover,
+.process-card:hover,
+.testimonial-card:hover,
+.faq-card:hover {
   transform: translateY(-6px);
   border-color: rgba(56,189,248,0.28);
   box-shadow: var(--shadow);
 }
 
-.quick-card h3 {
+.quick-card h3,
+.process-card h3,
+.faq-card h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 19px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.quick-card p {
+.quick-card p,
+.process-card p,
+.faq-card p,
+.testimonial-card p {
   color: var(--muted);
   margin-bottom: 16px;
   font-size: 14.5px;
 }
 
-/* ─────────────────────────────────────────
-   STATS
-───────────────────────────────────────── */
 .stats-section {
   padding: 8px 0 30px;
 }
@@ -564,10 +552,10 @@ a {
   font-size: 14px;
 }
 
-/* ─────────────────────────────────────────
-   SERVICES
-───────────────────────────────────────── */
-.services-grid {
+.services-grid,
+.process-grid,
+.testimonials-grid,
+.faq-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -643,9 +631,6 @@ a {
   font-weight: 700;
 }
 
-/* ─────────────────────────────────────────
-   PORTFOLIO
-───────────────────────────────────────── */
 .portfolio-section {
   background: linear-gradient(180deg, transparent, rgba(255,255,255,0.012), transparent);
 }
@@ -717,9 +702,6 @@ a {
   line-height: 1.8;
 }
 
-/* ─────────────────────────────────────────
-   PRICING
-───────────────────────────────────────── */
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -816,9 +798,32 @@ a {
   top: 3px;
 }
 
-/* ─────────────────────────────────────────
-   CONTACT
-───────────────────────────────────────── */
+.process-number {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  color: #fff;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 8px 22px rgba(37,99,235,0.32);
+}
+
+.testimonial-card p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.testimonial-card h4 {
+  font-size: 14px;
+  color: #d9e6ff;
+  font-weight: 600;
+}
+
 .contact-section {
   padding: 0 0 90px;
 }
@@ -874,9 +879,6 @@ a {
   color: var(--muted);
 }
 
-/* ─────────────────────────────────────────
-   FOOTER
-───────────────────────────────────────── */
 .site-footer {
   border-top: 1px solid var(--card-border);
   background: rgba(0,0,0,0.18);
@@ -892,9 +894,6 @@ a {
   font-size: 14px;
 }
 
-/* ─────────────────────────────────────────
-   FLOATING BUTTON
-───────────────────────────────────────── */
 .floating-btn {
   position: fixed;
   right: 22px;
@@ -923,9 +922,6 @@ a {
   box-shadow: 0 16px 40px rgba(37,211,102,0.58);
 }
 
-/* ─────────────────────────────────────────
-   ANIMATION
-───────────────────────────────────────── */
 .fade-up {
   opacity: 0;
   transform: translateY(26px);
@@ -937,12 +933,61 @@ a {
   transform: translateY(0);
 }
 
-/* ─────────────────────────────────────────
-   RESPONSIVE
-───────────────────────────────────────── */
+.page-hero {
+  padding: 90px 0 60px;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  line-height: 1.12;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+}
+
+.page-hero p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.page-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: var(--shadow-sm);
+}
+
+.page-card h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.page-card p,
+.page-card li {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.page-card ul {
+  padding-left: 18px;
+  margin-top: 12px;
+}
+
 @media (max-width: 992px) {
   .hero-grid,
-  .quick-grid {
+  .quick-grid,
+  .page-grid {
     grid-template-columns: 1fr;
   }
 
@@ -969,11 +1014,13 @@ a {
     font-size: 14px;
   }
 
-  .hero {
+  .hero,
+  .page-hero {
     padding: 80px 0 58px;
   }
 
-  .hero-left h1 {
+  .hero-left h1,
+  .page-hero h1 {
     font-size: 32px;
     letter-spacing: -0.5px;
   }
@@ -1019,12 +1066,14 @@ a {
     height: 40px;
   }
 
-  .hero-left h1 {
+  .hero-left h1,
+  .page-hero h1 {
     font-size: 26px;
   }
 
   .hero-left p,
-  .section-subtitle {
+  .section-subtitle,
+  .page-hero p {
     font-size: 15.5px;
   }
 
