@@ -1582,4 +1582,36 @@ ul {
     flex-direction: column;
     width: 100%;
   }
+}.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+.fade-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 999;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.scroll-top.show {
+  opacity: 1;
+  visibility: visible;
 }
