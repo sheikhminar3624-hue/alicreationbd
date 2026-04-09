@@ -1,18 +1,16 @@
-/* ============================================
-   AliCreationBD - Premium JavaScript
-   Updated & Fixed Interactions
-   ============================================ */
-
 document.addEventListener("DOMContentLoaded", function () {
-  document.body.style.opacity = "0";
-  setTimeout(() => {
-    document.body.style.transition = "opacity 0.35s ease";
-    document.body.style.opacity = "1";
-  }, 80);
+  // Loader
+  const loader = document.getElementById("loader");
+  window.addEventListener("load", function () {
+    if (loader) {
+      setTimeout(() => {
+        loader.classList.add("hide");
+      }, 500);
+    }
+  });
 
-  // ===== FADE-UP ANIMATION =====
+  // Fade-up animation
   const fadeElements = document.querySelectorAll(".fade-up");
-
   if ("IntersectionObserver" in window) {
     const fadeObserver = new IntersectionObserver(
       (entries, observerRef) => {
@@ -25,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         threshold: 0.12,
-        rootMargin: "0px 0px -50px 0px"
+        rootMargin: "0px 0px -40px 0px"
       }
     );
 
@@ -34,20 +32,17 @@ document.addEventListener("DOMContentLoaded", function () {
     fadeElements.forEach((el) => el.classList.add("show"));
   }
 
-  // ===== SCROLL TO TOP =====
+  // Scroll top
   const scrollTopBtn = document.getElementById("scrollTop");
-
-  function handleScrollTopButton() {
-    if (!scrollTopBtn) return;
-
-    if (window.scrollY > 300) {
-      scrollTopBtn.classList.add("active");
-    } else {
-      scrollTopBtn.classList.remove("active");
+  window.addEventListener("scroll", function () {
+    if (scrollTopBtn) {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.add("active");
+      } else {
+        scrollTopBtn.classList.remove("active");
+      }
     }
-  }
-
-  window.addEventListener("scroll", handleScrollTopButton);
+  });
 
   if (scrollTopBtn) {
     scrollTopBtn.addEventListener("click", function () {
@@ -58,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // ===== SMOOTH SCROLL FOR HASH LINKS =====
+  // Smooth hash scroll
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener("click", function (e) {
       const href = this.getAttribute("href");
@@ -78,48 +73,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // ===== HEADER SHADOW =====
+  // Header shadow
   const header = document.querySelector(".site-header");
-  function handleHeaderShadow() {
+  window.addEventListener("scroll", function () {
     if (!header) return;
+    header.style.boxShadow =
+      window.scrollY > 40
+        ? "0 14px 30px rgba(15,23,42,0.08)"
+        : "0 1px 3px rgba(0,0,0,0.05)";
+  });
 
-    if (window.scrollY > 50) {
-      header.style.boxShadow = "0 10px 24px rgba(15, 23, 42, 0.08)";
-    } else {
-      header.style.boxShadow = "0 1px 3px rgba(0,0,0,0.05)";
-    }
-  }
-
-  window.addEventListener("scroll", handleHeaderShadow);
-
-  // ===== ACTIVE NAV FOR HOME PAGE SECTIONS =====
-  const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav a[href^='#']");
-
-  function updateActiveNav() {
-    if (!sections.length || !navLinks.length) return;
-
-    const scrollPosition = window.scrollY + 120;
-
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      const sectionId = section.getAttribute("id");
-
-      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${sectionId}`) {
-            link.classList.add("active");
-          }
-        });
-      }
-    });
-  }
-
-  window.addEventListener("scroll", updateActiveNav);
-
-  // ===== COUNTER ANIMATION =====
+  // Counter animation
   const statNumbers = document.querySelectorAll(".stat-content h3");
 
   function animateCounter(element) {
@@ -127,11 +91,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const isPlus = rawText.includes("+");
     const isPercent = rawText.includes("%");
     const target = parseInt(rawText.replace(/[^\d]/g, ""), 10);
-
     if (isNaN(target)) return;
 
     let current = 0;
-    const increment = Math.max(1, Math.ceil(target / 50));
+    const increment = Math.max(1, Math.ceil(target / 60));
     const duration = 1800;
     const stepTime = Math.max(20, Math.floor(duration / (target / increment)));
 
@@ -165,22 +128,30 @@ document.addEventListener("DOMContentLoaded", function () {
     statNumbers.forEach((stat) => counterObserver.observe(stat));
   }
 
-  // ===== OPTIONAL LAZY LOAD =====
-  if ("IntersectionObserver" in window) {
-    const lazyImages = document.querySelectorAll("img[data-src]");
-    const imageObserver = new IntersectionObserver((entries, obs) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          img.src = img.dataset.src;
-          img.removeAttribute("data-src");
-          obs.unobserve(img);
-        }
-      });
+  // Mobile menu
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener("click", function () {
+      mobileMenu.classList.toggle("active");
+      mobileMenuBtn.classList.toggle("active");
     });
 
-    lazyImages.forEach((img) => imageObserver.observe(img));
+    document.addEventListener("click", function (e) {
+      if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+        mobileMenu.classList.remove("active");
+        mobileMenuBtn.classList.remove("active");
+      }
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", function () {
+        mobileMenu.classList.remove("active");
+        mobileMenuBtn.classList.remove("active");
+      });
+    });
   }
 
-  console.log("%cAliCreationBD Premium UI Loaded", "color:#2563eb; font-size:18px; font-weight:700;");
+  console.log("%cAliCreationBD Ultra Premium UI Loaded", "color:#2563eb; font-size:18px; font-weight:700;");
 });
